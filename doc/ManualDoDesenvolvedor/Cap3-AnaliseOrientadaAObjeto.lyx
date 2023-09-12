@@ -13,7 +13,7 @@
 \renewenvironment{center}{\par\centering}{\par}
 \end_preamble
 \use_default_options false
-\master /home2/andreduartebueno/workdir/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica/doc/manualDesenvolvedor-lyx/DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
 \maintain_unincluded_children false
 \language brazilian
 \language_package auto
@@ -124,13 +124,6 @@ AOO
 \end_inset
 
  – Análise Orientada a Objeto
-\begin_inset CommandInset label
-LatexCommand label
-name "chap:Análise Orientada a Objeto"
-
-\end_inset
-
-
 \begin_inset Index idx
 status collapsed
 
@@ -160,51 +153,8 @@ A terceira etapa do desenvolvimento de um projeto de engenharia, no nosso
  
 \end_layout
 
-\begin_layout Standard
-O modelo de análise deve ser conciso, simplificado e deve mostrar o que
- deve ser feito, não se preocupando como isso será realizado.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Itemize
-O modelo funcional (aspectos microdinâmicos, veja a seção 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:AOO-Modelagem-funcional"
-
-\end_inset
-
-).
- Gabriela: O que fazer com essa nota? Não ficou claro.
- 
-\end_layout
-
-\begin_layout Itemize
-DESCONSIDERAR
-\end_layout
-
-\begin_layout Itemize
-algumas notas tem lembretes para mim mesmo.
-\end_layout
-
-\end_inset
-
-O resultado da análise é um conjunto de diagramas que identificam os objetos
- e seus relacionamentos.
-\end_layout
-
 \begin_layout Section
 Diagramas de classes
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Diagramas-de-classes"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -228,12 +178,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-<<<<<<< HEAD:doc/manualDesenvolvedor-lyx/Cap3-AnaliseOrientadaAObjeto.lyx
-	filename imagens/DiagramaClasses.png
-=======
-	filename imagens/DiagramaDeClasses.png
->>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx):doc/ManualDoDesenvolvedor/Cap3-AnaliseOrientadaAObjeto.lyx
-	lyxscale 50
+	filename C:/Users/Atila Júnior/Desktop/Programação Prática/Imagens/4. Análise/Diagrama de Classes.jpg
 	width 100text%
 
 \end_inset
@@ -260,23 +205,13 @@ name "cap:Diagrama-de-classes"
 
 \end_layout
 
-\end_inset
-
+\begin_layout Plain Layout
 
 \end_layout
 
-\begin_layout Standard
-Nota: 
-\begin_inset space ~
 \end_inset
 
- 
-\begin_inset Newline newline
-\end_inset
 
-deve ocupar toda a página impressa! se necessário rotacionar 90 graus; SE
- NECESSÁRIO DIVIDIR EM 2 PÁGINAS; o importante é que toda figura/tabela
- deve ser bem legível (fonte mínima = 10).
 \end_layout
 
 \begin_layout Subsection
@@ -291,15 +226,51 @@ name "subsec:Dicionário-de-classes"
 \end_layout
 
 \begin_layout Itemize
-Classe CNomeClasse: representa.....
+Classe CPoco: representa a classe responsável por receber os parâmetros
+ do poço
 \end_layout
 
 \begin_layout Itemize
-Classe CNomeClasse: representa.....
+Classe CFluido: representa a classe responsável por receber as propriedades
+ do fluido.
 \end_layout
 
 \begin_layout Itemize
-Classe CNomeClasse: representa.....
+Classe CReservatorio: representa a classe responsável por receber todos
+ os parâmetros referentes ao reservatório.
+\end_layout
+
+\begin_layout Itemize
+Classe CIPRLinear: representa a classe responsável por calcular a curva
+ IPR para reservatórios acima da pressão de bolha.
+\end_layout
+
+\begin_layout Itemize
+Classe CFetkovich: representa a classe responsável pelo cálculo da curva
+ IPR utilizando o modelo de Fetkovich.
+\end_layout
+
+\begin_layout Itemize
+Classe CVogel: representa a classe responsável pelo cálculo da curva IPR
+ utilizando o modelo de Vogel.
+\end_layout
+
+\begin_layout Itemize
+Classe CIPRGeneralizada: representa a classe responsável pelo cálculo da
+ curva IPR utilizando o modelo de Vogel generalizado para reservatórios
+ bifásicos.
+\end_layout
+
+\begin_layout Itemize
+Classe CSimulador: representa a classe responsável pela simulação do software.
+ Recebe as escolhas do usuário quanto aos parâmetros do poço, reservatório
+ e fluidos, além da escolha do modelo adequado para a obtenção das curvas
+ de IPR.
+\end_layout
+
+\begin_layout Itemize
+Classe CGnuplot: representa a classe responsável pela parte gráfica do programa,
+ a partir do uso do software externo Gnuplot.
 \end_layout
 
 \begin_layout Section
@@ -360,13 +331,6 @@ O diagrama de seqüência enfatiza a troca de eventos e mensagens e sua ordem
 \shape italic
 \emph on
 Diagrama de sequência geral
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec: Diagrama de sequência geral"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -401,13 +365,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-<<<<<<< HEAD:doc/manualDesenvolvedor-lyx/Cap3-AnaliseOrientadaAObjeto.lyx
-	filename imagens/DiagramaSequencia-Eventos.png
-	lyxscale 40
-=======
-	filename imagens/DiagramaDeSequencia-Eventos.png
-	lyxscale 50
->>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx):doc/ManualDoDesenvolvedor/Cap3-AnaliseOrientadaAObjeto.lyx
+	filename ../../../../ATILAJ~1/Desktop/PROGRA~2/imagens/fig-3-12-Diagrama-de-eventos-sequencia-prova.png
+	lyxscale 85
 	width 100text%
 
 \end_inset
@@ -437,16 +396,6 @@ name "cap:Diagrama-de-sequencia"
 \end_inset
 
 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-deve mostrar uma sequência geral
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -454,13 +403,6 @@ deve mostrar uma sequência geral
 \shape italic
 \emph on
 Diagrama de sequência específico
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec: Diagrama de sequência específico"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -558,12 +500,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-<<<<<<< HEAD:doc/manualDesenvolvedor-lyx/Cap3-AnaliseOrientadaAObjeto.lyx
-	filename imagens/DiagramaComunicacao.png
-=======
-	filename imagens/DiagramaDeComunicacao.png
+	filename C:/Users/Atila Júnior/Desktop/Programação Prática/Imagens/4. Análise/Diagrama de Comunicacao.jpg
 	lyxscale 85
->>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx):doc/ManualDoDesenvolvedor/Cap3-AnaliseOrientadaAObjeto.lyx
 	width 100text%
 
 \end_inset
@@ -596,7 +534,7 @@ name "cap:Diagrama-de-comunicação"
 \end_layout
 
 \begin_layout Section
-Diagrama de estado
+Diagrama de máquina de estado
 \begin_inset Index idx
 status collapsed
 
@@ -608,10 +546,10 @@ estado
 
 
 \begin_inset Index idx
-status open
+status collapsed
 
 \begin_layout Plain Layout
-Diagrama de estado
+Diagrama de máquina de estado
 \end_layout
 
 \end_inset
@@ -670,13 +608,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-<<<<<<< HEAD:doc/manualDesenvolvedor-lyx/Cap3-AnaliseOrientadaAObjeto.lyx
-	filename imagens/DiagramaEstados.png
-	lyxscale 30
-=======
-	filename imagens/DiagramaDeEstado-ClasseSimulador.png
+	filename ../../../../ATILAJ~1/Desktop/PROGRA~2/imagens/fig-3-14-Diagrama-de-estados-aluno.png
 	lyxscale 85
->>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx):doc/ManualDoDesenvolvedor/Cap3-AnaliseOrientadaAObjeto.lyx
 	width 100text%
 
 \end_inset
@@ -710,13 +643,6 @@ name "cap:Diagrama-de-maquina-de-estado"
 
 \begin_layout Section
 Diagrama de atividades
-\begin_inset CommandInset label
-LatexCommand label
-name "sec: Diagrama de atividades"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -766,13 +692,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-<<<<<<< HEAD:doc/manualDesenvolvedor-lyx/Cap3-AnaliseOrientadaAObjeto.lyx
-	filename imagens/DiagramaAtividade.png
-	lyxscale 40
-=======
-	filename imagens/DiagramaDeAtividade-ClasseIntegral-MetodoArea.png
+	filename ../../../../ATILAJ~1/Desktop/PROGRA~2/imagens/DiagAtividade-MetodoArea.png
 	lyxscale 85
->>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx):doc/ManualDoDesenvolvedor/Cap3-AnaliseOrientadaAObjeto.lyx
 	width 100text%
 
 \end_inset
@@ -802,22 +723,6 @@ name "cap:Diagrama-de-atividades"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Description
-Nota: 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-Não perca de vista a visão do todo; do projeto de engenharia como um todo.
- Cada capítulo, cada seção, cada parágrafo deve se encaixar.
- Este é um diferencial fundamental do engenheiro em relação ao técnico,
- a capacidade de desenvolver projetos, de ver o todo e suas diferentes partes,
- de modelar processos/sistemas/produtos de engenharia.
 \end_layout
 
 \end_body
