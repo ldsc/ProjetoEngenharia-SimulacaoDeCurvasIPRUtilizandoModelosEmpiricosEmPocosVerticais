@@ -565,37 +565,24 @@ name "subsec:diagrama de estados"
 \end_layout
 
 \begin_layout Standard
-Um diagrama de máquina de estado representa os diversos estados que o objeto
- assume e os eventos que ocorrem ao longo de sua vida ou mesmo ao longo
- de um processo (histórico do objeto).
- É usado para modelar aspectos dinâmicos do objeto.
+Um diagrama de máquina de estado, também conhecido como diagrama de estados
+ ou diagrama de transição de estados, é uma representação visual que descreve
+ o comportamento de um sistema ou entidade em relação aos diferentes estados
+ em que pode estar e às transições entre esses estados.
+ Essa ferramenta é amplamente utilizada na engenharia de software, engenharia
+ de sistemas e em outros campos para modelar o comportamento de sistemas
+ complexos.
 \end_layout
 
 \begin_layout Standard
-Veja na Figura 
+É possível observar na figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "cap:Diagrama-de-maquina-de-estado"
 
 \end_inset
 
- o diagrama de máquina de estado para o objeto XXX.
- Observe que....
-\end_layout
-
-\begin_layout Itemize
-Lembre-se, são os estados de um objeto específico e não uma sequência de
- cálculo; as sequência já foram mostrados nos diagramas de sequência e comunicaç
-ão!!
-\end_layout
-
-\begin_layout Itemize
-Vou repetir; Não faça o diagrama de máquina de estado como sendo uma repetição
- dos diagramas de sequência! 
-\end_layout
-
-\begin_layout Itemize
-Este diagrama trata dos estados de um objeto único/específico!
+ o diagrama de máquina de estado para os objetos da classe Csimulador.
 \end_layout
 
 \begin_layout Standard
@@ -608,7 +595,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../../ATILAJ~1/Desktop/PROGRA~2/imagens/fig-3-14-Diagrama-de-estados-aluno.png
+	filename C:/Users/marce/Downloads/Diagrama_de_Estado_Simulação_IPR.png
 	lyxscale 85
 	width 100text%
 
@@ -646,7 +633,11 @@ Diagrama de atividades
 \end_layout
 
 \begin_layout Standard
-.....
+Um diagrama de atividades é um tipo de diagrama da Linguagem de Modelagem
+ Unificada (UML) que representa o fluxo de controle de atividades em um
+ sistema.
+ Ele é essencialmente um gráfico de fluxo que mostra o fluxo de controle
+ de uma atividade para outra.
 \end_layout
 
 \begin_layout Standard
@@ -659,27 +650,9 @@ reference "cap:Diagrama-de-atividades"
 
  o diagrama de atividades correspondente a uma atividade específica do diagrama
  de máguina de estado.
- Observe que....
-\end_layout
-
-\begin_layout Standard
-...descrever em detalhes uma atividade específica..não pode ser a sequência de
- uso geral, trata-se de um caso específico, detalhado do diagrama de máquina
- de estado.
-\end_layout
-
-\begin_layout Itemize
-Lembrar que o diagrama de sequência é a representação de um método de cálculo
- específico.
+ Neste caso específico, é realizado o cálculo da produtividade de um poço
+ vertical, utilizando-se de modelos teóricos e empíricos.
  
-\end_layout
-
-\begin_layout Itemize
-Não é para fazer o diagrama de atividades do método de gerenciamento!!!
-\end_layout
-
-\begin_layout Itemize
-Coloque aqui um diagrama de atividades que mostra contas/cálculos! 
 \end_layout
 
 \begin_layout Standard
@@ -692,7 +665,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../../ATILAJ~1/Desktop/PROGRA~2/imagens/DiagAtividade-MetodoArea.png
+	filename C:/Users/marce/Downloads/Diagrama_de_Atividades_IPR.png
 	lyxscale 85
 	width 100text%
 
