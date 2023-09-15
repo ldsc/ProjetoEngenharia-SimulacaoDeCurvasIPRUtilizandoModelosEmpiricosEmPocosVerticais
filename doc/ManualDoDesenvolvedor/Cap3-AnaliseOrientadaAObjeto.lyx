@@ -320,10 +320,8 @@ name "subsec:diagrama de sequência"
 \emph on
 O diagrama de seqüência enfatiza a troca de eventos e mensagens e sua ordem
  temporal.
- Contém informações sobre o fluxo de controle do software.
- Costuma ser montado a partir de um diagrama de caso de uso e estabelece
- o relacionamento dos atores (usuários e sistemas externos) com alguns objetos
- do sistema.
+ Portanto, representa uma forma de diagrama interativo que delineia a maneira
+ e a sequência em que um conjunto de objetos colabora.
 \end_layout
 
 \begin_layout Subsection
@@ -350,11 +348,6 @@ reference "cap:Diagrama-de-sequencia"
 .
 \end_layout
 
-\begin_layout Itemize
-[Aqui a ênfase é o entendimento da sequência com que as mensagens são trocadas,
- a ordem temporal.]
-\end_layout
-
 \begin_layout Standard
 \begin_inset Float figure
 placement H
@@ -365,7 +358,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../../ATILAJ~1/Desktop/PROGRA~2/imagens/fig-3-12-Diagrama-de-eventos-sequencia-prova.png
+	filename C:/Users/giova/Downloads/DiagramaGeral.png
 	lyxscale 85
 	width 100text%
 
@@ -406,16 +399,51 @@ Diagrama de sequência específico
 \end_layout
 
 \begin_layout Standard
-...
-\end_layout
-
-\begin_layout Itemize
-[deve mostrar uma sequência específica; NÃO É PARA REPETIR O GERAL COM 1-2
- coisas diferentes!
+Para o caso de um diagrama de sequência específico para cálculo dos parâmetros
+ das curvas de IPR, é necessário que o usuário forneça os dados de fluido,
+ reservatório e poço bem como escolha o método que deseja utilizar para
+ calcular e obter os resultados que serão utilizados no gráfico final Veja
+ o diagrama de sequência na Figura 4.5.
 \end_layout
 
 \begin_layout Standard
-é um novo diagrama; detalhando algo! ]
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/giova/Downloads/DiagramaEspecifico.png
+	rotateAngle 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de seqüência
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-de-sequencia-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
