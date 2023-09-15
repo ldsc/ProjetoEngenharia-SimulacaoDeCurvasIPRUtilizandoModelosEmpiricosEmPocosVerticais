@@ -1,0 +1,730 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement p
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Análise Orientada a Objeto}  
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+AOO
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+AOO
+\end_layout
+
+\end_inset
+
+ – Análise Orientada a Objeto
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Análise orientada a objeto
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:AOO"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A terceira etapa do desenvolvimento de um projeto de engenharia, no nosso
+ caso um software aplicado a engenharia de petróleo, é a AOO – Análise Orientada
+ a Objeto.
+ A AOO utiliza algumas regras para identificar os objetos de interesse,
+ as relacões entre os pacotes, as classes, os atributos, os métodos, as
+ heranças, as associações, as agregações, as composições e as dependências.
+ 
+\end_layout
+
+\begin_layout Section
+Diagramas de classes
+\end_layout
+
+\begin_layout Standard
+O diagrama de classes é apresentado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Diagrama-de-classes"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Atila Júnior/Desktop/Programação Prática/Imagens/4. Análise/Diagrama de Classes.jpg
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de classes
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-de-classes"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Dicionário de classes
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Dicionário-de-classes"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Classe CPoco: representa a classe responsável por receber os parâmetros
+ do poço
+\end_layout
+
+\begin_layout Itemize
+Classe CFluido: representa a classe responsável por receber as propriedades
+ do fluido.
+\end_layout
+
+\begin_layout Itemize
+Classe CReservatorio: representa a classe responsável por receber todos
+ os parâmetros referentes ao reservatório.
+\end_layout
+
+\begin_layout Itemize
+Classe CIPRLinear: representa a classe responsável por calcular a curva
+ IPR para reservatórios acima da pressão de bolha.
+\end_layout
+
+\begin_layout Itemize
+Classe CFetkovich: representa a classe responsável pelo cálculo da curva
+ IPR utilizando o modelo de Fetkovich.
+\end_layout
+
+\begin_layout Itemize
+Classe CVogel: representa a classe responsável pelo cálculo da curva IPR
+ utilizando o modelo de Vogel.
+\end_layout
+
+\begin_layout Itemize
+Classe CIPRGeneralizada: representa a classe responsável pelo cálculo da
+ curva IPR utilizando o modelo de Vogel generalizado para reservatórios
+ bifásicos.
+\end_layout
+
+\begin_layout Itemize
+Classe CSimulador: representa a classe responsável pela simulação do software.
+ Recebe as escolhas do usuário quanto aos parâmetros do poço, reservatório
+ e fluidos, além da escolha do modelo adequado para a obtenção das curvas
+ de IPR.
+\end_layout
+
+\begin_layout Itemize
+Classe CGnuplot: representa a classe responsável pela parte gráfica do programa,
+ a partir do uso do software externo Gnuplot.
+\end_layout
+
+\begin_layout Section
+Diagrama de seqüência – eventos
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Eventos
+\end_layout
+
+\end_inset
+
+ e mensagens
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Mensagens
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Diagrama de sequência
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:diagrama de sequência"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\emph on
+O diagrama de seqüência enfatiza a troca de eventos e mensagens e sua ordem
+ temporal.
+ Portanto, representa uma forma de diagrama interativo que delineia a maneira
+ e a sequência em que um conjunto de objetos colabora.
+\end_layout
+
+\begin_layout Subsection
+
+\shape italic
+\emph on
+Diagrama de sequência geral
+\end_layout
+
+\begin_layout Standard
+Veja o 
+\shape italic
+\emph on
+diagrama de seqüência na
+\shape default
+\emph default
+ Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Diagrama-de-sequencia"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/giova/Downloads/DiagramaGeral.png
+	lyxscale 85
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de seqüência
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-de-sequencia"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\shape italic
+\emph on
+Diagrama de sequência específico
+\end_layout
+
+\begin_layout Standard
+Para o caso de um diagrama de sequência específico para cálculo dos parâmetros
+ das curvas de IPR, é necessário que o usuário forneça os dados de fluido,
+ reservatório e poço bem como escolha o método que deseja utilizar para
+ calcular e obter os resultados que serão utilizados no gráfico final Veja
+ o diagrama de sequência na Figura 4.5.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/giova/Downloads/DiagramaEspecifico.png
+	rotateAngle 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de sequência 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Diagrama-de-sequencia"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diagrama de comunicação
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+comunicação
+\end_layout
+
+\end_inset
+
+ – colaboração
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+colaboração
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Diagrama-de-Comunicação"
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Diagrama de colaboração
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "par:Diagrama-de-colaboração:"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+No diagrama de comunicação o foco é a interação e a troca de mensagens e
+ dados entre os objetos.
+ 
+\end_layout
+
+\begin_layout Itemize
+[Pode ser a repetição de um diagrama de sequência; mas note que o formato
+ do gráfico é diferente, aqui a ênfase é o entendimento das mensagens que
+ chegam e saem de cada objeto.]
+\end_layout
+
+\begin_layout Standard
+Veja na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Diagrama-de-Comunicação"
+
+\end_inset
+
+ o diagrama de comunicação mostrando a sequência de blablabla.
+ Observe que ....
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Atila Júnior/Desktop/Programação Prática/Imagens/4. Análise/Diagrama de Comunicacao.jpg
+	lyxscale 85
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de comunicação
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-de-comunicação"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diagrama de máquina de estado
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+estado
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Diagrama de máquina de estado
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:diagrama de estados"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Um diagrama de máquina de estado, também conhecido como diagrama de estados
+ ou diagrama de transição de estados, é uma representação visual que descreve
+ o comportamento de um sistema ou entidade em relação aos diferentes estados
+ em que pode estar e às transições entre esses estados.
+ Essa ferramenta é amplamente utilizada na engenharia de software, engenharia
+ de sistemas e em outros campos para modelar o comportamento de sistemas
+ complexos.
+\end_layout
+
+\begin_layout Standard
+É possível observar na figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Diagrama-de-maquina-de-estado"
+
+\end_inset
+
+ o diagrama de máquina de estado para os objetos da classe Csimulador.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/marce/Downloads/Diagrama_de_Estado_Simulação_IPR.png
+	lyxscale 85
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de máquina de estado
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-de-maquina-de-estado"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diagrama de atividades
+\end_layout
+
+\begin_layout Standard
+Um diagrama de atividades é um tipo de diagrama da Linguagem de Modelagem
+ Unificada (UML) que representa o fluxo de controle de atividades em um
+ sistema.
+ Ele é essencialmente um gráfico de fluxo que mostra o fluxo de controle
+ de uma atividade para outra.
+\end_layout
+
+\begin_layout Standard
+Veja na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Diagrama-de-atividades"
+
+\end_inset
+
+ o diagrama de atividades correspondente a uma atividade específica do diagrama
+ de máguina de estado.
+ Neste caso específico, é realizado o cálculo da produtividade de um poço
+ vertical, utilizando-se de modelos teóricos e empíricos.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/marce/Downloads/Diagrama_de_Atividades_IPR.png
+	lyxscale 85
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de atividades
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-de-atividades"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
