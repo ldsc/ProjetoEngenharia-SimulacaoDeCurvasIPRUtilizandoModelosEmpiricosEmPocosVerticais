@@ -623,7 +623,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/marce/Downloads/Diagrama_de_Estado_Simulação_IPR.png
+	filename imagens/Diagrama_de_Estado_Simulação_IPR.png
 	lyxscale 85
 	width 100text%
 
@@ -693,7 +693,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/marce/Downloads/Diagrama_de_Atividades_IPR.png
+	filename imagens/Diagrama_de_Atividades_IPR.png
 	lyxscale 85
 	width 100text%
 

@@ -1247,53 +1247,33 @@ reference "cap:Diagrama-de-componentes"
 \end_inset
 
  um exemplo de diagrama de componentes.
- Observe que este inclui muitas dependências, ilustrando as relações entre
- os arquivos.
- Por exemplo: o subsistema biblioteca inclui os arquivos das classes A e
- B, e a geração dos objetos A.obj e B.obj depende dos arquivos A.h, A.cpp, B.h
- e B.cpp.
- A geração da biblioteca depende dos arquivos A.obj e B.obj.
- O subsistema biblioteca Qt, um subsistema exerno, inclui os arquivos de
- código da biblioteca Qt e a biblioteca em si.
- O subsistema banco de dados representa o banco de dados utilizado pelo
- sistema e tem uma interface de acesso que é utilizada pelo software para
- acesso aos dados armazenados no banco de dados.
- O software executável a ser gerado depende da biblioteca gerada, dos arquivos
- da biblioteca Qt, do módulo de arquivos MinhaJanela e do banco de dados.
-\end_layout
-
-\begin_layout Standard
-Algumas observações úteis para o diagrama de componentes:
+ Dessa forma, um diagrama de componentes é uma ferramenta valiosa para o
+ seu projeto de desenvolvimento de software para simulação de curvas IPR
+ na engenharia de petróleo por várias razões:
 \end_layout
 
 \begin_layout Itemize
-De posse do diagrama de componentes, temos a lista de todos os arquivos
- necessários para compilar e rodar o software.
+Visualiza a estrutura do sistema;
 \end_layout
 
 \begin_layout Itemize
-Observe que um assunto/pacote pode se transformar em uma biblioteca e será
- incluído no diagrama de componentes.
+Mostra as dependências entre os elementos;
 \end_layout
 
 \begin_layout Itemize
-A ligação entre componentes pode incluir um estereótipo indicando o tipo
- de relacionamento ou algum protocolo utilizado.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Na versão final apagar este texto copiado do livro; e colocado aqui para
- lhe auxiliar; deixar somente o que é pertinente ao trabalho
+Organiza o código em módulos;
 \end_layout
 
-\end_inset
-
-
+\begin_layout Itemize
+Facilita a comunicação na equipe;
 \end_layout
 
-\begin_layout Standard
-Neste projeto blablabla
+\begin_layout Itemize
+Identifica áreas críticas do sistema;
+\end_layout
+
+\begin_layout Itemize
+Serve como documentação.
 \end_layout
 
 \begin_layout Standard
@@ -1306,7 +1286,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagramaDeComponentes-Asuntos-Pacotes-Imago.png
+	filename imagens/DiagramaDeComponentesIPR.png
 	lyxscale 90
 	width 100text%
 
@@ -1383,6 +1363,31 @@ O diagrama de implantação deve incluir os elementos necessários para que
  o sistema seja colocado em funcionamento: computador, periféricos, processadore
 s, dispositivos, nós, relacionamentos de dependência, associação, componentes,
  subsistemas, restrições e notas.
+ O diagrama de implantação desempenha um papel crucial no projeto de engenharia
+ de petróleo com simulações de curvas IPR para Poços Verticais.
+ Ele se aplica de forma significativa ao ajudar a visualizar como os diversos
+ componentes de software e hardware interagem em seu ambiente de execução.
+ Neste contexto, o diagrama de implantação permite a:
+\end_layout
+
+\begin_layout Itemize
+Visualização da Infraestrutura;
+\end_layout
+
+\begin_layout Itemize
+Modelagem de Conexões;
+\end_layout
+
+\begin_layout Itemize
+Planejamento de Recursos;
+\end_layout
+
+\begin_layout Itemize
+Identificação de Pontos de Falha;
+\end_layout
+
+\begin_layout Itemize
+Escalabilidade.
 \end_layout
 
 \begin_layout Standard
@@ -1393,20 +1398,7 @@ reference "cap:Diagrama-de-implantação."
 
 \end_inset
 
- um exemplo de diagrama de implantação de um cluster.
- Observe a presença de um servidor conectado a um switch.
- Os nós do cluster (ou clientes) também estão conectados ao switch.
- Os resultados das simulações são armazenados em um servidor de arquivos
- (
-\emph on
-storage
-\emph default
-).
-\end_layout
-
-\begin_layout Standard
-Pode-se utilizar uma anotação de localização para identificar onde determinado
- componente está residente, por exemplo {localização: sala 3}.
+ um exemplo de diagrama de implantação.
 \end_layout
 
 \begin_layout Standard
@@ -1419,7 +1411,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagramDeExecucao.png
+	filename imagens/DiagramadeImplantacao_IPR.png
 	lyxscale 50
 	width 100text%
 
@@ -1450,22 +1442,6 @@ name "cap:Diagrama-de-implantação."
 \end_inset
 
 
-\end_layout
-
-\begin_layout Description
-Nota: 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-Não perca de vista a visão do todo; do projeto de engenharia como um todo.
- Cada capítulo, cada seção, cada parágrafo deve se encaixar.
- Este é um diferencial fundamental do engenheiro em relação ao técnico,
- a capacidade de desenvolver projetos, de ver o todo e suas diferentes partes,
- de modelar processos/sistemas/produtos de engenharia.
 \end_layout
 
 \begin_layout Subsection
