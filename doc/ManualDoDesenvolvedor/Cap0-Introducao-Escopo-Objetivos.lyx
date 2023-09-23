@@ -1,0 +1,455 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style apalike
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+UNIVERSIDADE ESTADUAL DO NORTE FLUMINENSE
+\begin_inset Newline newline
+\end_inset
+
+LABORATÓRIO DE ENGENHARIA E EXPLORAÇÃO DE PETRÓLEO
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+PROJETO ENGENHARIA
+\begin_inset Newline newline
+\end_inset
+
+DESENVOLVIMENTO DO SOFTWARE 
+\begin_inset Newline newline
+\end_inset
+
+SIMULAÇÃO DE CURVAS IPR UTILIZANDO MODELOS EMPÍRICOS PARA POÇOS VERTICAIS
+\begin_inset Newline newline
+\end_inset
+
+TRABALHO DA DISCIPLINA PROGRAMAÇÃO PRÁTICA
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Versão 1:
+\begin_inset Newline newline
+\end_inset
+
+Atila Júnior
+\begin_inset Newline newline
+\end_inset
+
+Giovanna Massardi
+\begin_inset Newline newline
+\end_inset
+
+Marcelo Bernardo
+\begin_inset Newline newline
+\end_inset
+
+Prof.
+ André Duarte Bueno
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+MACAÉ - RJ
+\begin_inset Newline newline
+\end_inset
+
+Versão 2023 - Semestre 2023/2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset nomencl_print
+LatexCommand printnomenclature
+set_width "auto"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Introdução
+\begin_inset CommandInset label
+LatexCommand label
+name "cha:Introdução"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Introdução}
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lfoot{Atila Jr., Giovanna M.
+ e Marcelo B.} 
+\backslash
+rfoot{
+\backslash
+today }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+No presente projeto de engenharia, desenvolve-se o software de Simulação
+ de Curvas IPR (Inflow Performance Relationship) utilizando Modelos Empíricos
+ em Poços verticais, um software aplicado a engenharia de petróleo e que
+ utiliza o paradigma da orientação a objetos.
+ 
+\end_layout
+
+\begin_layout Standard
+Este software tem como finalidade obter curvas de IPR no regime pseudopermanente
+ a partir de dados inseridos pelo usuário.
+ Para isso, é necessário que o índice de produtividade seja calculado com
+ base nos dados de pressão e vazão ou propriedades do reservatório.
+ Dessa forma, os modelos empíricos Linear, Fetkovich, Vogel e Vogel Generalizado
+ poderão ser escolhidos para realização do cálculo da pressão de fundo e
+ respectivas vazões bem como avaliar reservatórios estratificados a partir
+ dos cálculos resultantes.
+ Tais valores serão mostrados ao usuário juntamente com um gráfico com a
+ curva de IPR e estas informações poderão ser salvas em disco.
+ 
+\end_layout
+
+\begin_layout Section
+Escopo do problema
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Escopo-do-Problema"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A curva de IPR, que pode ser chamada de curva de influxo, curva de pressão
+ disponível ou curva do índice de produtividade, é uma representação gráfica
+ que descreve como a pressão disponível no fundo de um poço de petróleo
+ ou gás varia em relação à taxa de fluxo de fluidos.
+ Essas medidas são tomadas na profundidade em que o reservatório foi perfurado
+ em um momento específico durante a vida útil do campo.
+ Em outras palavras, essa curva fornece informações cruciais sobre como
+ a pressão no poço reage quando se está produzindo hidrocarbonetos.
+\end_layout
+
+\begin_layout Standard
+Através da análise dessa curva, as decisões estratégicas podem ser tomadas
+ para maximizar a eficiência e recuperação de petróleo ou gás, além de demonstra
+r os cenários nos quais intervenções deverão ser realizadas assim como definir
+ quando perfurar novos poços.
+ Com isso, é possível analisar quando há possíveis limitações no desempenho
+ do poço.
+ Ademais, esta ferramenta é frequentemente utilizada em simulações de reservatór
+io a fim de prever o comportamento futuro e auxiliar em um planejamento
+ de longo prazo.
+\end_layout
+
+\begin_layout Standard
+O cálculo da IPR pode sofrer variações dependendo das características do
+ reservatório e se estes dados são conhecidos.
+ Logo, alguns modelos matemáticos podem ser aplicados para obter a curva
+ de IPR e inúmeros métodos podem ser escolhidos com base nos regimes de
+ escoamento, tipos de fluxo e fluidos existentes.
+ Portanto, estas equações e suas respectivas análises podem ser encontradas
+ na literatura e, facilitar o cálculo e plotagem das curvas é algo extremamente
+ relevante para simulação de reservatórios e para o entedimento de elevação
+ e escoamento de fluidos.
+ 
+\end_layout
+
+\begin_layout Section
+Objetivos
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Objetivos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os objetivos deste projeto de engenharia são:
+\end_layout
+
+\begin_layout Itemize
+Objetivos gerais:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Utilizar modelos empíricos e equações matemáticas propostas na literatura
+ para o cálculo das pressões de poço e suas respectivas vazões ao longo
+ da vida útil de um reservatório.
+\end_layout
+
+\begin_layout Itemize
+Plotar curvas de IPR em escoamentos monofásico e bifásico utilizando os
+ modelos Linear, Vogel, Fetkovich e Vogel Generalizado considerando regime
+ pseudopermanente a partir do sofware externo Gnuplot.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Objetivos específicos:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Permitir que o usuário escolha qual modelo irá utilizar para realizar o
+ cálculo dos parâmetros da curva de IPR.
+\end_layout
+
+\begin_layout Itemize
+Criar o software de modo que a curva de IPR possa ser plotada independente
+ da existência dos parâmetros de reservatório.
+\end_layout
+
+\begin_layout Itemize
+A partir do cálculo dos modelos empíricos, analisar os tipos de IPR: Linear,
+ Generalizada e Reservatórios Estratificados.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
