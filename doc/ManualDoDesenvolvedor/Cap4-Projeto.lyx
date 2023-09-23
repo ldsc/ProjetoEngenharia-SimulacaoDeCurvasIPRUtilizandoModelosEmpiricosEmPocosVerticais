@@ -145,7 +145,7 @@ Neste capítulo do projeto de engenharia veremos questões associadas ao projeto
 \begin_layout Section
 Projeto do sistema
 \begin_inset Index idx
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Projeto do sistema
@@ -197,7 +197,7 @@ literal "true"
 \begin_layout Enumerate
 Protocolos
 \begin_inset Index idx
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Protocolos
@@ -216,12 +216,6 @@ Protocolos
 \begin_layout Itemize
 Definição dos protocolos de comunicação entre os diversos elementos externos
  
-\begin_inset Newline newline
-\end_inset
-
-(como dispositivos).
- Por exemplo: se o sistema envolve o uso dos nós de um cluster, devem ser
- considerados aspectos como o protocolo de comunicação entre os nós do cluster.
 \begin_inset Separator latexpar
 \end_inset
 
@@ -230,41 +224,7 @@ Definição dos protocolos de comunicação entre os diversos elementos externos
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Definição dos protocolos de comunicação entre os diversos elementos internos
- 
-\begin_inset Newline newline
-\end_inset
-
-(como objetos).
- 
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Definição da interface API de suas bibliotecas e sistemas.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
+Neste projeto o software irá se comunicar com o componente externo Gnuplot.
 \end_layout
 
 \end_deeper
@@ -279,7 +239,12 @@ Definição do formato dos arquivos gerados pelo software.
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+Neste projeto será gerado um arquivo .txt com os valores de pressão e vazão
+ obtidos dos resultados.
+\end_layout
+
+\begin_layout Itemize
+Neste projeto será gerado um arquivo .png com as curvas IPR geradas.
 \end_layout
 
 \end_deeper
@@ -287,7 +252,7 @@ Neste projeto blablabla
 \begin_layout Enumerate
 Recursos
 \begin_inset Index idx
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Recursos
@@ -315,41 +280,8 @@ Identificação e alocação dos recursos globais, como os recursos do sistema
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Identificação da necessidade do uso de banco de dados.
- Implicam em modificações nos diagramas de atividades e de componentes.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Identificação da necessidade de sistemas de armazenamento de massa.
- Por exemplo: um 
-\emph on
-storage
-\emph default
- em um sistema de cluster ou sistemas de backup.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
+Neste projeto serão utilizados todos os componentes internos do computador:
+ HD, processador, memória, além de teclado, mouse e tela.
 \end_layout
 
 \end_deeper
@@ -357,7 +289,7 @@ Neste projeto blablabla
 \begin_layout Enumerate
 Controle
 \begin_inset Index idx
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Controle
@@ -366,44 +298,9 @@ Controle
 \end_inset
 
 
-\begin_inset Separator latexpar
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-Identificação e seleção da implementação de controle, seqüencial ou concorrente,
- baseado em procedimentos ou eventos.
- Implicam modificações no diagrama de execução.
- 
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Identificação das condições extremas e de prioridades.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 Identificação da necessidade de otimização.
  Por exemplo: prefira sistemas com grande capacidade de memória; prefira
@@ -416,26 +313,8 @@ Identificação da necessidade de otimização.
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Identificação e definição de 
-\emph on
-loops
-\emph default
- de controle e das escalas de tempo.
- 
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
+Neste projeto não haverá a necessidade de grande quantidade de memória visto
+ que não haverá grande quantidade de dados.
 \end_layout
 
 \end_deeper
@@ -451,7 +330,8 @@ Identificação de concorrências – quais algoritmos podem ser implementados
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+O software não necessitará de uma grande escala de processamento, logo,
+ não haverá necessidade de processamento paralelo.
 \end_layout
 
 \end_deeper
@@ -459,7 +339,7 @@ Neste projeto blablabla
 \begin_layout Enumerate
 Plataformas
 \begin_inset Index idx
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Plataformas
@@ -468,45 +348,9 @@ Plataformas
 \end_inset
 
 
-\begin_inset Separator latexpar
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-Identificação das estruturas arquitetônicas comuns.
- 
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Identificação de subsistemas relacionados à plataforma selecionada.
- Podem implicar em modificações no diagrama de pacotes e no diagrama de
- componentes.
- 
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 Identificação e definição das plataformas a serem suportadas: hardware,
  sistema operacional e linguagem de software.
@@ -518,7 +362,17 @@ Identificação e definição das plataformas a serem suportadas: hardware,
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+Neste projeto será utilizado a linguagem C++.
+\end_layout
+
+\begin_layout Itemize
+O software deverá ser multiplataforma, podendo ser executado em Windows
+ e Linux.
+\end_layout
+
+\begin_layout Itemize
+O software será desenvolvido no sistema operacional Windows 10 em uma máquina
+ com processador Intel Core i5-11ª geração.
 \end_layout
 
 \end_deeper
@@ -532,22 +386,9 @@ Seleção das bibliotecas externas a serem utilizadas.
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Seleção da biblioteca utilizada para montar a interface gráfica do software
- – GDI.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
+Neste projeto será utilizada a biblioteca padrão da linguagem C++, incluindo
+ vector, string, iostream, fstream, sstream e iremos utilizar a classe CGnuplot,
+ que fornece acesso ao Gnuplot.
 \end_layout
 
 \end_deeper
@@ -563,44 +404,7 @@ o – IDE.
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Enumerate
-Padrões de projeto
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Normalmente os padrões de projeto são identificados e passam a fazer parte
- de uma biblioteca de padrões da empresa.
- Mas isto só ocorre após a realização de diversos projetos.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-se um item não for pertinente; pode ser retirado; ,mas somente na versão
- final; isto facilita o trabalho de revisão do trabalho!!
-\end_layout
-
-\end_inset
-
-
+Neste projeto a IDE utilizada será o software Embarcadero na versão 6.3.
 \end_layout
 
 \end_deeper
