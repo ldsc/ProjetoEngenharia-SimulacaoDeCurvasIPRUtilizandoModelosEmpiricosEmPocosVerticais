@@ -127,14 +127,7 @@ space - Especificação}
 \end_layout
 
 \begin_layout Chapter
-Concepção
-\begin_inset CommandInset label
-LatexCommand label
-name "chap:Concepção"
-
-\end_inset
-
-
+Especificação
 \begin_inset Index idx
 status collapsed
 
@@ -145,122 +138,80 @@ Concepção
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Apresenta-se neste capítulo do projeto de engenharia a concepção, a especificaçã
-o do sistema a ser modelado e desenvolvido.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
+\begin_inset Index idx
 status collapsed
 
 \begin_layout Plain Layout
-#O que é especificação?
+especificação
 \end_layout
 
-\begin_layout Description
-Nota: os textos que explicam o que é especificação; diagrama caso uso; etc....;
- foram colocados apenas para que você se lembre do assunto; na versão final
- do seu trabalho estes texto explicativos feitos pelo professor devem ser
- retirados/apagados.
-\end_layout
-
-\begin_layout Plain Layout
-A primeira etapa do desenvolvimento de um sistema é a concepção, a definição
- de requisitos a serem satisfeitos e a especificação do sistema (descrição
- do objetivo e o que se espera do sistema a ser desenvolvido, o contexto
- da aplicação).
-\end_layout
-
-\begin_layout Plain Layout
-Na concepção ocorre a primeira reunião da equipe de desenvolvimento com
- os clientes, quando é feita a especificação do software.
- O cliente por meio das especificações e das entrevistas, passa para o analista
- idéias gerais de uso do sistema.
- Neste caso, o cliente é o professor da disciplina e os alunos os analistas/dese
-nvolvedores.
-\end_layout
-
-\begin_layout Plain Layout
-O resultado da etapa de especificação é um conjunto formal de documentos
- e requisitos organizados pelo analista do sistema com apoio dos usuários.
- 
-\end_layout
-
-\begin_layout Plain Layout
-As 
-\shape italic
-especificações
-\shape default
- definem as características gerais do sistema, aquilo que ele deve realizar
- e não a forma como irá fazê-lo.
- Definem as necessidades a serem satisfeitas.
- Envolvem a seleção do tipo de interface, a forma de interação com o usuário;
- se vai ter uma ou múltiplas janelas; se o software vai imprimir seus resultados
-, o formato dos arquivos de disco; se vai existir um help e seu formato.
- Podem ser especificadas características de desempenho.
- O cliente define o que deve obrigatoriamente ser satisfeito e o que é opcional
- – isto é, tudo o que o sistema/software deve ser.
- 
-\end_layout
-
-\begin_layout Description
-Dica: a comunicação com o cliente pode ser melhorada com o uso de metáforas,
- como, por exemplo, a metáfora da "lixeira".
- 
-\end_layout
-
-\begin_layout Description
-NOTA
-\begin_inset space ~
-\end_inset
-
-IMPORTANTE:
-\begin_inset Separator latexpar
 \end_inset
 
 
 \end_layout
 
-\begin_deeper
+\begin_layout Standard
+Nesta seção do projeto de engenharia, é apresentada a especificação do software
+ a ser desenvolvido para aplicação em sistemas de modelagem de curvas IPR,
+ utilizado modelos empíricos em poços verticais.
+ Para a indústria de Óleo e Gás, este processo é altamente relevante, pois
+ ao dispor de um software capaz de construir curvas IPR (Figura 
+\begin_inset CommandInset label
+LatexCommand label
+name "Ref: cap:IPR-tipica"
+
+\end_inset
+
+), será possível estimar características importantes acerca dos poços analisados
+, dentre elas a sua produtividade.
+ Além disso, o projeto visa estimar e fornecer ao usuário o momento em que
+ será necessário utilizar-se de métodos de recuperação terciária, como a
+ elevação artificial.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
 \begin_layout Plain Layout
-Como requisitos mínimos o software deve:
+\align center
+\begin_inset Graphics
+	filename C:/Users/Atila Júnior/Desktop/Programação Prática/Imagens/2. Específicação/IPR.jpg
+	width 80text%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
-Solicitar dados ao usuário via terminal (teclado/tela);
-\end_layout
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Mostrar resultados na tela;
+Curva IPR típica de um reservatório de óleo
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:IPR-tipica"
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Plain Layout
-Ler dados de entrada e gerar dados de saída em arquivos de disco;
+\end_inset
+
+
 \end_layout
 
-\begin_layout Plain Layout
-Plotar gráficos usando biblioteca externa CGnuplot (tem livro do gnuplot
- na biblioteca );
-\end_layout
-
-\end_deeper
 \end_inset
 
 
 \end_layout
 
 \begin_layout Section
-Nome do sistema/produto
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:2.2 Nome do sistema/produto"
-
-\end_inset
-
-
+Nome do sistema/produto 
 \end_layout
 
 \begin_layout Standard
@@ -268,7 +219,7 @@ name "sec:2.2 Nome do sistema/produto"
 <lyxtabular version="3" rows="3" columns="2">
 <features tabularvalignment="middle" tabularwidth="14cm">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top" width="8cm">
+<column alignment="center" valignment="middle" width="8cm">
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
@@ -285,7 +236,7 @@ Nome
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Simulação de Curvas IPR Utilizando Modelos Empíricos para Poços Verticais
 \end_layout
 
 \end_inset
@@ -307,7 +258,28 @@ Componentes principais
 \begin_inset Text
 
 \begin_layout Plain Layout
+- Implementação de Modelos Empíricos de IPR: Será desenvolvida uma gama
+ diversificada de modelos empíricos, os quais representarão com precisão
+ os padrões de produção em poços verticais de petróleo.
+\end_layout
 
+\begin_layout Plain Layout
+- Entrada Customizada: O software possibilitará aos usuários inserirem parâmetro
+s específicos do poço, tais como propriedades dos fluidos e do reservatório,
+ para conduzir simulações altamente personalizadas.
+\end_layout
+
+\begin_layout Plain Layout
+- Cálculos de Produtividade: O software executará cálculos complexos para
+ estimar a produtividade prevista em um poço vertical, com base nos modelos
+ empíricos selecionados e nos dados fornecidos.
+\end_layout
+
+\begin_layout Plain Layout
+- Visualização Gráfica: O software será equipado com recursos de visualização
+ gráfica, a fim de exibir de forma clara e compreensível os resultados,
+ facilitando a análise e interpretação dos resultados.
+ 
 \end_layout
 
 \end_inset
@@ -325,11 +297,20 @@ Missão
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+A missão subjacente a este software é disponibilizar aos estudantes do curso
+ de Elevação e Escoamento e à indústria uma ferramenta de simulação de curvas
+ IPR de alta qualidade.
+ Por meio de uma interface intuitiva e da capacidade de fornecer estimativas
+ precisas de produtividade, o software tem por objetivo apoiar engenheiros,
+ pesquisadores e profissionais do setor em suas decisões e na otimização
+ da produção de poços verticais.
+ Fundindo a precisão dos modelos com a flexibilidade de entrada dos dados,
+ essa solução almeja tornar-se uma ferramenta indispensável para avaliação
+ e planejamento de operações em poços de petróleo.
 \end_layout
 
 \end_inset
@@ -344,23 +325,6 @@ Missão
 
 \begin_layout Section
 Especificação
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Especificação"
-
-\end_inset
-
-
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Especificação
-\end_layout
-
-\end_inset
-
-
 \begin_inset Index idx
 status collapsed
 
@@ -374,77 +338,72 @@ especificação
 \end_layout
 
 \begin_layout Standard
-Apresenta-se a seguir a especificação do software.
+O presente projeto tem como objetivo a criação de um software avançado de
+ simulação de curvas IPR (Inflow Performance Relationship), utilizando modelos
+ empíricos para poços verticais de petróleo.
+ A simulação de curvas IPR desempenha um papel crucial na indústria de petróleo,
+ permitindo estimativas precisas da produtividade dos poços e auxiliando
+ na tomada de decisões estratégicas.
+ O software a ser desenvolvido busca proporcionar uma ferramenta poderosa
+ para engenheiros e profissionais do setor, que desejam analisar e otimizar
+ a produção de poços verticais de maneira eficiente e eficaz.
 \end_layout
 
 \begin_layout Standard
-....coloque aqui a especificação...
+O fundamento deste projeto conta com a aplicação de modelos empíricos conhecidos
+, incluindo as abordagens de Fetkovich, Vogel, e outras metodologias de
+ IPR generalizada.
+ Esses modelos têm sido fundamentais na avaliação da performance de poços
+ de petróleo, considerando variáveis complexas como propriedades do reservatório
+, características dos fluidos e condições operacionais.
+ O software que está sendo desenvolvido permitirá aos usuários empregarem
+ esses modelos com facilidade, fornecendo uma plataforma de simulação confiável
+ e precisa.
 \end_layout
 
 \begin_layout Standard
-...eventualmente coloque imagem ilustrativa geral, mostrando o que se pretente
- (primeira ideia) do software; normalmente esta figura já será mais detalhada
- que aquela apresentada no escopo...
+Os modelos empíricos como Fetkovich e Vogel têm sido amplamente utilizados
+ para representar a relação entre a vazão de óleo e a pressão na entrada
+ do poço.
+ O Fetkovich é reconhecido pela sua aplicabilidade a diferentes regimes
+ de fluxo, enquanto o modelo Vogel oferece uma abordagem simplificada para
+ estimar a produtividade.
+ Além disso, abordar-se-á a adaptação desses modelos para situações específicas,
+ como poços estratificados, onde a heterogeneidade do reservatório é levada
+ em consideração para uma simulação mais precisa.
 \end_layout
 
-\begin_layout Section
-Requisitos
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Requisitos
+\begin_layout Standard
+Em suma, o projeto em questão assume uma importância significativa na indústria
+ de petróleo, fornecendo uma solução de simulação avançada para a análise
+ de curvas IPR em poços verticais.
+ Com modelos empíricos consagrados como Fetkovich e Vogel, juntamente com
+ adaptações para poços estratificados e outras variações, o software busca
+ simplificar e aprimorar a avaliação da produtividade de poços de petróleo.
+ Com isso, engenheiros e profissionais do setor terão uma ferramenta valiosa
+ para otimizar a produção e tomar decisões embasadas no setor de exploração
+ e produção de petróleo.
 \end_layout
 
+\begin_layout Standard
+O software será desenvolvido utilizando o conceito de programação orientada
+ a objeto, interface intuitiva e utilizará o software externo Gnuplot para
+ gerar e salvar os gráficos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Requisitos"
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Apresenta-se nesta seção os requisitos funcionais e não funcionais.
 \end_layout
 
 \begin_layout Subsection
 Requisitos funcionais
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Requisitos funcionais
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec:Requisitos-funcionais"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
-Apresenta-se a seguir os requisitos funcionais
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-coloque aqueles que fazem sentido para seu sistema
-\end_layout
-
-\end_inset
-
-.
+Apresenta-se a seguir os requisitos funcionais.
 \end_layout
 
 \begin_layout Standard
@@ -469,8 +428,8 @@ RF-01
 \begin_inset Text
 
 \begin_layout Plain Layout
-O sistema deve conter uma base de dados xxx.
- O usuário deve ser capaz de xxx.
+O usuário deve ter liberdade para escolher quais parâmetros de entrada utilizar,
+ utilizando teclado ou um arquivo .txt.
 \end_layout
 
 \end_inset
@@ -509,7 +468,8 @@ RF-02
 \begin_inset Text
 
 \begin_layout Plain Layout
-O usuário deverá ter liberdade para xxxx.
+O usuário deve escolher o modelo adequado para seu problema de engenharia
+ específico.
 \end_layout
 
 \end_inset
@@ -527,6 +487,9 @@ O usuário deverá ter liberdade para xxxx.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
 <features tabularvalignment="middle" tabularwidth="14cm">
@@ -548,132 +511,8 @@ RF-03
 \begin_inset Text
 
 \begin_layout Plain Layout
-Deve permitir o carregamento de arquivos criados pelo software.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="1" columns="2">
-<features tabularvalignment="middle" tabularwidth="14cm">
-<column alignment="center" valignment="top">
-<column alignment="block" valignment="top" width="11.5cm">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-RF-04
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Deve permitir a escolha da equação xxx.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="1" columns="2">
-<features tabularvalignment="middle" tabularwidth="14cm">
-<column alignment="center" valignment="top">
-<column alignment="block" valignment="top" width="11.5cm">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-RF-05
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-O usuário deve ter tal liberdade para escolher xxx.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\begin_inset Tabular
-<lyxtabular version="3" rows="1" columns="2">
-<features tabularvalignment="middle" tabularwidth="14cm">
-<column alignment="center" valignment="top">
-<column alignment="block" valignment="top" width="11.5cm">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-RF-06
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-O usuário poderá plotar seus resultados em um gráfico.
- O gráfico poderá ser salvo como imagem ou ter seus dados exportados como
- texto.
+O usuário poderá plotar suas curvas em um gráfico utilizando o Gnuplot.
+ O gráfico poderá ser salvo como imagem.
 \end_layout
 
 \end_inset
@@ -695,23 +534,6 @@ O usuário poderá plotar seus resultados em um gráfico.
 
 \begin_layout Subsection
 Requisitos não funcionais
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Requisitos não funcionais
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec:Requisitos-não-funcionais"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -736,7 +558,8 @@ RNF-01
 \begin_inset Text
 
 \begin_layout Plain Layout
-Os cálculos devem ser feitos utilizando-se xxxx.
+Os cálculos devem ser feitos utilizando-se formulações/modelos matemáticos
+ conhecidos na literatura.
 \end_layout
 
 \end_inset
@@ -778,6 +601,46 @@ RNF-02
 \begin_inset Text
 
 \begin_layout Plain Layout
+Usuário deve ter conhecimento básico e prévio de assuntos sobre Elevação
+ e Escoamento para escolha do método mais adequado.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle" tabularwidth="14cm">
+<column alignment="center" valignment="top">
+<column alignment="block" valignment="top" width="11cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+RNF-03
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 O programa deverá ser multi-plataforma, podendo ser executado em 
 \emph on
 Windows
@@ -803,142 +666,8 @@ Mac
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-#O que são os casos de uso
-\begin_inset Index idx
-status collapsed
-
-\begin_layout Plain Layout
-Casos de uso
-\end_layout
-
-\end_inset
-
- do sistema – cenários
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec:Casos-de-uso-do-programa"
-
-\end_inset
-
-
-\begin_inset Index idx
-status collapsed
-
-\begin_layout Plain Layout
-Cenário
-\end_layout
-
-\end_inset
-
-?
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Apague esta seção!
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-Segundo 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "prog-UML-blaha"
-literal "true"
-
-\end_inset
-
-, "um 
-\shape italic
-cenário
-\shape default
- pode ser um registro histórico de execução de um sistema real ou um experimento
- de execução teórica de um sistema proposto"
-\emph on
-.
-\end_layout
-
-\begin_layout Plain Layout
-Um 
-\shape italic
-caso de uso
-\shape default
- descreve um ou mais cenários de uso do software, exemplos de uso, como
- o sistema interage com usuários externos (atores).
- Ademais, ele deve representar uma seqüência típica de uso do software (a
- execução de determinadas tarefas-padrão).
- Também deve representar as exceções, casos em que o usuário comete algum
- erro, em que o sistema não consegue realizar as tarefas solicitadas.
- 
-\end_layout
-
-\begin_layout Plain Layout
-Segundo 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "prog-EngSof-Pressman"
-literal "true"
-
-\end_inset
-
-, o caso de uso deve "produzir uma descrição clara e não ambígua de como
- o usuário final e o sistema interagem um com o outro".
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "prog-EngSof-Pressman"
-literal "true"
-
-\end_inset
-
- diz ainda que "uma vez definidos o ator e seu caso de uso, uma hierarquia
- de comandos é identificada"
-\emph on
-.
-\end_layout
-
-\begin_layout Plain Layout
-Devem ser montados diversos diagramas de caso de uso.
- Por exemplo: para cada cenário, crie diagramas de seqüência listando os
- objetos e os diversos eventos que partem de um objeto para outro.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-As Figuras devem ficar GRANDES; bem legíveis!! se necessário dar zoom!!
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Casos de uso
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Casos-de-uso"
-
-\end_inset
-
-
 \begin_inset Index idx
 status collapsed
 
@@ -948,28 +677,14 @@ Casos de uso
 
 \end_inset
 
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-do software
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
 \begin_layout Standard
-A Tabela 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "cap:Exemplo-de-um-caso-de-uso (tabela)"
-
-\end_inset
-
- mostra a descrição de um caso de uso.
+Nesta seção, apresenta-se uma tabela que especifica um caso de uso para
+ o software, o diagrama de caso de uso geral e o diagrama de caso de uso
+ específico para casos onde o reservatório é estratificado, isto é, cada
+ camada possui diferentes propriedades.
 \end_layout
 
 \begin_layout Standard
@@ -983,10 +698,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Caso de uso 1
+Caso de uso
 \begin_inset CommandInset label
 LatexCommand label
-name "cap:Exemplo-de-um-caso-de-uso (tabela)"
+name "cap:Caso-de-uso (tabela)"
 
 \end_inset
 
@@ -1026,7 +741,7 @@ Nome do caso de uso:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Simulação de curvas IPR de um reservatório.
 \end_layout
 
 \end_inset
@@ -1046,7 +761,8 @@ Resumo/descrição:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Determinação das curvas IPR através das propriedades dos fluidos, rocha
+ e poço para análise do comportamento do reservatório ao longo do tempo.
 \end_layout
 
 \end_inset
@@ -1066,7 +782,34 @@ Etapas:
 \begin_inset Text
 
 \begin_layout Plain Layout
+1.
+ Definição do número de camadas.
+\end_layout
 
+\begin_layout Plain Layout
+2.
+ Entrada de dados do reservatório, fluidos e poço via teclado ou arquivo
+ .txt.
+\end_layout
+
+\begin_layout Plain Layout
+3.
+ Definir método adequado para a simulação.
+\end_layout
+
+\begin_layout Plain Layout
+4.
+ Cálculo da vazão ao longo do tempo.
+\end_layout
+
+\begin_layout Plain Layout
+5.
+ Gerar gráfico.
+\end_layout
+
+\begin_layout Plain Layout
+6.
+ Analisar resultados.
 \end_layout
 
 \end_inset
@@ -1086,7 +829,8 @@ Cenários alternativos:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Inserir valores negativos ou incompatíveis com a ordem de grandeza de um
+ reservatório real.
 \end_layout
 
 \end_inset
@@ -1102,35 +846,14 @@ Cenários alternativos:
 \end_inset
 
 
+\begin_inset VSpace bigskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 Diagrama de caso de uso geral
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec: Diagrama de caso de uso geral"
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
- do software
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-....coloque aqui caso de uso geral, descrição + figura(s)...
-\end_layout
-
-\begin_layout Standard
-exemplo...
 \end_layout
 
 \begin_layout Standard
@@ -1141,9 +864,16 @@ reference "cap:Diagrama-caso-uso-geral"
 
 \end_inset
 
- mostra o usuário acessando os sistemas de ajuda do software, calculando
- a área de uma função ou analisando resultados.
+ mostra o usuário interagindo com o software para obter as curvas de IPR
+ do reservatório.
+ Nesse caso, o usuário insere os dados do problema (propriedades dos fluidos,
+ reservatório e poço), selecionando o modelo mais adequado para o problema
+ que ele possuir e analisando os resultados obtidos.
  
+\begin_inset VSpace bigskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1155,11 +885,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagramaDeCasoUso-Geral.png
-	lyxscale 50
+	filename C:/Users/Atila Júnior/Desktop/Programação Prática/Imagens/2. Específicação/Diagrama de Caso de Uso.jpg
 	width 100text%
-	height 80theight%
-	keepAspectRatio
 
 \end_inset
 
@@ -1188,35 +915,18 @@ name "cap:Diagrama-caso-uso-geral"
 \end_inset
 
 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 Diagrama de caso de uso específico
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec: Diagrama de caso de uso específico"
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-do software
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
-....coloque aqui casos de uso específicos, descrição + figura(s)...
-\end_layout
-
-\begin_layout Standard
-exemplo...O caso de uso Calcular área função descrito na Figura 
+O caso de uso para reservatórios homogêneos é descrito na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "cap:Diagrama-caso-uso-geral"
@@ -1226,29 +936,28 @@ reference "cap:Diagrama-caso-uso-geral"
  e na Tabela 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "cap:Exemplo-de-um-caso-de-uso (tabela)"
-
-\end_inset
-
- é detalhado na Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "cap:Diagrama-de-caso-de-uso-especifico:Titulo"
+reference "cap:Caso-de-uso (tabela)"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
 .
- O usuário criará um objeto função matemática, um objeto para sua integração;
- em seguida, definirá o intervalo de integração, calculará a área da função
- criada e,  por fim, analisará os resultados (eventualmente gerará gráficos
- com os resultados obtidos utilizando um sistema externo, como o software
- 
-\emph on
-gnuplot
-\emph default
-).
- Este diagrama de caso de uso ilustra as etapas a serem executadas pelo
- usuário ou sistema, a iteração do usuário com o sistema.
+ Para reservatórios estratificados, o processo é detalhado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Diagrama-de-caso-de-uso-especifico"
+
+\end_inset
+
+.
+ O usuário entrará com o número de camadas do reservatório e com as propriedades
+ de cada camada do reservatório para obtenção das curvas.
+\begin_inset VSpace bigskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1260,7 +969,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagramaDeCasoDeUso-Especifico-AnaliseDosResultados.png
+	filename C:/Users/Atila Júnior/Desktop/Programação Prática/Imagens/2. Específicação/Diagrama de Caso de Uso Especifico.jpg
 	width 100text%
 
 \end_inset
@@ -1272,10 +981,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Diagrama de caso de uso específico – Título
+Diagrama de caso de uso específico – Reservatórios Estratificados
 \begin_inset CommandInset label
 LatexCommand label
-name "cap:Diagrama-de-caso-de-uso-especifico:Titulo"
+name "cap:Diagrama-de-caso-de-uso-especifico"
 
 \end_inset
 
@@ -1290,22 +999,6 @@ name "cap:Diagrama-de-caso-de-uso-especifico:Titulo"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Description
-Nota: 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-Não perca de vista a visão do todo; do projeto de engenharia como um todo.
- Cada capítulo, cada seção, cada parágrafo deve se encaixar.
- Este é um diferencial fundamental do engenheiro em relação ao técnico,
- a capacidade de desenvolver projetos, de ver o todo e suas diferentes partes,
- de modelar processos/sistemas/produtos de engenharia.
 \end_layout
 
 \end_body
