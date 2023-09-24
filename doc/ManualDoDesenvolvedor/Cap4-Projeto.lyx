@@ -1159,11 +1159,7 @@ O diagrama de implantação é um diagrama de alto nível que inclui relações
  entre o sistema e o hardware e que se preocupa com os aspectos da arquitetura
  computacional escolhida.
  Seu enfoque é o hardware, a configuração dos nós em tempo de execução.
- 
-\end_layout
-
-\begin_layout Standard
-O diagrama de implantação deve incluir os elementos necessários para que
+ O diagrama de implantação deve incluir os elementos necessários para que
  o sistema seja colocado em funcionamento: computador, periféricos, processadore
 s, dispositivos, nós, relacionamentos de dependência, associação, componentes,
  subsistemas, restrições e notas.
@@ -2370,7 +2366,7 @@ IDE:
 \begin_inset Text
 
 \begin_layout Plain Layout
-[X] Editor simples: kate/gedit/emacs
+[ ] Editor simples: kate/gedit/emacs
 \family typewriter
  
 \family default
@@ -2382,7 +2378,7 @@ IDE:
 \family typewriter
  
 \family default
-[ ] ____________
+[X] Embarcadero
 \end_layout
 
 \end_inset
