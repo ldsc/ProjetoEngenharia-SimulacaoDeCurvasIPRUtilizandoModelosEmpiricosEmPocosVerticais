@@ -458,9 +458,9 @@ Envolve a otimização da estrutura de dados e dos algoritmos, a minimização
 \end_layout
 
 \begin_layout Standard
-Exemplo: na análise você define que existe um método para salvar um arquivo
- em disco, define um atributo nomeDoArquivo, mas não se preocupa com detalhes
- específicos da linguagem.
+Por exemplo, na análise você define que existe um método para salvar um
+ arquivo em disco, define um atributo nomeDoArquivo, mas não se preocupa
+ com detalhes específicos da linguagem.
  Já no projeto, você inclui as bibliotecas necessárias para acesso ao disco,
  cria um objeto específico para acessar o disco, podendo, portanto, acrescentar
  novas classes àquelas desenvolvidas na análise.
@@ -499,7 +499,10 @@ Adicionar nos diagramas de pacotes as bibliotecas e subsistemas selecionados
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+Neste projeto, foi utilizada a classe CGnuplot a fim de gerar as curvas
+ para realização de análises gráficas.
+ Para isto, é necessário que haja a instalação do software Gnuplot para
+ que o funcionamento do Simulador seja totalmente garantido.
 \end_layout
 
 \end_deeper
@@ -514,7 +517,21 @@ Novas classes e associações oriundas das bibliotecas selecionadas e da linguag
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+Neste projeto, foram feitas associações entre as classes CGnuplot e CSimulador
+ para que ocorra a geração de gráficos dos parâmetros calculados;
+\end_layout
+
+\begin_layout Itemize
+As classes CReservatorio, CPoco e CFluido estão associadas a CSimulador
+ pois configuram os dados fundamentais que serão utilizados nos modelos
+ empíricos;
+\end_layout
+
+\begin_layout Itemize
+Por fim, as classes CVogel, CGeneralizada,CIPRLinear e CFetkovich também
+ estão relacionadas a CSimulador visto que são os modelos empíricos que
+ serão utilizados nos cálculos que resultarão nos parâmetros principais
+ das curvas de IPR (pressão e vazão).
 \end_layout
 
 \end_deeper
@@ -528,7 +545,17 @@ Estabelecer as dependências e restrições associadas à plataforma escolhida.
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+O software utiliza o HD, processador e o teclado do computador;
+\end_layout
+
+\begin_layout Itemize
+Pode ser executado nas plataformas GNU/Linux, Windows ou Mac;
+\end_layout
+
+\begin_layout Itemize
+Nos Sistemas Operacionais citados, há necessidade de instalação do software
+ Gnuplot para o funcionamento total do programa.
+ 
 \end_layout
 
 \end_deeper
@@ -564,7 +591,8 @@ Revisar os diagramas de seqüência e de comunicação considerando a plataforma
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+Os diagramas de sequência e comunicação serão revisados, se necessário,
+ durante as etapas de desenvolvimento do código.
 \end_layout
 
 \end_deeper
@@ -580,7 +608,10 @@ Verificar a necessidade de se revisar, ampliar e adicionar novos diagramas
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+Os diagramas de máquina de estado e atividades sofreram correções se surgir
+ a necessidade à medida que o código for desenvolvido.
+ Neste momento, não foi observado nenhum tipo de mudança significativa nos
+ digramas.
 \end_layout
 
 \end_deeper
@@ -617,7 +648,9 @@ Atributos novos podem ser adicionados a uma classe, como, por exemplo, atributos
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+Neste projeto, os atributos fin e fout deverão ser criados a fim de possibilitar
+ a leitura dos dados a partir de um arquivo de disco bem como criar um arquivo
+ com a saída de dados.
 \end_layout
 
 \end_deeper
@@ -658,57 +691,10 @@ vos (exemplo: hd, rede).
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-De maneira geral os métodos devem ser divididos em dois tipos: i) tomada
- de decisões, métodos políticos ou de controle; devem ser claros, legíveis,
- flexíveis e usam polimorfismo.
- ii) realização de processamentos, podem ser otimizados e em alguns casos
- o polimorfismo deve ser evitado.
- 
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Algoritmos complexos podem ser subdivididos.
- Verifique quais métodos podem ser otimizados.
- Pense em utilizar algoritmos prontos como os da STL (algoritmos genéricos).
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Responda a pergunta: os métodos da classes estão dando resposta às responsabilid
-ades da classe?
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
+Neste projeto, além da possibilidade de entrada de dados por um arquivo
+ de disco, estes poderão também ser digitados pelo usuário utilizando o
+ teclado do computador de maneira a não se limitar somente na utilização
+ de uma das vias.
 \end_layout
 
 \end_deeper
@@ -722,7 +708,9 @@ Revise os diagramas de classes, de seqüência e de máquina de estado.
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+As classes deverão ser revisadas, pois possivelmente mudanças irão ocorrer.
+ É possível que uma nova classe seja adicionada de modo que sua principal
+ função seja armazenar os cálculos realizados por cada classe dos modelos.
 \end_layout
 
 \end_deeper
@@ -772,53 +760,9 @@ Reorganização das classes e dos métodos (criar métodos genéricos com parâm
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Abstração do comportamento comum (duas classes podem ter uma superclasse
- em comum).
- 
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Utilização de delegação para compartilhar a implementação (quando você cria
- uma herança irreal para reaproveitar código).
- Usar com cuidado.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Revise as heranças no diagrama de classes.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
+Assim como mencionado anteriormente, acredita-se que uma nova classe deverá
+ ser construída.
+ À medida que o código for desenvolvido, este estudo acontecerá.
 \end_layout
 
 \end_deeper
@@ -858,41 +802,8 @@ Deve-se definir na fase de projeto como as associações serão implementadas,
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Se existe uma relação de "muitos", pode-se implementar a associação com
- a utilização de um dicionário, que é um mapa das associações entre objetos.
- Assim, o objeto A acessa o dicionário fornecendo uma chave (um nome para
- o objeto que deseja acessar) e o dicionário retorna um valor (um ponteiro)
- para o objeto correto.
- 
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Evite percorrer várias associações para acessar dados de classes distantes.
- Pense em adicionar associações diretas.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
+O projeto, ao referir-se a classes e sassociações, sofrerá mudanças futuras
+ quando o código começar a ser desenvolvido.
 \end_layout
 
 \end_deeper
@@ -911,71 +822,6 @@ otimizações
 \end_layout
 
 \begin_layout Itemize
-Faça uma análise de aspectos relativos à otimização do sistema.
- Lembrando que a otimização deve ser desenvolvida por analistas/desenvolvedores
- experientes.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Identifique pontos a serem otimizados em que podem ser utilizados processos
- concorrentes.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Pense em incluir bibliotecas otimizadas.
-\end_layout
-
-\begin_layout Itemize
-Se o acesso a determinados objetos (atributos/métodos) requer um caminho
- longo (exemplo: A->B->C->D.atributo), pense em incluir associações extras
- (exemplo: A-D.atributo).
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Atributos auxiliares podem ser incluídos.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
 A ordem de execução pode ser alterada.
 \begin_inset Separator latexpar
 \end_inset
@@ -985,30 +831,19 @@ A ordem de execução pode ser alterada.
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Revise as associações nos diagramas de classes.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
+Um menu com opções distintas irá aparecer na tela de modo que o usuário
+ poderá escolher como gostaria de entrar com os dados, o regime de fluxo
+ a ser utilizado e logo após, com base em suas escolhas anteriores, o modelo
+ empírico que gostaria de utilizar para realização dos cálculos de pressão
+ e vazão.
+ Logo após, o gráfico será gerado e o usuário poderá salvá-lo ou não.
 \end_layout
 
 \end_deeper
 \begin_layout Standard
-Depois de revisados os diagramas da análise você pode montar dois diagramas
- relacionados à infraestrutura do sistema.
- As dependências dos arquivos e bibliotecas podem ser descritos pelo diagrama
- de componentes, e as relações e dependências entre o sistema e o hardware
- podem ser ilustradas com o diagrama de implantação.
+As dependências das bibliotecas e arquivos são demonstrados pelo diagrama
+ de componentes e as dependências entre o sistema e o hardware são ilustradas
+ pelo diagrama de implantação.
 \end_layout
 
 \begin_layout Section
