@@ -136,7 +136,7 @@ thechapter - Projeto}
 
 \begin_layout Standard
 Neste capítulo do projeto de engenharia veremos questões associadas ao projeto
- do sistema, incluindo protocolos, recursos, plataformas suportadas, inplicações
+ do sistema, incluindo protocolos, recursos, plataformas suportadas, implicações
  nos diagramas feitos anteriormente, diagramas de componentes e implantação.
  Na segunda parte revisamos os diagramas levando em conta as decisões do
  projeto do sistema.
@@ -444,7 +444,7 @@ name "sec:Projeto-orientado-a-objeto"
 O projeto orientado a objeto é a etapa posterior ao projeto do sistema.
  Baseia-se na análise, mas considera as decisões do projeto do sistema.
  Acrescenta a análise desenvolvida e as características da plataforma escolhida
- (hardware, sistema operacional e linguagem de softwareção).
+ (hardware, sistema operacional e linguagem de software).
  Passa pelo maior detalhamento do funcionamento do software, acrescentando
  atributos e métodos que envolvem a solução de problemas específicos não
  identificados durante a análise.
@@ -638,8 +638,8 @@ name "subsec:Efeito-do-projeto-nos-atributos"
 
 \begin_layout Itemize
 Atributos novos podem ser adicionados a uma classe, como, por exemplo, atributos
- específicos de uma determinada linguagem de softwareção (acesso a disco,
- ponteiros, constantes e informações correlacionadas).
+ específicos de uma determinada linguagem de software (acesso a disco, ponteiros
+, constantes e informações correlacionadas).
 \begin_inset Separator latexpar
 \end_inset
 
@@ -699,7 +699,7 @@ Neste projeto, além da possibilidade de entrada de dados por um arquivo
 
 \end_deeper
 \begin_layout Itemize
-Revise os diagramas de classes, de seqüência e de máquina de estado.
+Revise os diagramas de classes, de sequência e de máquina de estado.
 \begin_inset Separator latexpar
 \end_inset
 
@@ -802,7 +802,7 @@ Deve-se definir na fase de projeto como as associações serão implementadas,
 
 \begin_deeper
 \begin_layout Itemize
-O projeto, ao referir-se a classes e sassociações, sofrerá mudanças futuras
+O projeto, ao referir-se a classes e associações, sofrerá mudanças futuras
  quando o código começar a ser desenvolvido.
 \end_layout
 
@@ -925,7 +925,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagramaDeComponentesIPR.png
+	filename C:/Users/Atila Júnior/Desktop/Programação Prática/Imagens/5. Projeto/DiagramaDeComponentesIPR.png
 	lyxscale 90
 	width 100text%
 
@@ -1046,7 +1046,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagramadeImplantacao_IPR.png
+	filename C:/Users/Atila Júnior/Desktop/Programação Prática/Imagens/5. Projeto/DiagramadeImplantacao_IPR.png
 	lyxscale 50
 	width 100text%
 
@@ -1396,7 +1396,7 @@ status collapsed
 um algoritmo iterativo utiliza estruturas de repetição, fazendo com que
  determinadas atividades sejam repetidas tantas vezes quanto necessárias,
  normalmente temos algum critério de parada.
- Já um algoritmo recursivo é um algoritmo que chama a sí mesmo.
+ Já um algoritmo recursivo é um algoritmo que chama a si mesmo.
  Note que chamar a sí mesmo é uma forma de iteração.
  O exemplo do pagamento dos salários é iterativo, foi do empregado 1 ao
  empregado 10000.
@@ -1430,7 +1430,7 @@ status collapsed
 \color inherit
 muitas vezes tenho a equação que me dá uma solução exata, quando utilizo
  esta equação meu algoritmo é exato.
- Mas em muitas situações eu não tenho a soluição exata, tenho apenas equações
+ Mas em muitas situações eu não tenho a solução exata, tenho apenas equações
  aproximadas, quando uso uma equação inexata ou empírica, sei que meu algoritmo
  é aproximado.
 \end_layout
@@ -1858,7 +1858,7 @@ Neste caso dois ou mais processos/
 \emph on
 threads
 \emph default
- diferentes rodam ao mesmo tempo e trocam informações entre sí.
+ diferentes rodam ao mesmo tempo e trocam informações entre si.
  Um exemplo típico é o caso do produtor/consumidor.
  O produtor gera dados que são processador pelo consumidor.
  Note que teremos pelo menos dois núcleos sendo utilizados, cada um fazendo
@@ -2062,7 +2062,7 @@ random, threads
 
 \begin_layout Plain Layout
 [ ] C++ avançado: Conversão de tipos do usuário, especializações de templates,
- excessões.
+ exceções.
  Cluster de computadores, processamento paralelo e concorrente, múltiplos
  processos (pipes, memória compartilhada, sinais).
  Bibliotecas: 
