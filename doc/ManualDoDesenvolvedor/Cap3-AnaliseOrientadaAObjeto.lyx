@@ -83,11 +83,12 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author 1635264300 "andreduartebueno" andreduartebueno@gmail.com
 \end_header
 
 \begin_body
@@ -167,6 +168,78 @@ reference "cap:Diagrama-de-classes"
 
 .
  
+\change_inserted 1635264300 1698155998
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698150063
+as classes qie calculam ipr são herdeiras de CIPR; corrigir o diagrama de
+ classes
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1635264300 1698155999
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698156133
+ATILA e demais
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698156140
+Para trabalhos em equipe cada aluno deve implementar 5 classes diferentes!!!
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698156147
+No diagrama abaixo temos apenas 8 classes (CGnuplot não conta, fui eu que
+ fiz);
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698156066
+Isto significa que o trabalho não tem complexidade suficiente para tanta
+ gente;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698156094
+Ou saem 2 do grupo ou ampliam a complexidade e o número de classes;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698156164
+Neste caso tem de pegar o livro de reservatório e ver outras coisas que
+ podem ser implementadas;
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -178,7 +251,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Atila Júnior/Documents/GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocosVerticais/doc/ManualDoDesenvolvedor/imagens/DiagramaDeClasses.png
+	filename imagens/DiagramaDeClasses.png
 	width 100text%
 
 \end_inset
@@ -246,13 +319,40 @@ Classe CIPRLinear: representa a classe responsável por calcular a curva
 \end_layout
 
 \begin_layout Itemize
-Classe CFetkovich: representa a classe responsável pelo cálculo da curva
- IPR utilizando o modelo de Fetkovich.
+Classe C
+\change_inserted 1635264300 1698149918
+IPR
+\change_unchanged
+Fetkovich: representa a classe responsável pelo cálculo da curva IPR utilizando
+ o modelo de Fetkovich.
+\change_inserted 1635264300 1698149941
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698149956
+classes herdeiras devem sempre que possível incluir no nome o vinculo com
+ a base
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
-Classe CVogel: representa a classe responsável pelo cálculo da curva IPR
- utilizando o modelo de Vogel.
+Classe C
+\change_inserted 1635264300 1698149921
+IPR
+\change_unchanged
+Vogel: representa a classe responsável pelo cálculo da curva IPR utilizando
+ o modelo de Vogel.
 \end_layout
 
 \begin_layout Itemize
@@ -262,15 +362,56 @@ Classe CIPRGeneralizada: representa a classe responsável pelo cálculo da
 \end_layout
 
 \begin_layout Itemize
-Classe CSimulador: representa a classe responsável pela simulação do software.
+Classe CSimulador
+\change_inserted 1635264300 1698149928
+IPR
+\change_unchanged
+: representa a classe responsável pela simulação do software.
  Recebe as escolhas do usuário quanto aos parâmetros do poço, reservatório
  e fluidos, além da escolha do modelo adequado para a obtenção das curvas
  de IPR.
+\change_inserted 1635264300 1698149960
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698149967
+CSimulador é nome genérico demais
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
 Classe CGnuplot: representa a classe responsável pela parte gráfica do programa,
  a partir do uso do software externo Gnuplot.
+\change_inserted 1635264300 1698149977
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698149996
+aqui use CGrafico só faça referencia ao CGnuplot a partir do capítulo de
+ projeto
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Section
@@ -346,6 +487,29 @@ reference "cap:Diagrama-de-sequencia"
 \end_inset
 
 .
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+o nome do arquivo é DiagramaGeral.png! renomeie para algo que faça sentido
+ como DiagramaDeSequencia-Geral.png; sempre que for dar nomes para algo de
+ nomes significativos; se der nome genérico vai ter problemas; pois acaba
+ confundindo a todos;
+\end_layout
+
+\begin_layout Plain Layout
+a sequência do diagrama abaixo é irreal pois pede entrada de dados 2x antes
+ de executar;
+\end_layout
+
+\begin_layout Plain Layout
+faça dois diagramas; um para entrada dados disco e outro para teclado ou
+ coloque uma nota explicando que a entrada pode ser de duas formas; 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -358,7 +522,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Atila Júnior/Desktop/Programação Prática/Imagens/4. Análise/DiagramaGeral.png
+	filename imagens/DiagramaGeral.png
 	lyxscale 85
 	width 100text%
 
@@ -403,7 +567,14 @@ Para o caso de um diagrama de sequência específico para cálculo dos parâmetr
  das curvas de IPR, é necessário que o usuário forneça os dados de fluido,
  reservatório e poço bem como escolha o método que deseja utilizar para
  calcular e obter os resultados que serão utilizados no gráfico final Veja
- o diagrama de sequência na Figura 4.5.
+ o diagrama de sequência na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Diagrama-de-sequencia-1"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -413,8 +584,9 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename C:/Users/Atila Júnior/Documents/GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocosVerticais/doc/ManualDoDesenvolvedor/imagens/Diagrama_Especifico.png
+	filename imagens/Diagrama_Especifico.png
 
 \end_inset
 

@@ -153,23 +153,34 @@ name "sec:Teste-1"
 \end_layout
 
 \begin_layout Standard
-No início apresente texto explicativo do teste:
+Sobre o teste:
 \end_layout
 
 \begin_layout Itemize
-O que esta sendo testado?
+O que esta sendo testado (relacione com os requisitos, quais requisitos
+ serão testados neste teste)? 
 \end_layout
 
 \begin_layout Itemize
-Como o teste vai ser realizado?
+Objetivo do teste?
 \end_layout
 
 \begin_layout Itemize
-Como o programa será validado?
+Como o teste será realizado (estratégia)?
 \end_layout
 
 \begin_layout Itemize
-Resultados e análises
+Casos de teste: descrever entradas e saídas esperadas e se tem alguma condição
+ específica.
+\end_layout
+
+\begin_layout Itemize
+Resultados dos testes: registram os resultados do teste; se deu tudo certo
+ ou se tem algum erro/falha;
+\end_layout
+
+\begin_layout Itemize
+Data/hora/responsável pelo teste;
 \end_layout
 
 \begin_layout Standard
@@ -243,23 +254,34 @@ name "sec:Teste-2"
 \end_layout
 
 \begin_layout Standard
-No início apresente texto explicativo do teste:
+Sobre o teste:
 \end_layout
 
 \begin_layout Itemize
-O que esta sendo testado?
+O que esta sendo testado (relacione com os requisitos, quais requisitos
+ serão testados neste teste)? 
 \end_layout
 
 \begin_layout Itemize
-Como o teste vai ser realizado?
+Objetivo do teste?
 \end_layout
 
 \begin_layout Itemize
-Como o programa será validado?
+Como o teste será realizado (estratégia)?
 \end_layout
 
 \begin_layout Itemize
-Resultados e análises
+Casos de teste: descrever entradas e saídas esperadas e se tem alguma condição
+ específica.
+\end_layout
+
+\begin_layout Itemize
+Resultados dos testes: registram os resultados do teste; se deu tudo certo
+ ou se tem algum erro/falha;
+\end_layout
+
+\begin_layout Itemize
+Data/hora/responsável pelo teste;
 \end_layout
 
 \begin_layout Standard
@@ -343,23 +365,34 @@ name "sec:Teste-3"
 \end_layout
 
 \begin_layout Standard
-No início apresente texto explicativo do teste:
+Sobre o teste:
 \end_layout
 
 \begin_layout Itemize
-O que esta sendo testado?
+O que esta sendo testado (relacione com os requisitos, quais requisitos
+ serão testados neste teste)? 
 \end_layout
 
 \begin_layout Itemize
-Como o teste vai ser realizado?
+Objetivo do teste?
 \end_layout
 
 \begin_layout Itemize
-Como o programa será validado?
+Como o teste será realizado (estratégia)?
 \end_layout
 
 \begin_layout Itemize
-Resultados e análises
+Casos de teste: descrever entradas e saídas esperadas e se tem alguma condição
+ específica.
+\end_layout
+
+\begin_layout Itemize
+Resultados dos testes: registram os resultados do teste; se deu tudo certo
+ ou se tem algum erro/falha;
+\end_layout
+
+\begin_layout Itemize
+Data/hora/responsável pelo teste;
 \end_layout
 
 \begin_layout Standard

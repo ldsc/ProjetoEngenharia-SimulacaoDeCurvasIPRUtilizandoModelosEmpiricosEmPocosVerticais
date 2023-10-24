@@ -96,11 +96,12 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author 1635264300 "andreduartebueno" andreduartebueno@gmail.com
 \end_header
 
 \begin_body
@@ -280,8 +281,48 @@ Identificação e alocação dos recursos globais, como os recursos do sistema
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto serão utilizados todos os componentes internos do computador:
- HD, processador, memória, além de teclado, mouse e tela.
+Neste projeto serão utilizados todos os componentes 
+\change_deleted 1635264300 1698151810
+internos 
+\change_unchanged
+do computador
+\change_inserted 1635264300 1698151820
+ que estão dentro do gabinete
+\change_unchanged
+: HD, processador, memória; 
+\change_inserted 1635264300 1698151760
+
+\end_layout
+
+\begin_layout Itemize
+
+\change_inserted 1635264300 1698151770
+Neste projeto serão utilizados todos os componentes :
+\change_deleted 1635264300 1698151759
+além de 
+\change_unchanged
+teclado, mouse e tela.
+\change_inserted 1635264300 1698151843
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698151894
+não existe a possibilidade de acesso a dados disponibilizados na internet
+ como exemplo dados armazenados em diretório na nuvem (dropbox); se sim
+ considere.
+ E coloque nos desenhos a nuvem e o dropbox ou google drive...
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_deeper
@@ -303,8 +344,12 @@ Controle
 \begin_deeper
 \begin_layout Itemize
 Identificação da necessidade de otimização.
+
+\change_deleted 1635264300 1698151904
  Por exemplo: prefira sistemas com grande capacidade de memória; prefira
  vários hds pequenos a um grande.
+\change_unchanged
+
 \begin_inset Separator latexpar
 \end_inset
 
@@ -362,17 +407,43 @@ Identificação e definição das plataformas a serem suportadas: hardware,
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto será utilizado a linguagem C++.
+Neste projeto será utilizado a linguagem
+\change_inserted 1635264300 1698151919
+de programação
+\change_unchanged
+ C++.
 \end_layout
 
 \begin_layout Itemize
 O software deverá ser multiplataforma, podendo ser executado em Windows
- e Linux.
+ e 
+\change_inserted 1635264300 1698151926
+GNU/
+\change_unchanged
+Linux.
 \end_layout
 
 \begin_layout Itemize
 O software será desenvolvido no sistema operacional Windows 10 em uma máquina
  com processador Intel Core i5-11ª geração.
+\change_inserted 1635264300 1698151936
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698151944
+só um esta trabalhando?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_deeper
@@ -388,7 +459,24 @@ Seleção das bibliotecas externas a serem utilizadas.
 \begin_layout Itemize
 Neste projeto será utilizada a biblioteca padrão da linguagem C++, incluindo
  vector, string, iostream, fstream, sstream e iremos utilizar a classe CGnuplot,
- que fornece acesso ao Gnuplot.
+ que fornece acesso ao 
+\change_inserted 1635264300 1698151963
+programa externo 
+\change_unchanged
+Gnuplot
+\change_inserted 1635264300 1698151984
+ (
+\begin_inset CommandInset href
+LatexCommand href
+name "link"
+target "http://www.gnuplot.info/"
+literal "false"
+
+\end_inset
+
+)
+\change_unchanged
+.
 \end_layout
 
 \end_deeper
@@ -404,7 +492,25 @@ o – IDE.
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto a IDE utilizada será o software Embarcadero na versão 6.3.
+Neste projeto a IDE utilizada será o software Embarcadero na versão 6.3
+\change_inserted 1635264300 1698151997
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698152000
+colocar links
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
 \end_layout
 
 \end_deeper
@@ -499,8 +605,11 @@ Adicionar nos diagramas de pacotes as bibliotecas e subsistemas selecionados
 
 \begin_deeper
 \begin_layout Itemize
-Neste projeto, foi utilizada a classe CGnuplot a fim de gerar as curvas
- para realização de análises gráficas.
+Neste projeto, foi utilizada a classe 
+\family typewriter
+CGnuplot
+\family default
+ a fim de gerar as curvas para realização de análises gráficas.
  Para isto, é necessário que haja a instalação do software Gnuplot para
  que o funcionamento do Simulador seja totalmente garantido.
 \end_layout
@@ -518,6 +627,9 @@ Novas classes e associações oriundas das bibliotecas selecionadas e da linguag
 \begin_deeper
 \begin_layout Itemize
 Neste projeto, foram feitas associações entre as classes CGnuplot e CSimulador
+\change_inserted 1635264300 1698152236
+IPR
+\change_unchanged
  para que ocorra a geração de gráficos dos parâmetros calculados;
 \end_layout
 
@@ -528,10 +640,24 @@ As classes CReservatorio, CPoco e CFluido estão associadas a CSimulador
 \end_layout
 
 \begin_layout Itemize
-Por fim, as classes CVogel, CGeneralizada,CIPRLinear e CFetkovich também
- estão relacionadas a CSimulador visto que são os modelos empíricos que
- serão utilizados nos cálculos que resultarão nos parâmetros principais
- das curvas de IPR (pressão e vazão).
+Por fim, as classes C
+\change_inserted 1635264300 1698152217
+IPR
+\change_unchanged
+Vogel, C
+\change_inserted 1635264300 1698152220
+IPR
+\change_unchanged
+Generalizada,CIPRLinear e C
+\change_inserted 1635264300 1698152225
+IPR
+\change_unchanged
+Fetkovich também estão relacionadas a CSimulador
+\change_inserted 1635264300 1698152229
+IPR
+\change_unchanged
+ visto que são os modelos empíricos que serão utilizados nos cálculos que
+ resultarão nos parâmetros principais das curvas de IPR (pressão e vazão).
 \end_layout
 
 \end_deeper
@@ -556,6 +682,25 @@ Pode ser executado nas plataformas GNU/Linux, Windows ou Mac;
 Nos Sistemas Operacionais citados, há necessidade de instalação do software
  Gnuplot para o funcionamento total do programa.
  
+\change_inserted 1635264300 1698152263
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698152286
+no manual do usuário deve acrescentar links para instruções de como instalar
+ o gnuplot nestas plataformas; 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_deeper
@@ -593,6 +738,27 @@ Revisar os diagramas de seqüência e de comunicação considerando a plataforma
 \begin_layout Itemize
 Os diagramas de sequência e comunicação serão revisados, se necessário,
  durante as etapas de desenvolvimento do código.
+\change_inserted 1635264300 1698152300
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698152352
+na parte de modelagem falou de CGrafico; aqui falou de CGnuplot, então os
+ diagramas que falam de gráfico em linhas gerais aqui falam de CGnuplot;
+ ou seja, são atualizados; se for utilizar a biblioteca filesystem deve
+ adicionar a mesma nos diagramas
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_deeper
@@ -612,6 +778,24 @@ Os diagramas de máquina de estado e atividades sofreram correções se surgir
  a necessidade à medida que o código for desenvolvido.
  Neste momento, não foi observado nenhum tipo de mudança significativa nos
  digramas.
+\change_inserted 1635264300 1698152361
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698152369
+sempre tem mudanças
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_deeper
@@ -651,6 +835,26 @@ Atributos novos podem ser adicionados a uma classe, como, por exemplo, atributos
 Neste projeto, os atributos fin e fout deverão ser criados a fim de possibilitar
  a leitura dos dados a partir de um arquivo de disco bem como criar um arquivo
  com a saída de dados.
+\change_inserted 1635264300 1698152390
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698152452
+fin e fout precisam de um caminho para o arquivo, atualmente usamos std::path
+ da biblioteca filesystem; tem um capítulo do livro que mostra o uso da
+ biblioteca filesystem com vários exemplos simples
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_deeper
@@ -711,6 +915,40 @@ Revise os diagramas de classes, de sequência e de máquina de estado.
 As classes deverão ser revisadas, pois possivelmente mudanças irão ocorrer.
  É possível que uma nova classe seja adicionada de modo que sua principal
  função seja armazenar os cálculos realizados por cada classe dos modelos.
+\change_inserted 1635264300 1698152468
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698152485
+ok; altere os diagramas e coloque aqui as versões alteradas;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698152493
+no diretório imagens pode colocar:
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698152521
+imagens/analise/ [imagens iniciais]
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698152528
+imagens/projetoorientadaaobjeto [imagens revisadas no projeto]
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_deeper
@@ -763,6 +1001,24 @@ Reorganização das classes e dos métodos (criar métodos genéricos com parâm
 Assim como mencionado anteriormente, acredita-se que uma nova classe deverá
  ser construída.
  À medida que o código for desenvolvido, este estudo acontecerá.
+\change_inserted 1635264300 1698152562
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698152577
+não diga acontecerá; diga o que fez, o que mudou
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_deeper
@@ -804,6 +1060,30 @@ Deve-se definir na fase de projeto como as associações serão implementadas,
 \begin_layout Itemize
 O projeto, ao referir-se a classes e associações, sofrerá mudanças futuras
  quando o código começar a ser desenvolvido.
+\change_inserted 1635264300 1698152587
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698152604
+depois de tomar decisões de projeto os diagramas devem ser atualizados!
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698152610
+e não somente na codificação;
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_deeper
@@ -837,6 +1117,24 @@ Um menu com opções distintas irá aparecer na tela de modo que o usuário
  empírico que gostaria de utilizar para realização dos cálculos de pressão
  e vazão.
  Logo após, o gráfico será gerado e o usuário poderá salvá-lo ou não.
+\change_inserted 1635264300 1698152624
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698152634
+em função das decisões de projeto o que alterou?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_deeper
@@ -913,6 +1211,43 @@ Identifica áreas críticas do sistema;
 
 \begin_layout Itemize
 Serve como documentação.
+\change_inserted 1635264300 1698152698
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698152708
+neste diagrama fala em banco de dados, algo que não falou antes
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698152764
+fala em CInterfaceGrafica, algo que não falou antes;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698152781
+este diagrama de componentes esta muito diferente do diagrama de pacotes
+ e normalmente estão relacionados;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698152786
+coloque os dois lado a lado e analise
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -925,7 +1260,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Atila Júnior/Documents/GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocosVerticais/doc/ManualDoDesenvolvedor/imagens/DiagramaDeComponentesIPR.png
+	filename imagens/DiagramaDeComponentesIPR.png
 	lyxscale 90
 	width 100text%
 
@@ -1046,7 +1381,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Atila Júnior/Documents/GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocosVerticais/doc/ManualDoDesenvolvedor/imagens/DiagramadeImplantacao_IPR.png
+	filename imagens/DiagramadeImplantacao_IPR.png
 	lyxscale 50
 	width 100text%
 
@@ -1122,10 +1457,54 @@ v0.1
 \begin_deeper
 \begin_layout Itemize
 Lista de classes a serem implementadas
+\change_inserted 1635264300 1698152845
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698152853
+coloque aqui o nome das classes da versão 0.1
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
 Testes
+\change_inserted 1635264300 1698152875
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698152884
+descreva os testes a serem realizados;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698152933
+dica: peque a lista de requisitos e organize em blocos de atividades; a
+ versão 0.1 deve incluir as classes necessárias para uma primeira versão
+ do software, a mais simp[les de todas;
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_deeper
@@ -1136,6 +1515,29 @@ v0.3
 \begin_deeper
 \begin_layout Itemize
 Lista de classes a serem implementadas
+\change_inserted 1635264300 1698152857
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698152936
+coloque aqui o nome das classes da versão 0.3;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698152955
+normalmente adicionamos algumas classes e então entregamos a versão 0.3 após
+ os testes
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
@@ -1144,12 +1546,34 @@ Testes
 
 \end_deeper
 \begin_layout Itemize
-v0.7
+v0.
+\change_deleted 1635264300 1698152869
+7
+\change_inserted 1635264300 1698152869
+5
+\change_unchanged
+
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 Lista de classes a serem implementadas
+\change_inserted 1635264300 1698152863
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698152867
+coloque aqui o nome das classes da versão 0.5
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
@@ -1178,6 +1602,10 @@ status open
 \begin_layout Plain Layout
 A tabela esta preenchida com dados de um dos exemplos de projeto; você deve
  preencher de acordo com o problema específico que esta resolvendo
+\change_inserted 1635264300 1698153162
+!
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -2332,7 +2760,13 @@ status collapsed
 
 \end_inset
 
- [X] análise e processamento de imagens
+ [
+\change_deleted 1635264300 1698153149
+X
+\change_inserted 1635264300 1698153149
+ 
+\change_unchanged
+] análise e processamento de imagens
 \end_layout
 
 \end_inset
