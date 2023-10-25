@@ -873,11 +873,11 @@ PROJETO DE ENGENHARIA
 \begin_inset Newline newline
 \end_inset
 
-DESENVOLVIMENTO DO SOFTWARE 
+DESENVOLVIMENTO DO SOFTWARE: 
 \begin_inset Newline newline
 \end_inset
 
-XXX
+SIMULADOR DE CURVAS IPR UTILIZANDO MODELOS EMPÍRICOS EM POÇOS VERTICAIS
 \begin_inset Newline newline
 \end_inset
 
@@ -899,18 +899,27 @@ Versão 1:
 \begin_inset Newline newline
 \end_inset
 
-AUTORES
-\begin_inset Newline newline
-\end_inset
+ÁTILA JUNIOR
+\end_layout
 
-Versão 2:
-\begin_inset Newline newline
-\end_inset
+\begin_layout Standard
+\align center
 
-AUTORES
-\begin_inset Newline newline
-\end_inset
+\size large
+GIOVANNA MASSARDI
+\end_layout
 
+\begin_layout Standard
+\align center
+
+\size large
+MARCELO BERNARDO
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
 Prof.
  André Duarte Bueno
 \end_layout
@@ -940,7 +949,7 @@ MACAÉ - RJ
 \begin_inset Newline newline
 \end_inset
 
-Janeiro - 2023
+Dezembro - 2023
 \end_layout
 
 \end_body
