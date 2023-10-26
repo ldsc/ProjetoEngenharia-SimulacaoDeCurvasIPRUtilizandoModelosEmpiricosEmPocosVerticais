@@ -250,6 +250,19 @@ filename "Cap-Apendice-A.lyx"
 \end_layout
 
 \begin_layout Standard
+\align block
+
+\lang brazilian
+\begin_inset CommandInset include
+LatexCommand include
+filename "Cap-Apendice-B.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \lang brazilian
 \begin_inset CommandInset index_print
