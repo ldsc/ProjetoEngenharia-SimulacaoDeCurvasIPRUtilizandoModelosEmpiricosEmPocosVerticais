@@ -88,6 +88,7 @@
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author -627105657 "Atila Junior"
 \author 1635264300 "andreduartebueno" andreduartebueno@gmail.com
 \end_header
 
@@ -306,11 +307,66 @@ Classe CPoco: representa a classe responsável por receber os parâmetros
 \begin_layout Itemize
 Classe CFluido: representa a classe responsável por receber as propriedades
  do fluido.
+\change_inserted -627105657 1698275015
+
+\end_layout
+
+\begin_layout Itemize
+
+\change_inserted -627105657 1698275288
+Classe COleo: representa a classe responsável por receber os parâmetros
+ do óleo quando a intenção do usuário é simular curvas IPR de óleo.
+\end_layout
+
+\begin_layout Itemize
+
+\change_inserted -627105657 1698275289
+Classe CGas: representa a classe responsável por receber os parâmetros do
+ gás quando a intenção do usuário é simular curvas IPR de gás.
+\end_layout
+
+\begin_layout Itemize
+
+\change_inserted -627105657 1698275290
+Classe CRocha: representa a classe responsável por receber os parâmetros
+ de rocha.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
 Classe CReservatorio: representa a classe responsável por receber todos
  os parâmetros referentes ao reservatório.
+\change_inserted -627105657 1698275255
+
+\end_layout
+
+\begin_layout Itemize
+
+\change_inserted -627105657 1698275325
+Classe CGeometria: representa a classe responsável por definir a geometria
+ do reservatório.
+\end_layout
+
+\begin_layout Itemize
+
+\change_inserted -627105657 1698275424
+Classe CRadial: representa a classe responsável por receber e calcular dimensões
+ do reservatório de geometria radial.
+\end_layout
+
+\begin_layout Itemize
+
+\change_inserted -627105657 1698275443
+Classe CLinear: representa a classe responsável por receber e calcular dimensões
+ do reservatório de geometria linear.
+\end_layout
+
+\begin_layout Itemize
+
+\change_inserted -627105657 1698275500
+ClasseCIPR: representa a classe base que recebe os vetores de pressão de
+ fundo e vazão.
 \end_layout
 
 \begin_layout Itemize
@@ -320,7 +376,9 @@ Classe CIPRLinear: representa a classe responsável por calcular a curva
 
 \begin_layout Itemize
 Classe C
-\change_inserted 1635264300 1698149918
+\change_deleted -627105657 1698275512
+IPR
+\change_inserted -627105657 1698275513
 IPR
 \change_unchanged
 Fetkovich: representa a classe responsável pelo cálculo da curva IPR utilizando
@@ -348,7 +406,9 @@ classes herdeiras devem sempre que possível incluir no nome o vinculo com
 
 \begin_layout Itemize
 Classe C
-\change_inserted 1635264300 1698149921
+\change_deleted -627105657 1698275517
+IPR
+\change_inserted -627105657 1698275517
 IPR
 \change_unchanged
 Vogel: representa a classe responsável pelo cálculo da curva IPR utilizando
@@ -363,8 +423,10 @@ Classe CIPRGeneralizada: representa a classe responsável pelo cálculo da
 
 \begin_layout Itemize
 Classe CSimulador
-\change_inserted 1635264300 1698149928
+\change_deleted -627105657 1698275522
 IPR
+\change_inserted -627105657 1698275524
+CurvasIPR
 \change_unchanged
 : representa a classe responsável pela simulação do software.
  Recebe as escolhas do usuário quanto aos parâmetros do poço, reservatório
@@ -391,8 +453,14 @@ CSimulador é nome genérico demais
 \end_layout
 
 \begin_layout Itemize
-Classe CGnuplot: representa a classe responsável pela parte gráfica do programa,
- a partir do uso do software externo Gnuplot.
+Classe C
+\change_deleted -627105657 1698275551
+Gnuplot
+\change_inserted -627105657 1698275553
+Grafico
+\change_unchanged
+: representa a classe responsável pela parte gráfica do programa, a partir
+ do uso do software externo Gnuplot.
 \change_inserted 1635264300 1698149977
 
 \begin_inset Note Note
@@ -476,7 +544,11 @@ Diagrama de sequência geral
 Veja o 
 \shape italic
 \emph on
-diagrama de seqüência na
+diagrama de seqüência 
+\change_inserted -627105657 1698276618
+geral 
+\change_unchanged
+na
 \shape default
 \emph default
  Figura 
@@ -487,6 +559,12 @@ reference "cap:Diagrama-de-sequencia"
 \end_inset
 
 .
+
+\change_inserted -627105657 1698276676
+ Notar que a entrada de dados pode ser realizada tanto via disco como via
+ teclado, deixando a escolha do usuário
+\change_unchanged
+
 \begin_inset Note Note
 status open
 
@@ -522,7 +600,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagramaGeral.png
+	filename imagens/DiagramaSequenciaGeral.png
 	lyxscale 85
 	width 100text%
 
@@ -565,9 +643,17 @@ Diagrama de sequência específico
 \begin_layout Standard
 Para o caso de um diagrama de sequência específico para cálculo dos parâmetros
  das curvas de IPR, é necessário que o usuário forneça os dados de fluido,
- reservatório e poço bem como escolha o método que deseja utilizar para
- calcular e obter os resultados que serão utilizados no gráfico final Veja
- o diagrama de sequência na Figura 
+ reservatório e poço
+\change_inserted -627105657 1698277986
+ através do teclado,
+\change_unchanged
+ bem como escolha o método que deseja utilizar para calcular e obter os
+ resultados que serão utilizados no gráfico final
+\change_inserted -627105657 1698278014
+.
+
+\change_unchanged
+ Veja o diagrama de sequência na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "cap:Diagrama-de-sequencia-1"
@@ -586,7 +672,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/Diagrama_Especifico.png
+	filename imagens/DiagramaSequenciaEspecifico.png
 
 \end_inset
 
@@ -672,9 +758,13 @@ No diagrama de comunicação o foco é a interação e a troca de mensagens e
 \end_layout
 
 \begin_layout Itemize
+
+\change_deleted -627105657 1698278734
 [Pode ser a repetição de um diagrama de sequência; mas note que o formato
  do gráfico é diferente, aqui a ênfase é o entendimento das mensagens que
  chegam e saem de cada objeto.]
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -685,8 +775,22 @@ reference "subsec:Diagrama-de-Comunicação"
 
 \end_inset
 
- o diagrama de comunicação mostrando a sequência de blablabla.
- Observe que ....
+ o diagrama de comunicação mostrando a sequência de 
+\change_deleted -627105657 1698278744
+blablabla
+\change_inserted -627105657 1698278774
+como as classes se comunicam entre si para o funcionamento do software
+\change_unchanged
+.
+ Observe que 
+\change_deleted -627105657 1698278780
+....
+\change_inserted -627105657 1698278855
+o método EntradaDados() pode ser representado através dos métodos EntradaDadosDi
+sco() ou EntradaDadosTeclado(), ficando a critério do usuário selecionar
+ qual modo de entrada de dados atende melhor à sua demanda.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -781,7 +885,11 @@ reference "cap:Diagrama-de-maquina-de-estado"
 
 \end_inset
 
- o diagrama de máquina de estado para os objetos da classe Csimulador.
+ o diagrama de máquina de estado para os objetos da classe Csimulador
+\change_inserted -627105657 1698278919
+CurvasIPR
+\change_unchanged
+.
 \end_layout
 
 \begin_layout Standard
