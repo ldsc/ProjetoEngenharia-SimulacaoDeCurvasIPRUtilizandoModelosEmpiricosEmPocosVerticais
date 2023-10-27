@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass article
+\textclass extbook
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -29,6 +29,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -44,6 +45,7 @@
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -76,6 +78,201 @@
 \begin_body
 
 \begin_layout Standard
+\align block
+
+\lang brazilian
+\begin_inset CommandInset include
+LatexCommand include
+filename "Cap0-Introducao-Escopo-Objetivos.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+
+\lang brazilian
+\begin_inset CommandInset include
+LatexCommand include
+filename "Cap1-Concepcao.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+
+\lang brazilian
+\begin_inset CommandInset include
+LatexCommand include
+filename "Cap2-Elaboracao.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+
+\lang brazilian
+\begin_inset CommandInset include
+LatexCommand include
+filename "Cap3-AnaliseOrientadaAObjeto.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+
+\lang brazilian
+\begin_inset CommandInset include
+LatexCommand include
+filename "Cap4-Projeto.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+
+\lang brazilian
+\begin_inset CommandInset include
+LatexCommand include
+filename "Cap5-Ciclos-Planejamento-Detalhamento.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+
+\lang brazilian
+\begin_inset CommandInset include
+LatexCommand include
+filename "Cap6-Ciclos-Construcao-Implementacao.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+
+\lang brazilian
+\begin_inset CommandInset include
+LatexCommand include
+filename "Cap7-Teste.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+
+\lang brazilian
+\begin_inset CommandInset include
+LatexCommand include
+filename "Cap8-DocumentacaoDoDesenvolvedor.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align block
+
+\lang brazilian
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{Referências} 
+\backslash
+chead{} 
+\backslash
+rhead{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\lang brazilian
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "bibliografia"
+options "apalike"
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+
+\lang brazilian
+\begin_inset CommandInset include
+LatexCommand include
+filename "Cap-Apendice-A.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+
+\lang brazilian
+\begin_inset CommandInset include
+LatexCommand include
+filename "Cap-Apendice-B.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang brazilian
+\begin_inset CommandInset index_print
+LatexCommand printindex
+type "idx"
+name "Index"
+literal "true"
+
+\end_inset
+
 
 \end_layout
 

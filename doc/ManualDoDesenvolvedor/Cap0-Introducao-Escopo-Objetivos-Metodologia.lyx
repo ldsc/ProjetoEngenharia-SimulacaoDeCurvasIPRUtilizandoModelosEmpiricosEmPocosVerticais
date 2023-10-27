@@ -146,7 +146,8 @@ status open
 
 
 \backslash
-lfoot{SeuNomeAqui} 
+lfoot{Atila Jr., Giovanna M.
+ e Marcelo B.} 
 \backslash
 rfoot{
 \backslash
@@ -181,20 +182,25 @@ today ele vai colocar data no material impresso
 \end_layout
 
 \begin_layout Standard
-No presente projeto de engenharia desenvolve-se o software XXXX, um software
- aplicado a engenharia de petróleo e que utiliza o paradigma da orientação
- a objetos.
+No presente projeto de engenharia, desenvolve-se o software de Simulação
+ de Curvas IPR (Inflow Performance Relationship) utilizando Modelos Empíricos
+ em Poços verticais, um software aplicado a engenharia de petróleo e que
+ utiliza o paradigma da orientação a objetos.
+ 
 \end_layout
 
-\begin_layout Itemize
-O primeiro parágrafo da introdução pode ser um super resumo do trabalho.
- A ideia é fazer um resumo do resumo.
-\end_layout
-
-\begin_layout Itemize
-ESTE MODELO TEM TEXTOS EXPLICATVOS QUE DEVEM SER ELIMINADOS DA VERSÃO FINAL.
- O OBJETIVO DE COLOCAR AS EXPLICAÇÕES É FACILITAR O ENTENDIMENTO DO QUE
- DEVE ENTRAR EM CADA SEÇÃO.
+\begin_layout Standard
+Este software tem como finalidade obter curvas de IPR no regime pseudopermanente
+ a partir de dados inseridos pelo usuário.
+ Para isso, é necessário que o índice de produtividade seja calculado com
+ base nos dados de pressão e vazão ou propriedades do reservatório.
+ Dessa forma, os modelos empíricos Linear, Fetkovich, Vogel e Vogel Generalizado
+ poderão ser escolhidos para realização do cálculo da pressão de fundo e
+ respectivas vazões bem como avaliar reservatórios estratificados a partir
+ dos cálculos resultantes.
+ Tais valores serão mostrados ao usuário juntamente com um gráfico com a
+ curva de IPR e estas informações poderão ser salvas em disco.
+ 
 \end_layout
 
 \begin_layout Section
@@ -209,30 +215,39 @@ name "sec:Escopo-do-Problema"
 \end_layout
 
 \begin_layout Standard
-Segundo o CREA/CONFEA um dos quesitos fundamentais que diferenciam a atuação
- de um tecnólogo da atuação de um engenheiro é a capacidade de desenvolver
- um projeto em engenharia; Neste trabalho, desenvolve-se um projeto em engenhari
-a de software aplicado a solução de um problema específico de engenharia
- de petróleo.
- Trabalhando-se com todo ciclo de um projeto, isto é, especificação, elaboração,
- análise, projeto, desenvolvimento, teste e documentação.
+A curva de IPR, que pode ser chamada de curva de influxo, curva de pressão
+ disponível ou curva do índice de produtividade, é uma representação gráfica
+ que descreve como a pressão disponível no fundo de um poço de petróleo
+ ou gás varia em relação à taxa de fluxo de fluidos.
+ Essas medidas são tomadas na profundidade em que o reservatório foi perfurado
+ em um momento específico durante a vida útil do campo.
+ Em outras palavras, essa curva fornece informações sobre como a pressão
+ no poço reage quando se está produzindo hidrocarbonetos.
+\end_layout
+
+\begin_layout Standard
+Através da análise dessa curva, as decisões estratégicas podem ser tomadas
+ para maximizar a eficiência e recuperação de petróleo ou gás, além de demonstra
+r os cenários nos quais intervenções deverão ser realizadas assim como definir
+ quando perfurar novos poços.
+ Com isso, é possível analisar quando há possíveis limitações no desempenho
+ do poço.
+ Ademais, esta ferramenta é frequentemente utilizada em simulações de reservatór
+io a fim de prever o comportamento futuro e auxiliar em um planejamento
+ de longo prazo.
+\end_layout
+
+\begin_layout Standard
+O cálculo da IPR pode sofrer variações dependendo das características do
+ reservatório e se estes dados são conhecidos.
+ Logo, alguns modelos matemáticos podem ser aplicados para obter a curva
+ de IPR e inúmeros métodos podem ser escolhidos com base nos regimes de
+ escoamento, tipos de fluxo e fluidos existentes.
+ Portanto, estas equações e suas respectivas análises podem ser encontradas
+ na literatura e, facilitar o cálculo e plotagem das curvas é algo relevante
+ para simulação de reservatórios e para o entedimento de elevação e escoamento
+ de fluidos.
  
-\end_layout
-
-\begin_layout Itemize
-Definir o escopo do projeto de engenharia, a ideia geral do software, acentuar
- sua importância, usos e aplicações em engenharia [de petróleo].
-\end_layout
-
-\begin_layout Itemize
-Delimitar o assunto.
- Situá-lo no tempo e no espaço.
- Situá-lo em relação a outros softwares.
-\end_layout
-
-\begin_layout Itemize
-Neste capítulo podem entrar figuras que ilustram a ideia geral, o detalhamento
- será feito depois, na elaboração.
 \end_layout
 
 \begin_layout Section
@@ -251,7 +266,7 @@ Os objetivos deste projeto de engenharia são:
 \end_layout
 
 \begin_layout Itemize
-Objetivo geral:
+Objetivos gerais:
 \begin_inset Separator latexpar
 \end_inset
 
@@ -260,14 +275,15 @@ Objetivo geral:
 
 \begin_deeper
 \begin_layout Itemize
-Descreva aqui o objetivo geral do projeto de engenharia, incluindo vínculos
- com engenharia de petróleo e com modelagem matemática computacional (ideia
- de lógica, algoritmos,...).
+Utilizar modelos empíricos e equações matemáticas propostas na literatura
+ para o cálculo das pressões de poço e suas respectivas vazões ao longo
+ da vida útil de um reservatório.
 \end_layout
 
 \begin_layout Itemize
-Desenvolver um projeto de engenharia de software para ...[.....descrever de forma
- clara, direta, objetiva, o objetivo geral do software].
+Plotar curvas de IPR em escoamentos monofásico e bifásico utilizando os
+ modelos Linear, Vogel, Fetkovich e Vogel Generalizado considerando regime
+ pseudopermanente a partir do sofware externo Gnuplot.
 \end_layout
 
 \end_deeper
@@ -281,35 +297,18 @@ Objetivos específicos:
 
 \begin_deeper
 \begin_layout Itemize
-Modelar física e matematicamente o problema.
+Permitir que o usuário escolha qual modelo irá utilizar para realizar o
+ cálculo dos parâmetros da curva de IPR.
 \end_layout
 
 \begin_layout Itemize
-Modelagem estática do software (diagramas de caso de uso, de pacotes, de
- classes).
+Criar o software de modo que a curva de IPR possa ser plotada independente
+ da existência dos parâmetros de reservatório.
 \end_layout
 
 \begin_layout Itemize
-Modelagem dinâmica do software (desenvolver algoritmos e diagramas exemplificand
-o os fluxos de processamento).
-\end_layout
-
-\begin_layout Itemize
-Calcular XXX[.....descrever de forma clara, direta, objetiva, cada objetivo específic
-o, cada parte do software].
-\end_layout
-
-\begin_layout Itemize
-Calcular XXX[.....descrever de forma clara, direta, objetiva, cada objetivo específic
-o, cada parte do software].
-\end_layout
-
-\begin_layout Itemize
-Simular (realizar simulações para teste do software desenvolvido).
-\end_layout
-
-\begin_layout Itemize
-Implementar manual simplificado de uso do software.
+A partir do cálculo dos modelos empíricos, analisar os tipos de IPR: Linear,
+ Generalizada e Reservatórios Estratificados.
 \end_layout
 
 \end_deeper
@@ -380,7 +379,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/EngenhariaSoftware-Geral.png
+	filename ../../../../../Downloads/imagens/EngenhariaSoftware-Geral.png
 	lyxscale 25
 	width 100text%
 	height 85theight%

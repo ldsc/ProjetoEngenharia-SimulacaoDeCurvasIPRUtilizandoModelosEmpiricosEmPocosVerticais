@@ -166,9 +166,18 @@ Análise de domínio
 \end_layout
 
 \begin_layout Standard
-O Software a ser desenvolvido trata-se de abordar formas de estimar a produtivid
-ade de um poço vertical de petróleo através de modelagem de curvas IPR,
- utilizando modelos empíricos.
+O Software a ser desenvolvido 
+\change_deleted 1635264300 1698147042
+trata-se de 
+\change_unchanged
+aborda
+\change_deleted 1635264300 1698147044
+r 
+\change_inserted 1635264300 1698147044
+ 
+\change_unchanged
+formas de estimar a produtividade de um poço vertical de petróleo através
+ de modelagem de curvas IPR, utilizando modelos empíricos.
  O fato de se explorar este tema é de fundamental relevância no campo da
  produção de petróleo, pois traz informações importantes em relação ao rendiment
 o e vida útil que o poço analisado terá.
@@ -184,21 +193,116 @@ o e vida útil que o poço analisado terá.
 \end_layout
 
 \begin_layout Itemize
-Pressão do Reservatório: A pressão do reservatório é um fator crítico que
- influencia diretamente a produtividade.
+Pressão do Reservatório
+\change_inserted 1635264300 1698147439
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698147446
+usa iniciais maiúsculas
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+: A pressão do reservatório é um fator crítico que influencia diretamente
+ a produtividade.
  Uma pressão mais alta pode impulsionar a migração do petróleo ou gás em
  direção ao poço, aumentando a taxa de produção.
+\change_inserted 1635264300 1698147306
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698147321
+pressões muito altas criam caminhos preferenciais e reduzem a produtividade
+ total
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
-Espessura de pay zone e Permeabilidade: A pay zone se refere à camada do
- reservatório que contém o petróleo ou gás.
+Espessura de 
+\emph on
+pay zone
+\change_inserted 1635264300 1698147328
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698147354
+
+\emph on
+textos em ingles sempre em itálico! e a primeira vez que aparece deve ser
+ explicado
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ 
+\emph default
+e Permeabilidade: A 
+\emph on
+pay zone 
+\emph default
+se refere à camada do reservatório que contém o petróleo ou gás.
  Quanto mais espessa essa camada, mais espaço há para armazenar hidrocarbonetos,
  o que pode aumentar a produtividade.
  A permeabilidade está relacionada à capacidade do reservatório de permitir
  que o petróleo ou gás fluam através dele.
  Uma maior permeabilidade facilita a movimentação dos fluidos, contribuindo
  para uma maior produtividade.
+\change_inserted 1635264300 1698147387
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698147407
+você coloca duas definições juntas; separe;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698147415
+*pay zoine...
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698147419
+*permeabilidade...
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
@@ -209,18 +313,101 @@ Propriedades dos fluidos do reservatório: As propriedades dos fluidos, como
 \end_layout
 
 \begin_layout Itemize
-Permeabilidade Relativa do reservatório: A permeabilidade relativa é a medida
- de quão facilmente os diferentes fluidos (por exemplo, óleo, gás e água)
- se movem no reservatório.
+Permeabilidade Relativa do reservatório
+\change_inserted 1635264300 1698147451
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698147468
+aqui duas iniciais maiúsculas e a terceira minúscula - adote um padrão único
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+: A permeabilidade relativa é a medida de quão facilmente os diferentes
+ fluidos (por exemplo, óleo, gás e água) se movem no reservatório.
  Se a permeabilidade relativa do óleo for baixa em relação ao gás ou água,
  o petróleo pode ter dificuldades em ser deslocado, afetando a produtividade.
 \end_layout
 
 \begin_layout Standard
-Portanto, o software desenvolvido terá a capacidade de fornecer ao cliente
- resultados fundamentais da produtividade e vida útil do reservatório, levando
- em consideração todos os requisitos, especificações e conceitos de Engenharia
- de Petróleo apresentados na Introdução.
+
+\change_deleted 1635264300 1698147518
+Portanto
+\change_inserted 1635264300 1698147485
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698147510
+de onde tirou o portanto? é usado para dar continuidade a uma argumentação;
+ mas cadê a argumentação?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_deleted 1635264300 1698147515
+, o
+\change_inserted 1635264300 1698147515
+O
+\change_unchanged
+ software desenvolvido terá a capacidade de fornecer ao cliente resultados
+ 
+\change_deleted 1635264300 1698147532
+fundamentais
+\change_inserted 1635264300 1698147533
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698147562
+o tempo todo colocam fundamental/essencial/etc, que são adjetivações desnecessár
+ias; não se usa em texto técnico científico
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_deleted 1635264300 1698147532
+ 
+\change_unchanged
+da produtividade e vida útil do reservatório, levando em consideração todos
+ os requisitos, especificações e conceitos de Engenharia de Petróleo apresentado
+s na Introdução
+\change_inserted 1635264300 1698147570
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698147576
+capítulo de introdução esta vazio
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
 \end_layout
 
 \begin_layout Section
@@ -230,15 +417,54 @@ Formulação teórica
 \begin_layout Standard
 Nesta seção, apresenta-se a formulação teórica dos conceitos fundamentais
  abordados ao longo deste projeto.
+
+\change_inserted 1635264300 1698147624
+ A mesma tem como base o livro XX 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698147670
+precisa adicionar no arquivo bibliografia.bib as referencias bibliograficas
+ utilizadas e então citar usando INSERIR CITAÇão;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698147692
+o que o lyx faz é mostrar a lista de rederencias que estão no arquivo bibliograf
+ia.bib; basta adicionar;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698147703
+no apếndice tem uma explicação de como funciona
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Subsection
+
+\emph on
 Inflow Performance Relationship
 \end_layout
 
 \begin_layout Standard
-A curva IPR (Inflow Performance Relationship) é usada para avaliar a capacidade
- de entrega do reservatório na engenharia de produção.
+A curva IPR (
+\emph on
+Inflow Performance Relationship
+\emph default
+) é usada para avaliar a capacidade de entrega do reservatório na engenharia
+ de produção.
  A curva IPR é uma apresentação gráfica da relação entre a pressão de fluxo
  no fundo do poço e a taxa de produção de líquidos.
  A magnitude da inclinação da curva IPR é chamada de “índice de produtividade”
@@ -276,9 +502,12 @@ IPR Linear
 \end_layout
 
 \begin_layout Standard
-A IPR Linear é aplicada na suposição de de fluxo líquido monofásico e, dessa
- forma, funciona para zonas do reservatório acima do ponto de bolha ou para
- óleos subsaturados.
+A IPR Linear é aplicada na suposição de 
+\change_deleted 1635264300 1698147756
+de 
+\change_unchanged
+fluxo líquido monofásico e, dessa forma, funciona para zonas do reservatório
+ acima do ponto de bolha ou para óleos subsaturados.
  As equações definem o índice de produtividade (J)
 \change_inserted 1635264300 1694784392
  (equação 
@@ -294,6 +523,25 @@ noprefix "false"
 )
 \change_unchanged
  para a pressão de fundo de poço acima da pressão do ponto de bolha:
+\change_inserted 1635264300 1698147780
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698147803
+toda equação que será referenciada precisa ser numerada e ter um label,
+ assim pode colocar referência cruzada
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -308,8 +556,55 @@ Como o índice de produtividade (J) acima da pressão do ponto de bolha é
  independente da taxa de produção, a curva IPR para um reservatório monofásico
  (líquido) é uma linha reta traçada da pressão do reservatório até a pressão
  do ponto de bolha.
- Se a pressão do ponto de bolha for 0 psig, o fluxo aberto absoluto (AOF)
- é o índice de produtividade (J) vezes a pressão do reservatório.
+ Se a pressão do ponto de bolha for 
+\change_deleted 1635264300 1698147824
+0
+\change_inserted 1635264300 1698147824
+
+\begin_inset Formula $0$
+\end_inset
+
+
+\change_unchanged
+ 
+\change_deleted 1635264300 1698147826
+psig
+\change_inserted 1635264300 1698147826
+
+\begin_inset Formula $psig$
+\end_inset
+
+
+\change_unchanged
+, o fluxo aberto absoluto (AOF) é o índice de produtividade (J) vezes a
+ pressão do reservatório.
+\change_inserted 1635264300 1698147831
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698147850
+TODA equação é colocada usando uma equação, mesmo que seja pequena e em
+ linha;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698147895
+quando você for usar termos usados nas equações deve usar uma equação inline.
+ Desta forma os textos nas equações e no meio do texto ficarão iguais; sem
+ isso ficam diferentes!
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Subsection
@@ -356,6 +651,24 @@ Equação de Vogel
 
 \begin_layout Standard
 A equação de Vogel é descrita por:
+\change_inserted 1635264300 1698147984
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698148004
+coloque como equação numerada as equações importantes e adicione label
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -370,8 +683,18 @@ A equação de Vogel é descrita por:
 \end_layout
 
 \begin_layout Standard
-onde qmax é uma constante empírica e seu valor representa a capacidade máxima
- que o reservatório pode entregar, ou AOF.
+onde 
+\change_deleted 1635264300 1698148012
+qmax
+\change_inserted 1635264300 1698148012
+
+\begin_inset Formula $qmax$
+\end_inset
+
+
+\change_unchanged
+ é uma constante empírica e seu valor representa a capacidade máxima que
+ o reservatório pode entregar, ou AOF.
  Para fluxo pseudo-permanente pode ser calculado por:
 \end_layout
 
@@ -388,6 +711,24 @@ Equação de Fetkovich
 
 \begin_layout Standard
 A equação de Fetkovich é definida por:
+\change_inserted 1635264300 1698148045
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698148059
+numerar as equações e colocar label quando for referenciada
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -402,7 +743,27 @@ A equação de Fetkovich é definida por:
 \end_layout
 
 \begin_layout Standard
-onde C e n são constantes empíricas relacionadas a vazão máxima, dada por:
+onde 
+\change_deleted 1635264300 1698148022
+C
+\change_inserted 1635264300 1698148022
+
+\begin_inset Formula $C$
+\end_inset
+
+
+\change_unchanged
+ e 
+\change_deleted 1635264300 1698148024
+n
+\change_inserted 1635264300 1698148024
+
+\begin_inset Formula $n$
+\end_inset
+
+
+\change_unchanged
+ são constantes empíricas relacionadas a vazão máxima, dada por:
 \end_layout
 
 \begin_layout Standard
@@ -541,7 +902,12 @@ Fluxo Bifásico
 
 \begin_layout Standard
 Para camadas de reservatório contendo óleos saturados, é esperado um fluxo
- bifásico.Utilizando Vogel:
+ bifásico.
+
+\change_inserted 1635264300 1698148168
+ 
+\change_unchanged
+Utilizando Vogel:
 \end_layout
 
 \begin_layout Standard
@@ -579,40 +945,243 @@ A partir da análise dos modelos apresentados, identifica-se ose seguintes
 \end_layout
 
 \begin_layout Itemize
-Pacote Propriedades do Reservatório: Composto pelos parâmetros da rocha-reservat
-ório, fluidos e do próprio reservatório, como porosidade, permeabilidade,
- extensão, viscosidade, fator volume-formação e outros.
+Pacote 
+\change_deleted 1635264300 1698148303
+Propriedades do 
+\change_unchanged
+Reservatório: 
+\change_inserted 1635264300 1698148178
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Composto pelos parâmetros da rocha-reservatório
+\change_inserted 1635264300 1698148248
+(como porosidade, permeabilidade)
+\change_unchanged
+, fluidos
+\change_inserted 1635264300 1698148262
+(como viscosidade)
+\change_unchanged
+ e do próprio reservatório
+\change_deleted 1635264300 1698148267
+,
+\change_inserted 1635264300 1698148269
+(como
+\change_unchanged
+ 
+\change_deleted 1635264300 1698148245
+como porosidade, permeabilidade
+\change_unchanged
+, extensão, 
+\change_deleted 1635264300 1698148254
+viscosidade,
+\change_unchanged
+ fator volume-formação
+\change_inserted 1635264300 1698148275
+)
+\change_unchanged
+ e outros.
  
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
-Pacote Dados de Produção: Composto por dados de pressão de fundo e inicial
- do reservatório de modo que o cálculo da IPR seja possível sem necessitar
- dos parâmetros do pacote acima descrito.
+Pacote Dados de Produção: 
+\change_inserted 1635264300 1698148180
+
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
-Pacote Modelos Empíricos: Calcula os parâmetros necessários para as curvas
- utilizando os modelos listados.
+Composto por dados de pressão de fundo e inicial do reservatório de modo
+ que o cálculo da IPR seja possível sem necessitar dos parâmetros do pacote
+ acima descrito.
+\change_inserted 1635264300 1698148378
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698148434
+não faz sentido separar os dados de produção do reservatório do reservatório
+ em si;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698149163
+Pode-se pensar em criar 
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698149230
+CAmostra com dados da amostra, formato, dimensões, quem coletou; refere-se
+ apenas a amostra, seria válido para qualquer amostra, tanto rocha como
+ fluido; teria de ter o tipo e um identificador;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698149250
+CMeioPoroso tem propriedades petrofísicas como porosidade e permeabilidade
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698149263
+CFluido tem propriedades básicas de fluido
+\change_unchanged
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698149305
+CAmostraRochaReservatorio teria duas agregações, CAmostra e CMeioPoroso
+ ou seria herdeiro das duas;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698149360
+CReservatorio que terá definição do tipo de reservatório, número de camadas,
+ um vetor de CAmostraRocha (pode ser uma única ou camadas);
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698149371
+CReservatorioProducao que se refere a um reservatório em produção, incluiria
+ dados de produção ou Algo diretamente ligado ao modelo de IPR; vamos ver
+ isso junto;
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Pacote Modelos Empíricos
+\change_inserted 1635264300 1698148629
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698148644
+é o pacote IPR? com os diferentes modelos de IPR?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+: 
+\change_inserted 1635264300 1698148182
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Calcula os parâmetros necessários para as curvas utilizando os modelos listados.
  O usuário poderá escolher qual modelo deseja usar.
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
-Pacote Regime Pseudopermanente: Permite calcular o parâmetro de índice de
- produtividade o qual será utilizado nos cálculos de vazão posteriormente.
+Pacote Regime Pseudopermanente
+\change_inserted 1635264300 1698148659
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698149434
+não é um pacote; para ser um pacote tem de ter várias classes dentro;
 \end_layout
 
-\begin_layout Itemize
-Pacote Simulador: Relaciona os pacotes listados, sendo responsável por interagir
- com o usuário através de um interface via texto para definir as ações a
- serem tomadas.
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698149457
+modelos empiricos e regime parecem estar dentro do pacote IPR
+\change_unchanged
+
 \end_layout
 
-\begin_layout Itemize
-Pacote Gráficos: Utilizando um software externo (GNUPLOT), será possível
- gerar gráficos de IPR.
+\end_inset
+
+
+\change_unchanged
+: 
+\change_inserted 1635264300 1698148184
+
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Permite calcular o parâmetro de índice de produtividade o qual será utilizado
+ nos cálculos de vazão posteriormente.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Pacote Simulador: 
+\change_inserted 1635264300 1698148186
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Relaciona os pacotes listados, sendo responsável por interagir com o usuário
+ através de um interface via texto para definir as ações a serem tomadas.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Pacote Gráficos: 
+\change_inserted 1635264300 1698148189
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Utilizando um software externo
+\change_deleted 1635264300 1698148694
+ (GNUPLOT)
+\change_inserted 1635264300 1698148695
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698148712
+fale do gnuplot no capítulo de projeto; daí revisa os diagramas adicionando
+ a classe CGnuplot
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+, será possível gerar gráficos de IPR.
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Diagrama de pacotes – assuntos
 \end_layout
@@ -626,6 +1195,68 @@ reference "fig:Diagrama-de-Pacotes"
 \end_inset
 
  mostra as relações e dependências existentes entre os pacotes deste software.
+\change_inserted 1635264300 1698148759
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698148761
+erros:
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698148821
+Dados de poço não são um pacote! dados de poço são atributos da classe CPoco;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698148858
+CPoco deve ter as propriedades e funcionalidades básicas de um poço;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698148895
+Pode-se pensar em criar CPocoProducao herdeira de CPoco e que adiciona os
+ dados de produção, como pressão inicial, de fundo e vazão;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698148988
+vamos discutir isso juntos.
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698148990
+-
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698149075
+PENSE NUM PACOTE COMO UM CONJUNTO DE CLASSES E FUN¨CÕES QUE ESTÃO INTIMAMENTE
+ RELACIONADAS E POR ISSO São agrupadas num único arquivo, como uma biblioteca;
+ um conjunto de classes que irão gerar uma biblioteca.
+ Um componente do sistema que poderá ser reaproveitado em outros softwares;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1698149104
+Parece existir um pacote IPR e dentro dele as classes CIPR_Fetkovich,...
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -637,7 +1268,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Atila Júnior/Desktop/Programação Prática/Imagens/3. Elaboração/Diagrama de Pacotes.png
+	filename imagens/Diagrama_De_Pacotes.png
+	lyxscale 50
 	width 100text%
 
 \end_inset

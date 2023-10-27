@@ -1,5 +1,3 @@
-Universidade Estadual do Norte Fluminense Darcy Ribeiro - UENF
-Laboratório de Engenharia e Exploração de Petróleo - LENEP
 
 * Nome do Software (ou Biblioteca):
 - SIMULADOR DE CURVAS IPR UTILIZANDO MODELOS EMPÍRICOS EM POCOS VERTICAIS
