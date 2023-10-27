@@ -98,10 +98,11 @@
 \papersides 1
 \paperpagestyle fancy
 \tracking_changes true
-\output_changes false
+\output_changes true
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author 267031021 "marce"
 \author 1635264300 "andreduartebueno" andreduartebueno@gmail.com
 \end_header
 
@@ -166,18 +167,9 @@ Análise de domínio
 \end_layout
 
 \begin_layout Standard
-O Software a ser desenvolvido 
-\change_deleted 1635264300 1698147042
-trata-se de 
-\change_unchanged
-aborda
-\change_deleted 1635264300 1698147044
-r 
-\change_inserted 1635264300 1698147044
- 
-\change_unchanged
-formas de estimar a produtividade de um poço vertical de petróleo através
- de modelagem de curvas IPR, utilizando modelos empíricos.
+O Software a ser desenvolvido aborda formas de estimar a produtividade de
+ um poço vertical de petróleo através de modelagem de curvas IPR, utilizando
+ modelos empíricos.
  O fato de se explorar este tema é de fundamental relevância no campo da
  produção de petróleo, pois traz informações importantes em relação ao rendiment
 o e vida útil que o poço analisado terá.
@@ -189,50 +181,25 @@ o e vida útil que o poço analisado terá.
  de completação e os métodos de elevação artificial a serem utilizados.
  Dessa forma, um conhecimento completo da produtividade do reservatório
  é essencial para engenheiros de produção.
- A produtividade do reservatório depende de diversos fatores, como: 
+ A produtividade do reservatório depende de diversos fatores, como:
 \end_layout
 
 \begin_layout Itemize
-Pressão do Reservatório
-\change_inserted 1635264300 1698147439
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1635264300 1698147446
-usa iniciais maiúsculas
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-: A pressão do reservatório é um fator crítico que influencia diretamente
- a produtividade.
+Pressão do Reservatório: A pressão do reservatório é um fator crítico que
+ influencia diretamente a produtividade.
  Uma pressão mais alta pode impulsionar a migração do petróleo ou gás em
  direção ao poço, aumentando a taxa de produção.
-\change_inserted 1635264300 1698147306
-
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted 1635264300 1698147321
-pressões muito altas criam caminhos preferenciais e reduzem a produtividade
- total
-\change_unchanged
-
+Neste caso, a ideia central é dizer que quando temos um pressão maior do
+ reservatório, por diferença de pressão entre o reservatório e poço, a vazão
+ pode ser aumentada, o que ocasiona uma maior taxa de produção.
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -240,69 +207,21 @@ pressões muito altas criam caminhos preferenciais e reduzem a produtividade
 Espessura de 
 \emph on
 pay zone
-\change_inserted 1635264300 1698147328
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1635264300 1698147354
-
-\emph on
-textos em ingles sempre em itálico! e a primeira vez que aparece deve ser
- explicado
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
- 
 \emph default
-e Permeabilidade: A 
+: A 
 \emph on
 pay zone 
 \emph default
 se refere à camada do reservatório que contém o petróleo ou gás.
  Quanto mais espessa essa camada, mais espaço há para armazenar hidrocarbonetos,
  o que pode aumentar a produtividade.
- A permeabilidade está relacionada à capacidade do reservatório de permitir
- que o petróleo ou gás fluam através dele.
+\end_layout
+
+\begin_layout Itemize
+Permeabilidade: A permeabilidade está relacionada à capacidade do reservatório
+ de permitir que o petróleo ou gás fluam através dele.
  Uma maior permeabilidade facilita a movimentação dos fluidos, contribuindo
  para uma maior produtividade.
-\change_inserted 1635264300 1698147387
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1635264300 1698147407
-você coloca duas definições juntas; separe;
-\end_layout
-
-\begin_layout Plain Layout
-
-\change_inserted 1635264300 1698147415
-*pay zoine...
-\end_layout
-
-\begin_layout Plain Layout
-
-\change_inserted 1635264300 1698147419
-*permeabilidade...
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
 \end_layout
 
 \begin_layout Itemize
@@ -313,101 +232,18 @@ Propriedades dos fluidos do reservatório: As propriedades dos fluidos, como
 \end_layout
 
 \begin_layout Itemize
-Permeabilidade Relativa do reservatório
-\change_inserted 1635264300 1698147451
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1635264300 1698147468
-aqui duas iniciais maiúsculas e a terceira minúscula - adote um padrão único
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-: A permeabilidade relativa é a medida de quão facilmente os diferentes
- fluidos (por exemplo, óleo, gás e água) se movem no reservatório.
+Permeabilidade Relativa do Reservatório: A permeabilidade relativa é a medida
+ de quão facilmente os diferentes fluidos (por exemplo, óleo, gás e água)
+ se movem no reservatório.
  Se a permeabilidade relativa do óleo for baixa em relação ao gás ou água,
  o petróleo pode ter dificuldades em ser deslocado, afetando a produtividade.
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted 1635264300 1698147518
-Portanto
-\change_inserted 1635264300 1698147485
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1635264300 1698147510
-de onde tirou o portanto? é usado para dar continuidade a uma argumentação;
- mas cadê a argumentação?
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_deleted 1635264300 1698147515
-, o
-\change_inserted 1635264300 1698147515
-O
-\change_unchanged
- software desenvolvido terá a capacidade de fornecer ao cliente resultados
- 
-\change_deleted 1635264300 1698147532
-fundamentais
-\change_inserted 1635264300 1698147533
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1635264300 1698147562
-o tempo todo colocam fundamental/essencial/etc, que são adjetivações desnecessár
-ias; não se usa em texto técnico científico
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_deleted 1635264300 1698147532
- 
-\change_unchanged
-da produtividade e vida útil do reservatório, levando em consideração todos
+O software desenvolvido terá a capacidade de fornecer ao cliente resultadosda
+ produtividade e vida útil do reservatório, levando em consideração todos
  os requisitos, especificações e conceitos de Engenharia de Petróleo apresentado
-s na Introdução
-\change_inserted 1635264300 1698147570
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1635264300 1698147576
-capítulo de introdução esta vazio
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-.
+s na Introdução.
 \end_layout
 
 \begin_layout Section
@@ -417,38 +253,26 @@ Formulação teórica
 \begin_layout Standard
 Nesta seção, apresenta-se a formulação teórica dos conceitos fundamentais
  abordados ao longo deste projeto.
-
-\change_inserted 1635264300 1698147624
  A mesma tem como base o livro XX 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1635264300 1698147670
 precisa adicionar no arquivo bibliografia.bib as referencias bibliograficas
  utilizadas e então citar usando INSERIR CITAÇão;
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1635264300 1698147692
 o que o lyx faz é mostrar a lista de rederencias que estão no arquivo bibliograf
 ia.bib; basta adicionar;
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1635264300 1698147703
 no apếndice tem uma explicação de como funciona
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -472,14 +296,6 @@ Inflow Performance Relationship
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted 1635264300 1694784374
-\begin_inset Formula $J=\frac{q}{\left(p_{e}-p_{wf}\right)}$
-\end_inset
-
-
-\change_inserted 1635264300 1694784374
-
 \begin_inset Formula 
 \begin{equation}
 J=\frac{q}{\left(p_{e}-p_{wf}\right)}\label{eq:IP}
@@ -487,8 +303,6 @@ J=\frac{q}{\left(p_{e}-p_{wf}\right)}\label{eq:IP}
 
 \end_inset
 
-
-\change_unchanged
 .
 \end_layout
 
@@ -502,53 +316,30 @@ IPR Linear
 \end_layout
 
 \begin_layout Standard
-A IPR Linear é aplicada na suposição de 
-\change_deleted 1635264300 1698147756
-de 
-\change_unchanged
-fluxo líquido monofásico e, dessa forma, funciona para zonas do reservatório
- acima do ponto de bolha ou para óleos subsaturados.
- As equações definem o índice de produtividade (J)
-\change_inserted 1635264300 1694784392
- (equação 
+A IPR Linear é aplicada na suposição de fluxo líquido monofásico e, dessa
+ forma, funciona para zonas do reservatório acima do ponto de bolha ou para
+ óleos subsaturados.
+ As equações definem o índice de produtividade (J) (equação 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:IP"
+reference "eq:IP*"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
-)
-\change_unchanged
- para a pressão de fundo de poço acima da pressão do ponto de bolha:
-\change_inserted 1635264300 1698147780
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1635264300 1698147803
-toda equação que será referenciada precisa ser numerada e ter um label,
- assim pode colocar referência cruzada
-\change_unchanged
-
-\end_layout
+) para a pressão de fundo de poço acima da pressão do ponto de bolha:
+\begin_inset Formula 
+\begin{equation}
+J^{*}=\frac{q}{\left(p_{e}-p_{wf}\right)}=\frac{kh}{141.2B_{o}\left(\frac{1}{2}ln\frac{4A}{\gamma C_{A}r_{w}^{2}+S}\right)}\label{eq:IP*}
+\end{equation}
 
 \end_inset
 
 
-\change_unchanged
+\change_deleted 267031021 1698289317
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $J^{*}=\frac{q}{\left(p_{e}-p_{wf}\right)}=\frac{kh}{141.2B_{o}\left(\frac{1}{2}ln\frac{4A}{\gamma C_{A}r_{w}^{2}+S}\right)}$
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
@@ -557,27 +348,32 @@ Como o índice de produtividade (J) acima da pressão do ponto de bolha é
  (líquido) é uma linha reta traçada da pressão do reservatório até a pressão
  do ponto de bolha.
  Se a pressão do ponto de bolha for 
-\change_deleted 1635264300 1698147824
-0
-\change_inserted 1635264300 1698147824
-
 \begin_inset Formula $0$
 \end_inset
 
-
-\change_unchanged
  
-\change_deleted 1635264300 1698147826
-psig
-\change_inserted 1635264300 1698147826
-
 \begin_inset Formula $psig$
 \end_inset
 
-
-\change_unchanged
 , o fluxo aberto absoluto (AOF) é o índice de produtividade (J) vezes a
- pressão do reservatório.
+ pressão do reservatório
+\change_inserted 267031021 1698289627
+ 
+\change_unchanged
+.
+
+\change_inserted 267031021 1698289458
+ 
+\change_unchanged
+
+\begin_inset Formula 
+\[
+AOF=JPe
+\]
+
+\end_inset
+
+
 \change_inserted 1635264300 1698147831
 
 \begin_inset Note Note
@@ -815,48 +611,6 @@ Portanto, a vazão para uma determinada pressão abaixo da pressão de bolha
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Subsection
-IPR para Reservatórios Estratificados
-\end_layout
-
-\begin_layout Standard
-Quase todas as formações produtoras são estratificadas até certo ponto.
- Isto significa que o poço vertical na zona de produção tem diferentes camadas
- com diferentes pressões de reservatório, permeabilidades e produção de
- fluidos.
- Se for assumido que não há outra comunicação entre estas formações (além
- do poço), a produção virá principalmente das camadas de maior permeabilidade.
-\end_layout
-
-\begin_layout Standard
-Uma das principais preocupações em um sistema multicamadas é que o fluxo
- cruzado entre as camadas pode ocorrer se os fluidos do reservatório forem
- produzidos a partir de camadas que possuem pressões iniciais desiguais.
- Este fluxo cruzado afeta grandemente a IPR composta do poço, o que pode
- resultar em uma estimativa otimista.
-\end_layout
-
-\begin_layout Standard
-Algumas suposições são assumidas para se gerar a IPR de reservatórios estratific
-ados:
-\end_layout
-
-\begin_layout Itemize
-Fluxo em estado pseudo-permanente em todas as camadas do reservatório.
-\end_layout
-
-\begin_layout Itemize
-Fluidos têm propriedades semelhantes para todas as camadas.
-\end_layout
-
-\begin_layout Itemize
-As perdas de pressão nas seções do poço entre as camadas são insignificantes.
-\end_layout
-
-\begin_layout Itemize
-IPR de camadas individuais são conhecidas.
 \end_layout
 
 \begin_layout Subsection
