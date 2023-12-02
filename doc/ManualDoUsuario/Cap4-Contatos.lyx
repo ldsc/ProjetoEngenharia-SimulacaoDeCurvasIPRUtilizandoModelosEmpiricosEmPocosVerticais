@@ -188,21 +188,14 @@ Prof.
 <bueno@lenep.uenf.br>
 \end_layout
 
-\end_deeper
-\begin_layout Section
-Referência
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-btprint "btPrintCited"
-bibfiles "bibliografia"
-options "apalike"
+\begin_layout Standard
 
-\end_inset
-
-
+\series bold
+1.1 Referência
 \end_layout
 
-\begin_layout Standard
+\end_deeper
+\begin_layout Itemize
 O projeto foi desenvolvido tomando como base o modelo disponibilizado no
  site:
 \end_layout
@@ -210,12 +203,13 @@ O projeto foi desenvolvido tomando como base o modelo disponibilizado no
 \begin_layout Itemize
 \begin_inset CommandInset href
 LatexCommand href
-target "https://github.com/ldsc/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica"
+name "[https://github.com/ldsc/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica]."
+target "https://github.com/ldsc/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocosVerticais"
 literal "false"
 
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Itemize
@@ -236,12 +230,24 @@ literal "false"
 \begin_layout Itemize
 \begin_inset CommandInset citation
 LatexCommand cite
-key "adb-prog-livroCpp,adb-prog-livroCpp3"
+key "adb-prog-apostilaprogramacao-v03"
 literal "false"
 
 \end_inset
 
-.
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "bibliografia"
+options "apalike"
+
+\end_inset
+
+
 \end_layout
 
 \end_body

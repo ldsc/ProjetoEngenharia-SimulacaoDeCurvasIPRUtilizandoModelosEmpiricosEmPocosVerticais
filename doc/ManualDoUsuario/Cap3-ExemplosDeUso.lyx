@@ -200,7 +200,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Tela do programa mostrando xxx
+Tela do programa mostrando a interface gráfica do diálogo com o usuário
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Teste-TelaPrograma-Captura1"

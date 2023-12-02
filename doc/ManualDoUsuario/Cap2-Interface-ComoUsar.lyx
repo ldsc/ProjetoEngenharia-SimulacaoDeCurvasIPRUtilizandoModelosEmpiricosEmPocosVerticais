@@ -175,7 +175,8 @@ status open
 	filename imagens/Interface Gráfica - Projeto Simulação Curvas IPR.png
 	lyxscale 30
 	width 100text%
-	height 85in
+	height 80text%
+	keepAspectRatio
 
 \end_inset
 
@@ -207,7 +208,7 @@ name "fig:Imagem da Interface Gráfica"
 \end_layout
 
 \begin_layout Standard
-O Figura 
+A Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Imagem da Interface Gráfica"
