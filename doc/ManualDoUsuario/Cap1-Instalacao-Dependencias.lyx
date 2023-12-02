@@ -169,7 +169,7 @@ Baixando o software
 O software foi disponibilizado no site 
 \begin_inset CommandInset href
 LatexCommand href
-target "https://github.com/ldsc"
+target "https://github.com/ldsc/ProjetoEngenharia-AnaliseDoEfeitoDePeliculaAPartirIPR-PocosVerticais-EscoamentoMonofasico.git"
 literal "false"
 
 \end_inset
@@ -190,6 +190,9 @@ jetoEspecifico
 
 \begin_layout Standard
 Lá você encontra instruções atualizadas para baixar e instalar.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -258,24 +261,13 @@ dnf install gcc
 
 \end_deeper
 \begin_layout Itemize
-Instalar a biblioteca Qt disponível em 
-\begin_inset CommandInset href
-LatexCommand href
-target "https://www.qt.io/download"
-
-\end_inset
-
-.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-apague se não usa Qt; 
+Baixar e instalar o ambiente de desenvolvimento integrado livre de sua preferênc
+ia que utiliza os compiladores do projeto GNU para compilar programas para
+ o sistema operacional Microsoft Windows.
 \end_layout
 
-\end_inset
-
-
+\begin_layout Itemize
+Baixar o programa disponível nos links da seção anterior.
 \end_layout
 
 \begin_layout Standard
