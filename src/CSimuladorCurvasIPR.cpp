@@ -51,7 +51,7 @@ void CSimuladorCurvasIPR::EntradaDados() {
     cout << endl;
     cout << "--------------- SIMULADOR DE CURVAS IPR PARA POCOS VERTICAIS ---------------" << endl;
     cout << "----------------------------------------------------------------------------" << endl;
-    cout << "------------ Atila Júnior, Giovanna Massardi e Marcelo Bernardo ------------" << endl;
+    cout << "------------ Atila Junior, Giovanna Massardi e Marcelo Bernardo ------------" << endl;
     cout << "-------------------------------- UENF/LENEP --------------------------------" << endl;
     cout << endl;
 
@@ -801,7 +801,7 @@ void CSimuladorCurvasIPR::Executar() {
     cout << endl;
     cout << "--------------- SIMULADOR DE CURVAS IPR PARA POCOS VERTICAIS ---------------" << endl;
     cout << "----------------------------------------------------------------------------" << endl;
-    cout << "------------ Atila Júnior, Giovanna Massardi e Marcelo Bernardo ------------" << endl;
+    cout << "------------ Atila Junior, Giovanna Massardi e Marcelo Bernardo ------------" << endl;
     cout << "-------------------------------- UENF/LENEP --------------------------------" << endl;
     cout << endl;
 

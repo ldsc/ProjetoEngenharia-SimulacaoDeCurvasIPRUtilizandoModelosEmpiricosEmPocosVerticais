@@ -419,6 +419,30 @@ Vogel: representa a classe responsável pelo cálculo da curva IPR utilizando
 Classe CIPRGeneralizada: representa a classe responsável pelo cálculo da
  curva IPR utilizando o modelo de Vogel generalizado para reservatórios
  bifásicos.
+\change_inserted -627105657 1701549663
+
+\end_layout
+
+\begin_layout Itemize
+
+\change_inserted -627105657 1701549796
+Classe CMetodo: classe que representa a enumeração dos tipos de métodos
+ de cálculo de IPR.
+\end_layout
+
+\begin_layout Itemize
+
+\change_inserted -627105657 1701549767
+Classe CTipoGeometria: classe que representa a enumeração dos tipos de geometria
+ do reservatório.
+\end_layout
+
+\begin_layout Itemize
+
+\change_inserted -627105657 1701549741
+Classe CTipoFluido: classe que representa a enumeração dos tipos de fluidos.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
