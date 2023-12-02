@@ -172,11 +172,10 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/andreduartebueno/workdir/Projeto-TCC-SimuladorDifusaoTermica-Nicholas-Bueno-Guilherme/imagens/Interface-vFinal.png
+	filename imagens/Interface Gráfica - Projeto Simulação Curvas IPR.png
 	lyxscale 30
 	width 100text%
 	height 85in
-	keepAspectRatio
 
 \end_inset
 
@@ -220,65 +219,84 @@ s importantes ao usuário.
 \end_layout
 
 \begin_layout Itemize
-explicar o funcionamento do software na prática...explicando o uso de cada
- uma das features/funcionalidades.
+
+\series bold
+Inicialização
+\end_layout
+
+\begin_layout Standard
+O usuário inicia o software e é apresentado a uma interface onde pode inserir
+ os parâmetros do reservatório, do poço e escolher o modelo empírico desejado.
 \end_layout
 
 \begin_layout Itemize
-aqui você dá um apanhado geral...
+
+\series bold
+Entrada de Dados:
+\end_layout
+
+\begin_layout Standard
+O usuário fornece os dados necessários, como pressão inicial, pressão de
+ bolha e outros parâmetros específicos para o modelo escolhido.
+ 
 \end_layout
 
 \begin_layout Itemize
-Depois vai criar seções para funcionalidades específicas, detalhando seu
- uso...como nos exemplos abaixo
-\end_layout
 
-\begin_layout Section
-Funcionalidade específica A
+\series bold
+Escolha do Modelo:
 \end_layout
 
 \begin_layout Standard
-O que é?
+O usuário seleciona o modelo empírico que deseja usar para a simulação (por
+ exemplo, Vogel, Fetkovich).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Variação de Pwf:
 \end_layout
 
 \begin_layout Standard
-Como usar - exemplo de uso:
+O software realiza a variação da pressão de fundo do poço (Pwf) de acordo
+ com a lógica do modelo empírico escolhido.
+ 
 \end_layout
 
-\begin_layout Subsection
-Item específico A1
-\end_layout
+\begin_layout Itemize
 
-\begin_layout Subsection
-Item específico A2
-\end_layout
-
-\begin_layout Subsection
-Item específico An
-\end_layout
-
-\begin_layout Section
-Funcionalidade específica B
+\series bold
+Cálculos e Resultados:
 \end_layout
 
 \begin_layout Standard
-O que é?
+Os cálculos são realizados automaticamente para cada valor de Pwf, e os
+ resultados são exibidos graficamente, mostrando as curvas IPR correspondentes.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Análise:
 \end_layout
 
 \begin_layout Standard
-Como usar - exemplo de uso:
+Os usuários podem analisar as curvas geradas para entender o comportamento
+ do poço sob diferentes condições de pressão de fundo.
 \end_layout
 
-\begin_layout Subsection
-Item específico B1
+\begin_layout Itemize
+
+\series bold
+Exportação de Dados:
 \end_layout
 
-\begin_layout Subsection
-Item específico B2
-\end_layout
-
-\begin_layout Subsection
-Item específico Bn
+\begin_layout Standard
+O software pode oferecer a opção de exportar os resultados, em formato gráfico,
+ para análises posteriores.
 \end_layout
 
 \end_body
