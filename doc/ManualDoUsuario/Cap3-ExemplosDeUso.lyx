@@ -152,27 +152,19 @@ name "sec:Exemplo-1"
 : Descrição
 \end_layout
 
-\begin_layout Itemize
-Explique, passo a passo, e de forma detalhada o que irá fazer.
-\end_layout
-
-\begin_layout Itemize
-Importante falar aonda o usuário deve clicar, o que deve informar, quais
- as entradas e saídas;
-\end_layout
-
-\begin_layout Itemize
-Coloque figuras ilustrativas;
-\end_layout
-
-\begin_layout Itemize
-A ideia é fazer com que o usuário realize uma determinada atividade usando
- o software e compreendendo claramente o que esta fazendo.
-\end_layout
-
-\begin_layout Itemize
-Como sugestão monte estes exemplos tomando como base os testes realizados
- no manual de desenvolvimento.
+\begin_layout Standard
+O presente trabalho apresenta interface ao usuário em modo texto, através
+ do prompt de comandos.
+ O software constantemente apresenta um diálogo com o usuário.
+ Primeiramente, o software pergunta ao usuário se ele quer executar o programa
+ e após isso, o usuário entra com o valor 1 ou 2 (1 - Executa o programa,
+ 2 - Encerra o programa agradendo por utilizar o software).
+ Após esta etapa inicial, o software pergunta ao usuário quais modelos deseja-se
+ utilizar para a simulação das curvas IPR, extraindo os valores de 1 a 4
+ do teclado (1 - IPR Linear, 2 - IPR Generalizada, 3 - Vogel e 4 - Fetkovich).
+ Inicia-se então a etapa de novo diálogo com o usuário para fornecer os
+ dados de entrada e por fim realizar o plot das curvas.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -196,7 +188,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/Interface-Simulador-Transcal-Guilherme2.png
+	filename imagens/IPR Poco vertical - captura de tela - dialogo inicial.png
 	width 100text%
 
 \end_inset
@@ -239,48 +231,47 @@ name "sec: Exemplo-2"
 : Descrição
 \end_layout
 
-\begin_layout Standard
-Explique, passo a passo, e de forma detalhada o que irá fazer.
+\begin_layout Itemize
+Neste programa, de uma forma geral, será simulada as curvas IPR de poços
+ verticais utilizando modelos empíricos.
+ Ao longo da execução implicitamente serão calculados diversos parâmetros.
+ Entretanto, podemos trazer destaque para os cáculos das vazões, pressões
+ de fundo de poço e índice de produtividade.
+ Estes cálculos são tomados como base pelos modelos presentes na literatura:
+ IPR Linear, IPR Generalizada, Vogel e Fetkovich.
 \end_layout
 
 \begin_layout Itemize
-Importante falar aonda o usuário deve clicar, o que deve informar, quais
- as entradas e saídas;
+O programa primeiramente precisa ser aberto no diretório onde o código se
+ encontra e, depois disso, compila-se o código em um programa como o Embarcadero
+ ou dev C++.
 \end_layout
 
 \begin_layout Itemize
-Coloque figuras ilustrativas;
-\end_layout
-
-\begin_layout Itemize
-A ideia é fazer com que o usuário realize uma determinada atividade usando
- o software e compreendendo claramente o que esta fazendo.
-\end_layout
-
-\begin_layout Itemize
-Como sugestão monte estes exemplos tomando como base os testes realizados
- no manual de desenvolvimento.
+Além disso, o programa pôde ser validado com base nos resultados obtidos
+ no livro em que foi tomado como referência.
 \end_layout
 
 \begin_layout Standard
-Veja Figura 
+Veja um caso de exemplo para a simulação utilizando o modelo IPR Generalizada
+ nas figuras 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Teste-TelaPrograma-1"
+reference "fig:Teste-Modelo-IPRGeneralizada"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Curva IPR Generalizada com base na literatura"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
 .
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Na Figura simulador desenvolvido pelo aluno Tiago Schauwer
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -293,22 +284,19 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/Interface-Simulador-Tiago.png
+	filename imagens/Grafico IPR Generalizada.png
 	width 100text%
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Tela do programa mostrando xxx
+Tela do programa mostrando a curva do modelo IPR Generalizada
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Teste-TelaPrograma-1"
+name "fig:Teste-Modelo-IPRGeneralizada"
 
 \end_inset
 
@@ -323,51 +311,6 @@ name "fig:Teste-TelaPrograma-1"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-Exemplo 3
-\begin_inset CommandInset label
-LatexCommand label
-name "sec: Exemplo-3"
-
-\end_inset
-
-: Descrição
-\end_layout
-
-\begin_layout Standard
-Explique, passo a passo, e de forma detalhada o que irá fazer.
-\end_layout
-
-\begin_layout Itemize
-Importante falar aonda o usuário deve clicar, o que deve informar, quais
- as entradas e saídas;
-\end_layout
-
-\begin_layout Itemize
-Coloque figuras ilustrativas;
-\end_layout
-
-\begin_layout Itemize
-A ideia é fazer com que o usuário realize uma determinada atividade usando
- o software e compreendendo claramente o que esta fazendo.
-\end_layout
-
-\begin_layout Itemize
-Como sugestão monte estes exemplos tomando como base os testes realizados
- no manual de desenvolvimento.
-\end_layout
-
-\begin_layout Standard
-Veja Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Teste-TelaPrograma-Captura1-1"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
@@ -380,7 +323,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/Interface-SimuladorTranscal-Nicholas.png
+	filename imagens/Grafico IPR Generalizada base literatura.png
 	lyxscale 25
 	width 100text%
 
@@ -393,10 +336,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Tela do programa mostrando xxx
+Curva IPR Generalizada com base na literatura
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Teste-TelaPrograma-Captura1-1"
+name "fig:Curva IPR Generalizada com base na literatura"
 
 \end_inset
 
@@ -411,20 +354,6 @@ name "fig:Teste-TelaPrograma-Captura1-1"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Description
-Nota: 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-Não perca de vista a visão do todo; explique para o usuário o que é e como
- funciona o software; lembre-se que ele não desenvolveu nada, apenas vai
- usar!
 \end_layout
 
 \end_body
