@@ -247,7 +247,7 @@ literal "false"
 
 \end_inset
 
-.
+;
 \end_layout
 
 \begin_deeper
@@ -261,13 +261,25 @@ dnf install gcc
 
 \end_deeper
 \begin_layout Itemize
-Baixar e instalar o ambiente de desenvolvimento integrado livre de sua preferênc
-ia que utiliza os compiladores do projeto GNU para compilar programas para
- o sistema operacional Microsoft Windows.
+Biblioteca CGnuplot; os arquivos para acesso a biblioteca CGnuplot devem
+ estar no diretório com os códigos do software;
 \end_layout
 
 \begin_layout Itemize
-Baixar o programa disponível nos links da seção anterior.
+Baixar e instalar o ambiente de desenvolvimento integrado livre de sua preferênc
+ia que utiliza os compiladores do projeto GNU para compilar programas para
+ o sistema operacional Microsoft Windows;
+\end_layout
+
+\begin_layout Itemize
+Baixar o programa disponível no link da seção anterior;
+\end_layout
+
+\begin_layout Itemize
+É recomendado usar versões mais atualizadas de compiladores para se conseguir
+ usar a biblioteca filesystem, que somente pode ser usada para versões C++17
+ a C++20.
+ 
 \end_layout
 
 \begin_layout Standard

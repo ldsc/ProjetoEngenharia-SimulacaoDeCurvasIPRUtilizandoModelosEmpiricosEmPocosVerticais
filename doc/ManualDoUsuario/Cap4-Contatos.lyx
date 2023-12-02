@@ -138,11 +138,11 @@ Autor 1:
 
 \begin_deeper
 \begin_layout Itemize
-SeuNome
+Atila de Sales Gomes Junior
 \end_layout
 
 \begin_layout Itemize
-Seuemail
+XXX@lenep.uenf.br
 \end_layout
 
 \end_deeper
@@ -152,11 +152,25 @@ Autor 2:
 
 \begin_deeper
 \begin_layout Itemize
-SeuNome
+Giovanna Massardi
 \end_layout
 
 \begin_layout Itemize
-Seuemail
+XXX@lenep.uenf.br
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Autor 3:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Marcelo de Souza Bernardo
+\end_layout
+
+\begin_layout Itemize
+Marcelobernardo@lenep.uenf.br
 \end_layout
 
 \end_deeper
@@ -176,7 +190,16 @@ Prof.
 
 \end_deeper
 \begin_layout Section
-Referências
+Referência
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "bibliografia"
+options "apalike"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -197,6 +220,17 @@ literal "false"
 
 \begin_layout Itemize
 Foram utilizadas informações de vários livros, incluindo:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PetroleumProduction"
+literal "false"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
