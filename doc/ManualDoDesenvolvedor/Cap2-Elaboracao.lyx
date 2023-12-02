@@ -253,7 +253,23 @@ Formulação teórica
 \begin_layout Standard
 Nesta seção, apresenta-se a formulação teórica dos conceitos fundamentais
  abordados ao longo deste projeto.
- A mesma tem como base o livro XX 
+ A mesma tem como base o livro
+\change_deleted 267031021 1698414871
+ X
+\change_inserted 267031021 1698414862
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Simulacao-IPR"
+literal "false"
+
+\end_inset
+
+
+\change_deleted 267031021 1698414866
+X 
+\change_unchanged
+
 \begin_inset Note Note
 status open
 
