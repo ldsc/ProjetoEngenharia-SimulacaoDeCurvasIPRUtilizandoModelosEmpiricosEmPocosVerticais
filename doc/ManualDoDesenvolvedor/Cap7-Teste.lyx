@@ -149,55 +149,23 @@ name "sec:Teste-1"
 
 \end_inset
 
-: Descrição
+: Entrada de dados
 \end_layout
 
 \begin_layout Standard
-Sobre o teste:
-\end_layout
-
-\begin_layout Itemize
-O que esta sendo testado (relacione com os requisitos, quais requisitos
- serão testados neste teste)? 
-\end_layout
-
-\begin_layout Itemize
-Objetivo do teste?
-\end_layout
-
-\begin_layout Itemize
-Como o teste será realizado (estratégia)?
-\end_layout
-
-\begin_layout Itemize
-Casos de teste: descrever entradas e saídas esperadas e se tem alguma condição
- específica.
-\end_layout
-
-\begin_layout Itemize
-Resultados dos testes: registram os resultados do teste; se deu tudo certo
- ou se tem algum erro/falha;
-\end_layout
-
-\begin_layout Itemize
-Data/hora/responsável pelo teste;
-\end_layout
-
-\begin_layout Standard
-A seguir apresente texto explicando a sequência do teste e imagens do programa
- (captura de tela).
-\end_layout
-
-\begin_layout Standard
-coloque aqui texto falando do diagrama de pacotes, referencie a figura.
- Veja Figura 
+O software inicia com a entrada de dados referentes ao problema como: tipo
+ de fluido, raio de poço, viscosidade, fator volume formação do fluido e
+ etc.
+ Os dados são inseridos via teclado pelo usuário 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Teste-TelaPrograma-Captura1"
+reference "fig:Software-Entrada-Dados"
 
 \end_inset
 
 .
+ É importante notar que os tipos de dados inseridos está condicionado ao
+ método de IPR que será utilizado nos cálculos.
 \end_layout
 
 \begin_layout Standard
@@ -210,7 +178,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/Interface-Simulador-Transcal-Guilherme2.png
+	filename imagens/EntradaDados.png
 	width 100text%
 
 \end_inset
@@ -222,10 +190,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Tela do programa mostrando xxx
+Software - Entrada de dados.
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Teste-TelaPrograma-Captura1"
+name "fig:Software-Entrada-Dados"
 
 \end_inset
 
@@ -250,65 +218,21 @@ name "sec:Teste-2"
 
 \end_inset
 
-: Descrição
+: Cálculos
 \end_layout
 
 \begin_layout Standard
-Sobre o teste:
-\end_layout
-
-\begin_layout Itemize
-O que esta sendo testado (relacione com os requisitos, quais requisitos
- serão testados neste teste)? 
-\end_layout
-
-\begin_layout Itemize
-Objetivo do teste?
-\end_layout
-
-\begin_layout Itemize
-Como o teste será realizado (estratégia)?
-\end_layout
-
-\begin_layout Itemize
-Casos de teste: descrever entradas e saídas esperadas e se tem alguma condição
- específica.
-\end_layout
-
-\begin_layout Itemize
-Resultados dos testes: registram os resultados do teste; se deu tudo certo
- ou se tem algum erro/falha;
-\end_layout
-
-\begin_layout Itemize
-Data/hora/responsável pelo teste;
-\end_layout
-
-\begin_layout Standard
-A seguir apresente texto explicando a sequência do teste e imagens do programa
- (captura de tela).
-\end_layout
-
-\begin_layout Standard
-Coloque aqui texto falando do diagrama de pacotes, referencie a figura.
- Veja Figura 
+Após a entrada de dados é realizado o cálculo de vazões com base no método
+ selecionado.
+ A saída dos resultados é gerada com o valor de vazão para a pressão de
+ fundo em questão
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Teste-TelaPrograma-1"
+reference "fig:Calculos"
 
 \end_inset
 
 .
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Na Figura simulador desenvolvido pelo aluno Tiago Schauwer
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -321,7 +245,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/Interface-Simulador-Tiago.png
+	filename imagens/CalculoMetodos.png
 	width 100text%
 
 \end_inset
@@ -333,10 +257,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Tela do programa mostrando xxx
+Cálculo de vazão.
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Teste-TelaPrograma-1"
+name "fig:Calculos"
 
 \end_inset
 
@@ -361,51 +285,16 @@ name "sec:Teste-3"
 
 \end_inset
 
-: Descrição
+: Plotar gráficos
 \end_layout
 
 \begin_layout Standard
-Sobre o teste:
-\end_layout
-
-\begin_layout Itemize
-O que esta sendo testado (relacione com os requisitos, quais requisitos
- serão testados neste teste)? 
-\end_layout
-
-\begin_layout Itemize
-Objetivo do teste?
-\end_layout
-
-\begin_layout Itemize
-Como o teste será realizado (estratégia)?
-\end_layout
-
-\begin_layout Itemize
-Casos de teste: descrever entradas e saídas esperadas e se tem alguma condição
- específica.
-\end_layout
-
-\begin_layout Itemize
-Resultados dos testes: registram os resultados do teste; se deu tudo certo
- ou se tem algum erro/falha;
-\end_layout
-
-\begin_layout Itemize
-Data/hora/responsável pelo teste;
-\end_layout
-
-\begin_layout Standard
-A seguir apresente texto explicando a sequência do teste e imagens do programa
- (captura de tela).
-\end_layout
-
-\begin_layout Standard
-coloque aqui texto falando do diagrama de pacotes, referencie a figura.
- Veja Figura 
+Após a entrada de dados e cálculo dos resultados o usuário pode optar pelo
+ plot das curvas.
+ Os resultados quando comparados à literatura foram satisfatórios 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Teste-TelaPrograma-Captura1-1"
+reference "fig:Plot-graficos"
 
 \end_inset
 
@@ -422,7 +311,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/Interface-SimuladorTranscal-Nicholas.png
+	filename imagens/Plotar-Graficos.png
 	lyxscale 25
 	width 100text%
 
@@ -435,10 +324,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Tela do programa mostrando xxx
+Gráfico IPR generalizada
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Teste-TelaPrograma-Captura1-1"
+name "fig:Plot-graficos"
 
 \end_inset
 
@@ -455,25 +344,66 @@ name "fig:Teste-TelaPrograma-Captura1-1"
 
 \end_layout
 
-\begin_layout Description
-Nota: 
-\begin_inset space ~
+\begin_layout Section
+Teste 4
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Teste-4"
+
 \end_inset
 
+: Salvar gráficos
+\end_layout
 
-\begin_inset Newline newline
+\begin_layout Standard
+Após o gráfico ser gerado o usuário possui a autonomia de salvar o gráfico
+ e executar novamente o programa para utilizar outros métodos de cálculo
+ de IPR 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Salvar-Graficos"
+
 \end_inset
 
-Não perca de vista a visão do todo; do projeto de engenharia como um todo.
- Cada capítulo, cada seção, cada parágrafo deve se encaixar.
- Este é um diferencial fundamental do engenheiro em relação ao técnico,
- a capacidade de desenvolver projetos, de ver o todo e suas diferentes partes,
- de modelar processos/sistemas/produtos de engenharia.
-\begin_inset Note Note
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-apague!
+\align center
+\begin_inset Graphics
+	filename imagens/SalvarGraficos.png
+	lyxscale 25
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfico IPR generalizada
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Salvar-Graficos"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
