@@ -5,9 +5,31 @@
 \save_transient_properties true
 \origin unavailable
 \textclass extbook
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\options normaltoc, sumarioincompleto
 \use_default_options true
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
 \maintain_unincluded_children false
-\language english
+\language brazilian
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -28,11 +50,11 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize default
-\spacing single
+\paperfontsize 12
+\spacing onehalf
 \use_hyperref false
-\papersize default
-\use_geometry false
+\papersize a4paper
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -51,12 +73,16 @@
 \paperorientation portrait
 \suppress_date false
 \justification true
-\use_refstyle 1
+\use_refstyle 0
 \use_minted 0
 \index Index
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -67,7 +93,7 @@
 \dynamic_quotes 0
 \papercolumns 1
 \papersides 1
-\paperpagestyle default
+\paperpagestyle fancy
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -79,8 +105,13 @@
 
 \begin_layout Standard
 \align block
+\begin_inset CommandInset include
+LatexCommand include
+filename "Cap0-Capa-ProjetoDisciplina.lyx"
 
-\lang brazilian
+\end_inset
+
+
 \begin_inset CommandInset include
 LatexCommand include
 filename "Cap0-Introducao-Escopo-Objetivos.lyx"
@@ -92,8 +123,6 @@ filename "Cap0-Introducao-Escopo-Objetivos.lyx"
 
 \begin_layout Standard
 \align block
-
-\lang brazilian
 \begin_inset CommandInset include
 LatexCommand include
 filename "Cap1-Concepcao.lyx"
@@ -105,8 +134,6 @@ filename "Cap1-Concepcao.lyx"
 
 \begin_layout Standard
 \align block
-
-\lang brazilian
 \begin_inset CommandInset include
 LatexCommand include
 filename "Cap2-Elaboracao.lyx"
@@ -118,8 +145,6 @@ filename "Cap2-Elaboracao.lyx"
 
 \begin_layout Standard
 \align block
-
-\lang brazilian
 \begin_inset CommandInset include
 LatexCommand include
 filename "Cap3-AnaliseOrientadaAObjeto.lyx"
@@ -131,8 +156,6 @@ filename "Cap3-AnaliseOrientadaAObjeto.lyx"
 
 \begin_layout Standard
 \align block
-
-\lang brazilian
 \begin_inset CommandInset include
 LatexCommand include
 filename "Cap4-Projeto.lyx"
@@ -144,21 +167,6 @@ filename "Cap4-Projeto.lyx"
 
 \begin_layout Standard
 \align block
-
-\lang brazilian
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap5-Ciclos-Planejamento-Detalhamento.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align block
-
-\lang brazilian
 \begin_inset CommandInset include
 LatexCommand include
 filename "Cap6-Ciclos-Construcao-Implementacao.lyx"
@@ -170,8 +178,6 @@ filename "Cap6-Ciclos-Construcao-Implementacao.lyx"
 
 \begin_layout Standard
 \align block
-
-\lang brazilian
 \begin_inset CommandInset include
 LatexCommand include
 filename "Cap7-Teste.lyx"
@@ -183,8 +189,6 @@ filename "Cap7-Teste.lyx"
 
 \begin_layout Standard
 \align block
-
-\lang brazilian
 \begin_inset CommandInset include
 LatexCommand include
 filename "Cap8-DocumentacaoDoDesenvolvedor.lyx"
@@ -197,8 +201,6 @@ filename "Cap8-DocumentacaoDoDesenvolvedor.lyx"
 \begin_layout Standard
 \noindent
 \align block
-
-\lang brazilian
 \begin_inset ERT
 status open
 
@@ -220,8 +222,6 @@ rhead{}
 
 \begin_layout Standard
 \noindent
-
-\lang brazilian
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "bibliografia"
@@ -230,41 +230,9 @@ options "apalike"
 \end_inset
 
 
-\begin_inset Separator latexpar
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
-\align block
-
-\lang brazilian
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap-Apendice-A.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align block
-
-\lang brazilian
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap-Apendice-B.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang brazilian
 \begin_inset CommandInset index_print
 LatexCommand printindex
 type "idx"

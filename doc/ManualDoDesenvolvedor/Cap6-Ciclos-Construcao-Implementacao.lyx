@@ -46,7 +46,7 @@
 \use_dash_ligatures true
 \graphics default
 \default_output_format default
-\output_sync 0
+\output_sync 1
 \bibtex_command default
 \index_command default
 \float_placement p
@@ -308,11 +308,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CFluido}, label={CFluid
-o-h}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEm
-PocosVerticais/src/CFluido.h}
+o-h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/CFluido.h}
 \end_layout
 
 \begin_layout Plain Layout
@@ -353,11 +356,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe COleo}, label={COleo-h}
-] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPoco
-sVerticais/src/COleo.h}
+,extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/COleo.h}
 \end_layout
 
 \begin_layout Plain Layout
@@ -398,11 +404,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
-lstinputlisting[ caption={Arquivo de cabeçalho da classe CGas}, label={CGas-h}]
- {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocos
-Verticais/src/CGas.h}
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CGas}, label={CGas-h},e
+xtendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/CGas.h}
 \end_layout
 
 \begin_layout Plain Layout
@@ -441,11 +450,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CTipoFluido}, label={CT
-ipoFluido-h}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmp
-iricosEmPocosVerticais/src/CTipoFluido.h}
+ipoFluido-h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/CTipoFluido.h}
 \end_layout
 
 \begin_layout Plain Layout
@@ -486,11 +498,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CRocha.}, label={CRocha.-
-h}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPo
-cosVerticais/src/CRocha..h}
+h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/CRocha.h}
 \end_layout
 
 \begin_layout Plain Layout
@@ -531,11 +546,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CReservatorio},
- label={CReservatorio-h}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizan
-doModelosEmpiricosEmPocosVerticais/src/CReservatorio.h}
+ label={CReservatorio-h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/CReservatorio.h}
 \end_layout
 
 \begin_layout Plain Layout
@@ -577,11 +595,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CReservatorio},
- label={CReservatorio-cpp}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtiliz
-andoModelosEmpiricosEmPocosVerticais/src/CReservatorio.cpp}
+ label={CReservatorio-cpp},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/CReservatorio.cpp}
 \end_layout
 
 \begin_layout Plain Layout
@@ -622,11 +643,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CGeometria}, label={CGe
-ometria-h}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpir
-icosEmPocosVerticais/src/CGeometria.h}
+ometria-h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/CGeometria.h}
 \end_layout
 
 \begin_layout Plain Layout
@@ -667,11 +691,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CLinear}, label={CLinea
-r-h}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEm
-PocosVerticais/src/CLinear.h}
+r-h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/CLinear.h}
 \end_layout
 
 \begin_layout Plain Layout
@@ -713,11 +740,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CLinear}, label={CL
-inear-cpp}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpir
-icosEmPocosVerticais/src/CLinear.cpp}
+inear-cpp},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/CLinear.cpp}
 \end_layout
 
 \begin_layout Plain Layout
@@ -758,11 +788,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CRadial}, label={CRadia
-l-h}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEm
-PocosVerticais/src/CRadial.h}
+l-h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/CRadial.h}
 \end_layout
 
 \begin_layout Plain Layout
@@ -804,11 +837,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CRadial}, label={CR
-adial-cpp}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpir
-icosEmPocosVerticais/src/CRadial.cpp}
+adial-cpp},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/CRadial.cpp}
 \end_layout
 
 \begin_layout Plain Layout
@@ -847,11 +883,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CTipoGeometria},
- label={CTipoGeometria-h}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtiliza
-ndoModelosEmpiricosEmPocosVerticais/src/CTipoGeometria.h}
+ label={CTipoGeometria-h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/CTipoGeometria.h}
 \end_layout
 
 \begin_layout Plain Layout
@@ -892,11 +931,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CPoco}, label={CPoco-h}
-] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPoco
-sVerticais/src/CPoco.h}
+,extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/CPoco.h}
 \end_layout
 
 \begin_layout Plain Layout
@@ -938,11 +980,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CPoco}, label={CPoc
-o-cpp}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricos
-EmPocosVerticais/src/CPoco.cpp}
+o-cpp},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/CPoco.cpp}
 \end_layout
 
 \begin_layout Plain Layout
@@ -983,11 +1028,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
-lstinputlisting[ caption={Arquivo de cabeçalho da classe CIPR}, label={CIPR-h}]
- {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocos
-Verticais/src/CIPR.h}
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CIPR}, label={CIPR-h},e
+xtendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/CIPR.h}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1029,11 +1077,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CIPR}, label={CIPR-
-cpp}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEm
-PocosVerticais/src/CIPR.cpp}
+cpp},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/CIPR.cpp}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1074,11 +1125,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CIPRLinear}, label={CIP
-RLinear-h}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpir
-icosEmPocosVerticais/src/CIPRLinear.h}
+RLinear-h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/CIPRLinear.h}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1120,11 +1174,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CIPRLinear},
- label={CIPRLinear-cpp}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizand
-oModelosEmpiricosEmPocosVerticais/src/CIPRLinear.cpp}
+ label={CIPRLinear-cpp},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/CIPRLinear.cpp}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1165,11 +1222,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CIPRFetkovich},
- label={CIPRFetkovich-h}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizan
-doModelosEmpiricosEmPocosVerticais/src/CIPRFetkovich.h}
+ label={CIPRFetkovich-h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/CIPRFetkovich.h}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1211,11 +1271,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CIPRFetkovich},
- label={CIPRFetkovich-cpp}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtiliz
-andoModelosEmpiricosEmPocosVerticais/src/CIPRFetkovich.cpp}
+ label={CIPRFetkovich-cpp},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/CIPRFetkovich.cpp}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1256,11 +1319,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CIPRVogel}, label={CIPR
-Vogel-h}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiric
-osEmPocosVerticais/src/CIPRVogel.h}
+Vogel-h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/CIPRVogel.h}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1302,11 +1368,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CIPRVogel},
- label={CIPRVogel-cpp}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizando
-ModelosEmpiricosEmPocosVerticais/src/CIPRVogel.cpp}
+ label={CIPRVogel-cpp},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/CIPRVogel.cpp}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1347,11 +1416,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CIPRGeneralizada},
- label={CIPRGeneralizada-h}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtili
-zandoModelosEmpiricosEmPocosVerticais/src/CIPRGeneralizada.h}
+ label={CIPRGeneralizada-h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/CIPRGeneralizada.h}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1393,11 +1465,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CIPRGeneralizada},
- label={CIPRGeneralizada-cpp}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUti
-lizandoModelosEmpiricosEmPocosVerticais/src/CIPRGeneralizada.cpp}
+ label={CIPRGeneralizada-cpp},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/CIPRGeneralizada.cpp}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1438,11 +1513,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CReservatorio},
- label={CReservatorio-h}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizan
-doModelosEmpiricosEmPocosVerticais/src/CReservatorio.h}
+ label={CReservatorio-h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/CReservatorio.h}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1483,11 +1561,14 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CSimuladorCurvasIPR},
- label={CSimuladorCurvasIPR-h}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUt
-ilizandoModelosEmpiricosEmPocosVerticais/src/CSimuladorCurvasIPR.h}
+ label={CSimuladorCurvasIPR-h},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/CSimuladorCurvasIPR.h}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1529,100 +1610,15 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CSimuladorCurvasIPR
-}, label={CSimuladorCurvasIPR-cpp}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasI
-PRUtilizandoModelosEmpiricosEmPocosVerticais/src/CSimuladorCurvasIPR.cpp}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Apresenta-se na listagem 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
+}, label={CSimuladorCurvasIPR-cpp},extendedchars=true,breaklines=true,basicstyle
+=
 \backslash
-ref{CCGnuplot-h}
-\end_layout
-
-\end_inset
-
-o arquivo com código da classe 
-\family typewriter
-CCGnuplot.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
+footnotesize
 \backslash
-lstset{style=C++} 
-\backslash
-lstinputlisting[ caption={Arquivo de cabeçalho da classe CCGnuplot}, label={CCGn
-uplot-h}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiric
-osEmPocosVerticais/src/CCGnuplot.h}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Apresenta-se na listagem 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-ref{CCGnuplot-cpp}
-\end_layout
-
-\end_inset
-
- o arquivo de implementação da classe 
-\family typewriter
-CCGnuplot
-\family default
-.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstset{style=C++} 
-\backslash
-lstinputlisting[ caption={Arquivo de implementação da classe CCGnuplot},
- label={CCGnuplot-cpp}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizando
-ModelosEmpiricosEmPocosVerticais/src/CCGnuplot.cpp}
+tt] {../../src/CSimuladorCurvasIPR.cpp}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1664,34 +1660,19 @@ status open
 
 
 \backslash
-lstset{style=C++} 
+lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da função 
 \backslash
-texttt{main()}}, label={main-cpp}] {GitHub/ProjetoEngenharia-SimulacaoDeCurvasIP
-RUtilizandoModelosEmpiricosEmPocosVerticais/src/main.cpp}
+texttt{main()}}, label={main-cpp},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../src/main.cpp}
 \end_layout
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstset{style=out}   
-\backslash
-lstinputlisting[caption=] {../../src/Programa.out}
 \end_layout
 
 \end_inset

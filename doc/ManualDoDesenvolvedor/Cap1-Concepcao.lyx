@@ -50,7 +50,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\float_placement ph
+\float_placement h
 \paperfontsize 12
 \spacing onehalf
 \use_hyperref false
@@ -97,13 +97,11 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes true
+\tracking_changes false
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
-\author 260200347 "giova"
-\author 1635264300 "andreduartebueno" andreduartebueno@gmail.com
 \end_header
 
 \begin_body
@@ -340,15 +338,9 @@ especificação
 \end_layout
 
 \begin_layout Standard
-O presente projeto tem como objetivo a criação de um software 
-\change_deleted 1635264300 1698146208
-avançado
-\change_unchanged
- de simulação de curvas IPR (
-\emph on
-Inflow Performance Relationship
-\emph default
-), utilizando modelos empíricos para poços verticais de petróleo.
+O presente projeto tem como objetivo a criação de um software avançado de
+ simulação de curvas IPR (Inflow Performance Relationship), utilizando modelos
+ empíricos para poços verticais de petróleo.
  A simulação de curvas IPR desempenha um papel crucial na indústria de petróleo,
  permitindo estimativas precisas da produtividade dos poços e auxiliando
  na tomada de decisões estratégicas.
@@ -519,37 +511,7 @@ RF-03
 \begin_inset Text
 
 \begin_layout Plain Layout
-O usuário poderá plotar suas curvas em um gráfic
-\change_inserted 260200347 1698347474
-o e este poderá ser salvo como imagem.
- Os detalhes serão explicados no manual do usuário.3
-\change_deleted 260200347 1698347293
-o utilizando o Gnuplot
-\change_inserted 1635264300 1698146590
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1635264300 1698146661
-normalmente não entramos em detalhes sobre qual ferramenta gráfica iremos
- utilizar aqui; isto é feito no capítulo de projeto, lá é que definimos
- quais bibliotecas e softwares auxiliares iremos usar; note que podemos
- usar gnuplot, mas também QCustomPlot ou ainda programas externos como scilab,
- octave,...
-
-\change_inserted 260200347 1698351066
- Texto corrigido.
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-.
+O usuário poderá plotar suas curvas em um gráfico utilizando o Gnuplot.
  O gráfico poderá ser salvo como imagem.
 \end_layout
 
@@ -560,25 +522,6 @@ normalmente não entramos em detalhes sobre qual ferramenta gráfica iremos
 
 \end_inset
 
-
-\change_inserted 1635264300 1698146690
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1635264300 1698146714
-vocês terão de fazer o manual do usuário, então coloque como requisito a
- existência do manual do usuário
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
 
 \end_layout
 
@@ -756,10 +699,6 @@ status open
 
 \begin_layout Plain Layout
 Caso de uso
-\change_inserted 1635264300 1698146734
- geral
-\change_unchanged
-
 \begin_inset CommandInset label
 LatexCommand label
 name "cap:Caso-de-uso (tabela)"
@@ -890,28 +829,8 @@ Cenários alternativos:
 \begin_inset Text
 
 \begin_layout Plain Layout
-Inserir valores negativos
-\change_inserted 1635264300 1698146767
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1635264300 1698146776
-todos os valores são sempre positivos? 
-\change_inserted 260200347 1698351035
-Sim.
- São valores de parâmetros de rocha, fluidos e pressões.
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
- ou incompatíveis com a ordem de grandeza de um reservatório real.
+Inserir valores negativos ou incompatíveis com a ordem de grandeza de um
+ reservatório real.
 \end_layout
 
 \end_inset
@@ -951,34 +870,6 @@ reference "cap:Diagrama-caso-uso-geral"
  reservatório e poço), selecionando o modelo mais adequado para o problema
  que ele possuir e analisando os resultados obtidos.
  
-\change_inserted 1635264300 1698146802
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1635264300 1698146847
-não esqueça de adicionar o arquivo .xmi do umbrello; o umbrello permite seleciona
-r objetos e colocar cores;
-\end_layout
-
-\begin_layout Plain Layout
-
-\change_inserted 1635264300 1698146872
-gerar curvas vai interagir com software externo, precisa adicionar bonequinho
- "Software Gráfico"
-\change_inserted 260200347 1698351391
- Diagrama revisado.
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
 \begin_inset VSpace bigskip
 \end_inset
 
@@ -1063,34 +954,6 @@ reference "cap:Diagrama-de-caso-de-uso-especifico"
 .
  O usuário entrará com o número de camadas do reservatório e com as propriedades
  de cada camada do reservatório para obtenção das curvas.
-\change_inserted 1635264300 1698146928
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1635264300 1698146956
-você pode repetir o gráfico anterior e adicionar com cores diferentes o
- que é diferente, o que é novo;
-\end_layout
-
-\begin_layout Plain Layout
-
-\change_inserted 1635264300 1698146980
-se tiver outros casos diferentes considere adicionar o diagrama de caso
- de uso; 
-\change_inserted 260200347 1698501111
-Diagrama corrigido.
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
 \begin_inset VSpace bigskip
 \end_inset
 

@@ -50,7 +50,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\float_placement H
+\float_placement h
 \paperfontsize 12
 \spacing onehalf
 \use_hyperref false

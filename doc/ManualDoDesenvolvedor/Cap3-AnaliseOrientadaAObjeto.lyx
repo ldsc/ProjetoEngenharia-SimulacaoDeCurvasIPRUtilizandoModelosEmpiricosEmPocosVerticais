@@ -36,7 +36,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\float_placement p
+\float_placement h
 \paperfontsize 12
 \spacing onehalf
 \use_hyperref false
@@ -624,7 +624,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagramaSequenciaGeral.png
+	filename imagens/DiagramaGeral.png
 	lyxscale 85
 	width 100text%
 
@@ -697,6 +697,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/DiagramaSequenciaEspecifico.png
+	scale 80
+	rotateAngle 90
 
 \end_inset
 
@@ -827,7 +829,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Atila Júnior/Documents/GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocosVerticais/doc/ManualDoDesenvolvedor/imagens/DiagramaDeComunicacao.png
+	filename imagens/DiagramaDeComunicacao.png
 	lyxscale 85
 	width 100text%
 
@@ -926,7 +928,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Atila Júnior/Documents/GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocosVerticais/doc/ManualDoDesenvolvedor/imagens/Diagrama_de_Estado_Simulação_IPR.png
+	filename imagens/Diagrama_de_Estado_Simulação_IPR.png
 	lyxscale 85
 	width 100text%
 
@@ -996,7 +998,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Atila Júnior/Documents/GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocosVerticais/doc/ManualDoDesenvolvedor/imagens/Diagrama_de_Atividades_IPR.png
+	filename imagens/Diagrama_de_Atividades_IPR.png
 	lyxscale 85
 	width 100text%
 
