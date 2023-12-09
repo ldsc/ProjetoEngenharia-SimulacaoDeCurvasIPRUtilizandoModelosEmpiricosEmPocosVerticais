@@ -5,7 +5,7 @@
 
 #include <iostream>
 
-//Declaração de CGas que herda de CFluido
+//Declaracao de CGas que herda de CFluido
 
 class CGas : public CFluido {
 	
@@ -18,8 +18,8 @@ class CGas : public CFluido {
 		CGas(){}; // Construtor
 		~CGas(){}; // Destrutor
 				
-		double FatorZ() const {return fatorZ;} // Método get para a constante dos gases
-		void FatorZ (double _fatorZ) {fatorZ = _fatorZ;} // Método set para a constante dos gases
+		double FatorZ() const {return fatorZ;} // Metodo get para a constante dos gases
+		void FatorZ (double _fatorZ) {fatorZ = _fatorZ;} // Metodo set para a constante dos gases
 		
 };
 

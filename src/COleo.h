@@ -5,7 +5,7 @@
 
 #include <iostream>
 
-//Declaração de COleo que herda de CFluido
+//Declaracao de COleo que herda de CFluido
 
 class COleo : public CFluido {
 	

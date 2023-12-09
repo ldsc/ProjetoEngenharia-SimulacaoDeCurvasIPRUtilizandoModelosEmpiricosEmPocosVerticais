@@ -19,14 +19,14 @@ class CRocha {
 		CRocha(){}; // Construtor
 		~CRocha(){}; // Destrutor
 	
-		double CompRocha() const {return compRocha;} // Método get para a compressibilidade da rocha
-		void CompRocha (double _compRocha) {compRocha = _compRocha;} // Método set para a compressibilidade da rocha
+		double CompRocha() const {return compRocha;} // Metodo get para a compressibilidade da rocha
+		void CompRocha (double _compRocha) {compRocha = _compRocha;} // Metodo set para a compressibilidade da rocha
 		
-		double Porosidade() const {return porosidade;} // Método get para a porosidade da rocha
-		void Porosidade (double _porosidade) {porosidade = _porosidade;} // Método set para a porosidade da rocha
+		double Porosidade() const {return porosidade;} // Metodo get para a porosidade da rocha
+		void Porosidade (double _porosidade) {porosidade = _porosidade;} // Metodo set para a porosidade da rocha
 		
-		double Permeabilidade() const {return permeabilidade;} // Método get para a permeabilidade da rocha
-		void Permeabilidade (double _permeabilidade) {permeabilidade = _permeabilidade;} // Método set para a permeabilidade da rocha
+		double Permeabilidade() const {return permeabilidade;} // Metodo get para a permeabilidade da rocha
+		void Permeabilidade (double _permeabilidade) {permeabilidade = _permeabilidade;} // Metodo set para a permeabilidade da rocha
 		
 };
 

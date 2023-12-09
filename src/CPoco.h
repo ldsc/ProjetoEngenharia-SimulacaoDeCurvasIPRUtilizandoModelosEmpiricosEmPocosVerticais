@@ -7,27 +7,27 @@ class CPoco{
 	
 	protected:
 		
-		double raioPoco; // Raio do poço
-		double pwf; // Pressão de fundo
-        double area; // Área do poço
-        double vazaoProducao; // Vazão de produção
+		double raioPoco; // Raio do poco
+		double pwf; // Pressao de fundo
+        double area; // Area do poco
+        double vazaoProducao; // Vazao de producao
 		
 	public:
 	
 		CPoco(){}; // Construtor
 		~CPoco(){}; // Destrutor
 	
-		void CalcArea(); // Método de cálculo da área
+		void CalcArea(); // Metodo de calculo da area
         double getArea() {return area; }
 
-		double getRaioPoco() const {return raioPoco;} // Método get para o raio do poço
-		void setRaioPoco (double _raioPoco) {raioPoco = _raioPoco;} // Método set para o raio do poço
+		double getRaioPoco() const {return raioPoco;} // Metodo get para o raio do poco
+		void setRaioPoco (double _raioPoco) {raioPoco = _raioPoco;} // Metodo set para o raio do poco
 		
-		double getPressao() const {return pwf;} // Método get para a pressão de fundo
-		void setPressao (double _pwf) {pwf = _pwf;} // Método set para a pressão de fundo
+		double getPressao() const {return pwf;} // Metodo get para a pressao de fundo
+		void setPressao (double _pwf) {pwf = _pwf;} // Metodo set para a pressao de fundo
 
-        double getVazaoProducao() {return vazaoProducao;} // Método get para a vazão de produção
-        void setVazaoProducao(double _vazaoProducao) { vazaoProducao = _vazaoProducao;} // Método set para a vazão de produção
+        double getVazaoProducao() {return vazaoProducao;} // Metodo get para a vazao de producao
+        void setVazaoProducao(double _vazaoProducao) { vazaoProducao = _vazaoProducao;} // Metodo set para a vazao de producao
 
 };
 #endif

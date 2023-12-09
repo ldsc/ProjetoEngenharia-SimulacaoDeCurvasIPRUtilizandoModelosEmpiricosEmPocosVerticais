@@ -2,7 +2,7 @@
 #define CVogel_H
 
 #include "CFluido.h"
-//#include "CReservatorio.h"
+#include "CReservatorio.h"
 #include "CPoco.h"
 #include "CIPR.h"
 

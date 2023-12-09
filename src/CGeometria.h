@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-//Classe CGeometria que representa a geometria da rocha reservatório 
+//Classe CGeometria que representa a geometria da rocha reservatorio 
 
 class CGeometria{
 	
@@ -18,7 +18,7 @@ class CGeometria{
 		
 		virtual void Area() {}
 		
-		double getArea () {return area;} // Puxar área da geometria em questão
+		double getArea () {return area;} // Puxar area da geometria em questão
 	
 };
 

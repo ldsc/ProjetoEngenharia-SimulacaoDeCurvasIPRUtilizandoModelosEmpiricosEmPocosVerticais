@@ -4,6 +4,6 @@
 
 void CPoco::CalcArea(){
 	
-	area = (2.0 * M_PI * raioPoco * raioPoco) / 4.0; // Cálculo área do poço
+	area = (2.0 * M_PI * raioPoco * raioPoco) / 4.0; // Cálculo area do poco
 	
 };

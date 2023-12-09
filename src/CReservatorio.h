@@ -1,7 +1,7 @@
 #ifndef CReservatorio_h
 #define CReservatorio_h
 
-// Inclusão dos arquivos de cabeçalho
+// Inclusao dos arquivos de cabecalho
 
 #include "CRocha.h"
 #include "CGeometria.h"
@@ -16,23 +16,23 @@
 
 #include <iostream>
 
-// Classe CReservatório que representa o reservatório 
+// Classe CReservatorio que representa o reservatorio 
 
 class CReservatorio: public CRocha {
 	
 	protected:
 		
-		double espessura; // Espessura do reservatório
+		double espessura; // Espessura do reservatorio
 		double EulerCte = 1.781; // Constante de Euler
-		double fatorPelicula; // Fator de película do reservatório
-		double pressaoBolha; // Pressão de bolha do reservatório
-		double pressaoInicial; // Pressão média inicial do reservatório
+		double fatorPelicula; // Fator de pelicula do reservatorio
+		double pressaoBolha; // Pressao de bolha do reservatorio
+		double pressaoInicial; // Pressao media inicial do reservatorio
 		double temperatura; // Temperatura
 		double coeficienteDietz; // Coeficiente de Dietz
-		double indiceProdutividade; // Indice de Produtividade do reservatório
-		CTipoGeometria enumeracaoGeometria; // Enumeração para escolha do tipo de geometria
-		CTipoFluido enumeracaoFluido; // Enumeração para escolha do tipo de fluido
-		CPoco poco; // Objeto de CPoco associado a reservatório
+		double indiceProdutividade; // Indice de Produtividade do reservatorio
+		CTipoGeometria enumeracaoGeometria; // Enumeracao para escolha do tipo de geometria
+		CTipoFluido enumeracaoFluido; // Enumeracao para escolha do tipo de fluido
+		CPoco poco; // Objeto de CPoco associado a reservatorio
 		
 	public:
 		
@@ -40,34 +40,34 @@ class CReservatorio: public CRocha {
 		
 		~CReservatorio () {} // Destrutor
 		
-		double Espessura () const {return espessura;} // Método get para a espessura
-		void Espessura (double _espessura) {espessura = _espessura;} // Método set para a espessura
+		double Espessura () const {return espessura;} // Metodo get para a espessura
+		void Espessura (double _espessura) {espessura = _espessura;} // Metodo set para a espessura
 		
-		double FatorPelicula() const {return fatorPelicula;} // Método get para a fatorPelicula
-		void FatorPelicula (double _fatorPelicula) {fatorPelicula = _fatorPelicula;} // Método set para a fatorPelicula
+		double FatorPelicula() const {return fatorPelicula;} // Metodo get para a fatorPelicula
+		void FatorPelicula (double _fatorPelicula) {fatorPelicula = _fatorPelicula;} // Metodo set para a fatorPelicula
 		
-		double PressaoBolha() const {return pressaoBolha;} // Método get para a pressaoBolha
-		void PressaoBolha (double _pressaoBolha) {pressaoBolha = _pressaoBolha;} // Método set para a pressaoBolha
+		double PressaoBolha() const {return pressaoBolha;} // Metodo get para a pressaoBolha
+		void PressaoBolha (double _pressaoBolha) {pressaoBolha = _pressaoBolha;} // Metodo set para a pressaoBolha
 		
-		double PressaoInicial() const {return pressaoInicial;} // Método get para a pressaoInicial
-		void PressaoInicial (double _pressaoInicial) {pressaoInicial = _pressaoInicial;} // Método set para a pressaoInicial
+		double PressaoInicial() const {return pressaoInicial;} // Metodo get para a pressaoInicial
+		void PressaoInicial (double _pressaoInicial) {pressaoInicial = _pressaoInicial;} // Metodo set para a pressaoInicial
 		
-		double Temperatura() const {return temperatura;} // Método get para a temperatura
-		void Temperatura (double _temperatura) {temperatura = _temperatura;} // Método set para a temperatura
+		double Temperatura() const {return temperatura;} // Metodo get para a temperatura
+		void Temperatura (double _temperatura) {temperatura = _temperatura;} // Metodo set para a temperatura
 		
-		void setGeometria(CTipoGeometria _enumeracaoGeometria); // Método set para o tipo de geometria
+		void setGeometria(CTipoGeometria _enumeracaoGeometria); // Metodo set para o tipo de geometria
 		
-		void setFluido(CTipoFluido _enumeracaoFluido); // Método set para o tipo de fluido
+		void setFluido(CTipoFluido _enumeracaoFluido); // Metodo set para o tipo de fluido
 		
-		void setFatorVolumeFormacao(double _fatorVolumeFormacao); // Método set para o fator volume-formação
+		void setFatorVolumeFormacao(double _fatorVolumeFormacao); // Metodo set para o fator volume-formacao
 		
-		void CoeficienteDietz(CTipoGeometria _enumeracaoGeometria); // Método para cálculo do Coeficiente de Dietz a ser utilizado
+		void CoeficienteDietz(CTipoGeometria _enumeracaoGeometria); // Metodo para calculo do Coeficiente de Dietz a ser utilizado
         double getCoeficienteDietz() { return coeficienteDietz; }
 		
-		void IndiceProdutividade(CFluido* _fluido, CGeometria* _geometria, CPoco& _poco); // Método para cálculo do Índice de Produtividade
+		void IndiceProdutividade(CFluido* _fluido, CGeometria* _geometria, CPoco& _poco); // Metodo para calculo do Indice de Produtividade
         double getIndiceProdutividade() {return indiceProdutividade; }
 		
-		double VazaoMaxima() {return ((indiceProdutividade * pressaoInicial)/1.8);} // Método para cálculo da máxima vazão obtida pelo reservatório (AOF)
+		double VazaoMaxima() {return ((indiceProdutividade * pressaoInicial)/1.8);} // Metodo para calculo da maxima vazao obtida pelo reservatorio (AOF)
 		
 };
 

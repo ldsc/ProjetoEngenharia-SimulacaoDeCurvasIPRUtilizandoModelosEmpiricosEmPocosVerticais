@@ -5,9 +5,9 @@
 
 enum class CTipoFluido {
 	
-	none = 0, oleo, gas // Definição da geometria por enumeração
+	none = 0, oleo, gas // Definicao da geometria por enumeracao
 	
-	// O usuário fica aberto a adicionar mais geometrias
+	// O usuario fica aberto a adicionar mais geometrias
 	
 };
 

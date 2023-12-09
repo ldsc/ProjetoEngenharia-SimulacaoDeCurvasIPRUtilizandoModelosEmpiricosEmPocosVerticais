@@ -10,19 +10,19 @@ class CLinear: public CGeometria {
 
 	protected:
 
-	double length; // Comprimento da rocha reservatório
-	double width; // Largura da rocha reservatório
+	double length; // Comprimento da rocha reservatorio
+	double width; // Largura da rocha reservatorio
 	
 	public:
 		
 		CLinear(); // Construtor default
 		~CLinear() {}; // Destrutor
 
-		double Length() {return length;} // Método get para o comprimento do reservatório
-		void Length (double _length) {length = _length;} // Método set para o comprimento do reservatório
+		double Length() {return length;} // Metodo get para o comprimento do reservatorio
+		void Length (double _length) {length = _length;} // Metodo set para o comprimento do reservatorio
 		
-		double Width() const {return width;} // Método get para a largura do reservatório
-		void Width (double _width) {width = _width;} // Método set para a largura do reservatório
+		double Width() const {return width;} // Metodo get para a largura do reservatorio
+		void Width (double _width) {width = _width;} // Metodo set para a largura do reservatorio
 				
 		virtual void Area() override;
 	

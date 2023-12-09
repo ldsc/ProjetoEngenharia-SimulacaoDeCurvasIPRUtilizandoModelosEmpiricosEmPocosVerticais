@@ -5,9 +5,9 @@
 
 enum class CTipoGeometria {
 	
-	none = 0, linear, radial // Definição da geometria por enumeração
+	none = 0, linear, radial // Definicao da geometria por enumeracao
 	
-	//O usuário fica aberto a adicionar mais geometrias
+	//O usuario fica aberto a adicionar mais geometrias
 	
 };
 

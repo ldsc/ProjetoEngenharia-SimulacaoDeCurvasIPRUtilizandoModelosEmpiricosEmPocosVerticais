@@ -7,7 +7,7 @@
 
 using namespace std;
 
-// Implementação do método CoeficienteDietz da classe CReservatorio
+// Implementacao do metodo CoeficienteDietz da classe CReservatorio
 void CReservatorio::CoeficienteDietz(CTipoGeometria _enumeracaoGeometria) {
 
 // Switch para atribuir o coeficiente de Dietz baseado no tipo de geometria
@@ -29,10 +29,10 @@ void CReservatorio::CoeficienteDietz(CTipoGeometria _enumeracaoGeometria) {
 
 }
 
-// Implementação do método IndiceProdutividade da classe CReservatorio
+// Implementacao do metodo IndiceProdutividade da classe CReservatorio
 void CReservatorio::IndiceProdutividade(CFluido* _fluido, CGeometria* _geometria, CPoco& _poco) {
 
-	// Cálculo do Índice de Produtividade usando os parâmetros do reservatório
+	// Calculo do Indice de Produtividade usando os parametros do reservatorio
 	indiceProdutividade = ((permeabilidade * espessura) / (141.2 * _fluido->FatorVolumeFormacao() * _fluido->Viscosidade() * (0.5 * log((4 * _geometria->getArea()) / (EulerCte * coeficienteDietz * _poco.getRaioPoco() * _poco.getRaioPoco())) + fatorPelicula)));
 
 }
