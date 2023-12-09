@@ -379,11 +379,10 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../../../Downloads/imagens/EngenhariaSoftware-Geral.png
+	filename imagens/EngenhariaSoftware-Geral.png
 	lyxscale 25
 	width 100text%
 	height 85theight%
-	keepAspectRatio
 
 \end_inset
 

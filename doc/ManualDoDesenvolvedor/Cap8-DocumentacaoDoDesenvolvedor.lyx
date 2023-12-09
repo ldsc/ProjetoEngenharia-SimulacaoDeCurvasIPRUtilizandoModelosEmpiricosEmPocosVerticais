@@ -149,6 +149,57 @@ Para compilar o software é necessário atender as seguintes dependências:
 \end_layout
 
 \begin_layout Itemize
+No sistema operacional GNU/Linux:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Instalar o compilador g++ da GNU disponível em 
+\begin_inset CommandInset href
+LatexCommand href
+name "http://www.gnuplot.info/"
+target "http://www.gnuplot.info/"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Para instalar no GNU/Linux use o comando 
+\family typewriter
+yum install gcc
+\family default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+No sistema operacional Windows:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Instalar um compilador apropriado.
+\end_layout
+
+\begin_layout Itemize
+Por ter sido testado, recomenda-se o Embarcadero disponível em 
+\begin_inset CommandInset href
+LatexCommand href
+name "https://www.embarcadero.com/br/products/delphi/downloads"
+target "https://www.embarcadero.com/br/products/delphi/downloads"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
 Instalar o compilador g++ da GNU disponível em 
 \begin_inset CommandInset href
 LatexCommand href
@@ -191,32 +242,6 @@ gnuplot
 \family default
 .
  
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Coloque aqui quaisquer dependências de arquivos com dados
-\end_layout
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Coloque aqui quaisquer dependências de softwares ou sistemas externos
-\end_layout
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Section
@@ -407,31 +432,10 @@ ou
 chrome html/index.html
 \end_layout
 
+\begin_layout LyX-Code
+
+\end_layout
+
 \end_deeper
-\begin_layout Standard
-Apresenta-se a seguir algumas imagens com as telas das saídas geradas pelo
- software 
-\family typewriter
-doxygen
-\family default
-.
-\end_layout
-
-\begin_layout Description
-Nota: 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-Não perca de vista a visão do todo; do projeto de engenharia como um todo.
- Cada capítulo, cada seção, cada parágrafo deve se encaixar.
- Este é um diferencial fundamental do engenheiro em relação ao técnico,
- a capacidade de desenvolver projetos, de ver o todo e suas diferentes partes,
- de modelar processos/sistemas/produtos de engenharia.
-\end_layout
-
 \end_body
 \end_document
