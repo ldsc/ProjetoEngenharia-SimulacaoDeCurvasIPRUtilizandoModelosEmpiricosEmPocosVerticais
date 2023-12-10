@@ -224,8 +224,9 @@ rhead{}
 \noindent
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
+btprint "btPrintAll"
 bibfiles "bibliografia"
-options "apalike"
+options "bibtotoc,plain"
 
 \end_inset
 
