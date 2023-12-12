@@ -32,6 +32,7 @@ class CSimuladorCurvasIPR {
         CPoco pocoDois; // Criando segundo objeto poco para IPR do tipo Fetkovich
         CIPR* IPR; // Ponteiro para apontar para o tipo de metodo
         CGeometria* forma; // Ponteiro para apontar a geometria do reservatorio
+        CTipoGeometria* geometria; // Ponteiro para apontar a geometria do reservatorio
         CFluido* fluido; // Ponteiro para apontar o tipo de fluido: gas ou oleo
         Gnuplot plot; // Criando objeto plot
         CMetodo metodo; // Criando objeto para enumeracao do metodo
