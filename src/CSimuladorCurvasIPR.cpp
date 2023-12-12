@@ -68,7 +68,16 @@ void CSimuladorCurvasIPR::EntradaDados() {
     cout << "----------------------------------------------------------------------------" << endl;
 
     cin >> metodo; // Recebe o tipo de metodo que o usuario entrar
+    
+    cout << "Qual a geometria do reservatorio?" << std::endl;
+	cout << "1 - Linear" << endl;
+	cout << "2 - Radial" << endl;
+	cout << "----------------------------------------------------------------------------" << endl;
 
+
+	CTipoGeometria geometria;
+
+    cin >> geometria;
     cin.get();
     
 	// Switch para o tipo de metodo de calculo
@@ -77,634 +86,1304 @@ void CSimuladorCurvasIPR::EntradaDados() {
         case CMetodo::IPR_LINEAR:
         
 		{
-        
-		    CTipoGeometria geometria = CTipoGeometria::linear;
-            cin.get();
-
-            forma = new CLinear;
-            CLinear* cast = dynamic_cast<CLinear*>(forma);
-
-            reservatorio.CoeficienteDietz(geometria);
-
-            cout << "Entre com o comprimento do reservatorio (FT)" << endl;
-
-            double esp;
-
-            cin >> esp;
-
-            cout << "Entre com a largura do reservatorio (FT)" << endl;
-
-            double lar;
-
-            cin >> lar;
-
-            cast-> Length(esp);
-            cast-> Width(lar);
-            cast-> Area();
-
-            cout << "Entre com o raio do poco (FT):" << endl;
-
-            double raio;
-
-            cin >> raio;
-
-            poco.setRaioPoco(raio);
-
-            cout << "Entre com a pressao inicial do reservatorio (PSIA): " << endl;
-
-            double pi;
-
-            cin >> pi;
-
-            reservatorio.PressaoInicial(pi);
-
-            cout << "Entre com a pressao de bolha do reservatorio (PSIA): " << endl;
-
-            double pb;
-
-            cin >> pb;
-
-            reservatorio.PressaoBolha(pb);
-
-            poco.CalcArea();
-
-            cout << "Qual tipo de fluido presente no reservatorio?" << std::endl;
-            cout << "1 - Oleo" << endl;
-            cout << "2 - Gas" << endl;
-            cout << "----------------------------------------------------------------------------" << endl;
-
-            CTipoFluido tipoFluido;
-
-            cin >> tipoFluido;
-            cin.get();
-
-            bool chs = true;
-
-            while(chs) 
-            
-			{
-                
-				switch (tipoFluido) // Switch para definicao do tipo de fluido
-                
+        	
+		    switch (geometria) {
+		    	
+				case CTipoGeometria::linear:
+				
 				{
-                    
-					case CTipoFluido::oleo: // Caso oleo, cria um novo objeto da classe COleo
-                        
-						{
 
-                        fluido = new COleo;
-                        cout << "Entre com fator volume de formacao do oleo: " << endl;
-                        double Bo;
-                        cin >> Bo;
-                        fluido->FatorVolumeFormacao(Bo);
-                        cout << "Entre com a viscosidade do fluido (CP):" << endl;
-                        double viscosidade;
-                        cin >> viscosidade;
-                        fluido->Viscosidade(viscosidade);
+            	cin.get();
 
-                        chs = false;
-                        break;
-                        
-						}
-                    
-					case CTipoFluido::gas: // Caso gas, cria um novo objeto da classe CGas
-                        
-						{
+            	forma = new CLinear;
+            	CLinear* cast = dynamic_cast<CLinear*>(forma);
 
-                        fluido = new CGas;
-                        cout << "Entre com fator volume de formacao do gas:" << endl;
-                        double Bg;
-                        cin >> Bg;
-                        fluido->FatorVolumeFormacao(Bg);
-                        cout << "Entre com a viscosidade do fluido (CP):" << endl;
-                        double viscosidade;
-                        cin >> viscosidade;
-                        fluido->Viscosidade(viscosidade);
+            	reservatorio.CoeficienteDietz(geometria);
 
-                        chs = false;
-                        break;
-                        
-						}
-                    
-					default:
-                        cout << "Entrada invalida!" << endl;
-                        cout << "Qual tipo de fluido presente no reservatorio? " << endl;
-                        cin >> tipoFluido;
-                        cin.get();
-                
-				}
+            	cout << "Entre com o comprimento do reservatorio (FT)" << endl;
 
-            }
-            
-            cout << "Entre com a espessura do reservatorio (FT):" << endl;
+            	double esp;
 
-            double espreservatorio;
+            	cin >> esp;
 
-            cin >> espreservatorio;
+            	cout << "Entre com a largura do reservatorio (FT)" << endl;
 
-            reservatorio.Espessura(espreservatorio);
+            	double lar;
 
-            cout << "Entre com a permeabilidade da rocha reservatorio (MD):" << endl;
+            	cin >> lar;
 
-            double perm;
+            	cast-> Length(esp);
+	            cast-> Width(lar);
+	            cast-> Area();
 
-            cin >> perm;
-
-            reservatorio.Permeabilidade(perm);
-
-            cout << "Entre com fator de pelicula do reservatorio:" << endl;
-
-            double s;
-
-            cin >> s;
-
-            reservatorio.FatorPelicula(s);
-
-            reservatorio.IndiceProdutividade(fluido, forma, poco);
-
-            cout << "IP = " << reservatorio.getIndiceProdutividade() << endl << endl;
-            
-            IPR = new CIPRLinear();
-
-            break;
+	            cout << "Entre com o raio do poco (FT):" << endl;
+	
+	            double raio;
+	
+	            cin >> raio;
+	
+	            poco.setRaioPoco(raio);
+	
+	            cout << "Entre com a pressao inicial do reservatorio (PSIA): " << endl;
+	
+	            double pi;
+	
+	            cin >> pi;
+	
+	            reservatorio.PressaoInicial(pi);
+	
+	            cout << "Entre com a pressao de bolha do reservatorio (PSIA): " << endl;
+	
+	            double pb;
+	
+	            cin >> pb;
+	
+	            reservatorio.PressaoBolha(pb);
+	
+	            poco.CalcArea();
+	
+	            cout << "Qual tipo de fluido presente no reservatorio?" << std::endl;
+	            cout << "1 - Oleo" << endl;
+	            cout << "2 - Gas" << endl;
+	            cout << "----------------------------------------------------------------------------" << endl;
+	
+	            CTipoFluido tipoFluido;
+	
+	            cin >> tipoFluido;
+	            cin.get();
+	
+	            bool chs = true;
+	
+	            while(chs) 
+	            
+				{
+	                
+					switch (tipoFluido) // Switch para definicao do tipo de fluido
+	                
+					{
+	                    
+						case CTipoFluido::oleo: // Caso oleo, cria um novo objeto da classe COleo
+	                        
+							{
+	
+	                        fluido = new COleo;
+	                        cout << "Entre com fator volume de formacao do oleo: " << endl;
+	                        double Bo;
+	                        cin >> Bo;
+	                        fluido->FatorVolumeFormacao(Bo);
+	                        cout << "Entre com a viscosidade do fluido (CP):" << endl;
+	                        double viscosidade;
+	                        cin >> viscosidade;
+	                        fluido->Viscosidade(viscosidade);
+	
+	                        chs = false;
+	                        break;
+	                        
+							}
+	                    
+						case CTipoFluido::gas: // Caso gas, cria um novo objeto da classe CGas
+	                        
+							{
+	
+	                        fluido = new CGas;
+	                        cout << "Entre com fator volume de formacao do gas:" << endl;
+	                        double Bg;
+	                        cin >> Bg;
+	                        fluido->FatorVolumeFormacao(Bg);
+	                        cout << "Entre com a viscosidade do fluido (CP):" << endl;
+	                        double viscosidade;
+	                        cin >> viscosidade;
+	                        fluido->Viscosidade(viscosidade);
+	
+	                        chs = false;
+	                        break;
+	                        
+							}
+	                    
+						default:
+	                        cout << "Entrada invalida!" << endl;
+	                        cout << "Qual tipo de fluido presente no reservatorio? " << endl;
+	                        cin >> tipoFluido;
+	                        cin.get();
+	                
+					}
+	
+	            }
+	            
+	            cout << "Entre com a espessura do reservatorio (FT):" << endl;
+	
+	            double espreservatorio;
+	
+	            cin >> espreservatorio;
+	
+	            reservatorio.Espessura(espreservatorio);
+	
+	            cout << "Entre com a permeabilidade da rocha reservatorio (MD):" << endl;
+	
+	            double perm;
+	
+	            cin >> perm;
+	
+	            reservatorio.Permeabilidade(perm);
+	
+	            cout << "Entre com fator de pelicula do reservatorio:" << endl;
+	
+	            double s;
+	
+	            cin >> s;
+	
+	            reservatorio.FatorPelicula(s);
+	
+	            reservatorio.IndiceProdutividade(fluido, forma, poco);
+	
+	            cout << "IP = " << reservatorio.getIndiceProdutividade() << endl << endl;
+	            
+	            IPR = new CIPRLinear();
+	
+	            break;
         
+				}
+			
+				case CTipoGeometria::radial:
+					
+					{
+					
+		            cin.get();
+		
+		           	forma = new CRadial;
+		           	CRadial* cast = dynamic_cast<CRadial*>(forma);
+		
+		           	reservatorio.CoeficienteDietz(geometria);
+		
+		           	cout << "Entre com o raio externo do reservatorio (FT)" << endl;
+		           	
+			        double Re;
+			
+			        cin >> Re;
+			
+		            cast->RaioExterno(Re);
+			        cast->Area();
+		
+			        cout << "Entre com o raio do poco (FT):" << endl;
+			
+			        double raio;
+			
+			        cin >> raio;
+			
+			        poco.setRaioPoco(raio);
+			
+			        cout << "Entre com a pressao inicial do reservatorio (PSIA): " << endl;
+			
+			        double pi;
+			
+			        cin >> pi;
+			
+			        reservatorio.PressaoInicial(pi);
+			
+			        cout << "Entre com a pressao de bolha do reservatorio (PSIA): " << endl;
+			
+			        double pb;
+			
+			        cin >> pb;
+			
+			        reservatorio.PressaoBolha(pb);
+			
+			        poco.CalcArea();
+			
+			        cout << "Qual tipo de fluido presente no reservatorio?" << std::endl;
+			        cout << "1 - Oleo" << endl;
+			        cout << "2 - Gas" << endl;
+			        cout << "----------------------------------------------------------------------------" << endl;
+			
+			        CTipoFluido tipoFluido;
+			
+			        cin >> tipoFluido;
+			        cin.get();
+			
+			        bool chs = true;
+			
+			        while(chs) 
+			            
+					{
+			                
+						switch (tipoFluido) // Switch para definicao do tipo de fluido
+			                
+						{
+			                    
+							case CTipoFluido::oleo: // Caso oleo, cria um novo objeto da classe COleo
+			                        
+								{
+			
+			                    fluido = new COleo;
+			                    cout << "Entre com fator volume de formacao do oleo: " << endl;
+			                    double Bo;
+			                    cin >> Bo;
+			                    fluido->FatorVolumeFormacao(Bo);
+			                    cout << "Entre com a viscosidade do fluido (CP):" << endl;
+			                    double viscosidade;
+			                    cin >> viscosidade;
+			                    fluido->Viscosidade(viscosidade);
+			
+			                    chs = false;
+			                    break;
+			                        
+									}
+			                    
+								case CTipoFluido::gas: // Caso gas, cria um novo objeto da classe CGas
+			                        
+									{
+			
+			                        fluido = new CGas;
+			                        cout << "Entre com fator volume de formacao do gas:" << endl;
+			                        double Bg;
+			                        cin >> Bg;
+			                        fluido->FatorVolumeFormacao(Bg);
+			                        cout << "Entre com a viscosidade do fluido (CP):" << endl;
+			                        double viscosidade;
+			                        cin >> viscosidade;
+			                        fluido->Viscosidade(viscosidade);
+			
+			                        chs = false;
+			                        break;
+			                        
+									}
+			                    
+								default:
+			                        cout << "Entrada invalida!" << endl;
+			                        cout << "Qual tipo de fluido presente no reservatorio? " << endl;
+			                        cin >> tipoFluido;
+			                        cin.get();
+			                
+							}
+			
+			            }
+			            
+			    }
+		            
+		            cout << "Entre com a espessura do reservatorio (FT):" << endl;
+		
+		            double espreservatorio;
+		
+		            cin >> espreservatorio;
+		
+		            reservatorio.Espessura(espreservatorio);
+		
+		            cout << "Entre com a permeabilidade da rocha reservatorio (MD):" << endl;
+		
+		            double perm;
+		
+		            cin >> perm;
+		
+		            reservatorio.Permeabilidade(perm);
+		
+		            cout << "Entre com fator de pelicula do reservatorio:" << endl;
+		
+		            double s;
+		
+		            cin >> s;
+		
+		            reservatorio.FatorPelicula(s);
+		
+		            reservatorio.IndiceProdutividade(fluido, forma, poco);
+		
+		            cout << "IP = " << reservatorio.getIndiceProdutividade() << endl << endl;
+		            
+		            IPR = new CIPRLinear();
+		
+		            break;
+	        
+				}
+		
 		}
         
 		case CMetodo::IPR_GENERALIZADA:
         
 		{
-            
-			CTipoGeometria geometria = CTipoGeometria::radial; // Caso geometria radial cria objeto do tipo CRadial
-            cin.get();
-
-            forma = new CRadial;
-            CRadial* cast = dynamic_cast<CRadial*>(forma);
-
-            reservatorio.CoeficienteDietz(geometria);
-
-            cout << "Entre com o raio externo do reservatorio (FT)" << endl;
-
-            double Re;
-
-            cin >> Re;
-
-            cast->RaioExterno(Re);
-            cast->Area();
-
-            cout << "Entre com a raio do poco (FT)" << endl;
-
-            double raio;
-
-            cin >> raio;
-
-            poco.setRaioPoco(raio);
-
-            cout << "Entre com a pressao inicial (PSIA):" << endl;
-
-            double pi;
-
-            cin >> pi;
-
-            reservatorio.PressaoInicial(pi);
-
-            cout << "Entre com a pressao de bolha (PSIA): " << endl;
-
-            double pb;
-
-            cin >> pb;
-
-            reservatorio.PressaoBolha(pb);
-
-            poco.CalcArea();
-
-            cout << "Qual tipo de fluido presente no reservatorio?" << endl;
-            cout << "1 - Oleo" << endl;
-            cout << "2 - Gas" << endl;
-            cout << "----------------------------------------------------------------------------" << endl;
-
-            CTipoFluido tipoFluido;
-
-            cin >> tipoFluido;
-            cin.get();
-
-            bool chs = true;
-
-            while(chs)
-            
+			
+			switch (geometria) 
+			
 			{
-                
-				switch (tipoFluido)
-                
+				
+				case CTipoGeometria::linear: // Caso geometria linear cria objeto do tipo CLinear
+	            
 				{
-                    
-					case CTipoFluido::oleo:
-                        
+				
+					cin.get();
+		
+		            forma = new CLinear;
+		            CLinear* cast = dynamic_cast<CLinear*>(forma);
+		
+		            reservatorio.CoeficienteDietz(geometria);
+		
+		            cout << "Entre com o comprimento do reservatorio (FT)" << endl;
+	
+	            	double esp;
+	
+	            	cin >> esp;
+	
+	            	cout << "Entre com a largura do reservatorio (FT)" << endl;
+	
+	            	double lar;
+	
+	            	cin >> lar;
+	
+	            	cast-> Length(esp);
+		            cast-> Width(lar);
+		            cast-> Area();
+		
+		            cout << "Entre com a raio do poco (FT)" << endl;
+		
+		            double raio;
+		
+		            cin >> raio;
+		
+		            poco.setRaioPoco(raio);
+		
+		            cout << "Entre com a pressao inicial (PSIA):" << endl;
+		
+		            double pi;
+		
+		            cin >> pi;
+		
+		            reservatorio.PressaoInicial(pi);
+		
+		            cout << "Entre com a pressao de bolha (PSIA): " << endl;
+		
+		            double pb;
+		
+		            cin >> pb;
+		
+		            reservatorio.PressaoBolha(pb);
+		
+		            poco.CalcArea();
+		
+		            cout << "Qual tipo de fluido presente no reservatorio?" << endl;
+		            cout << "1 - Oleo" << endl;
+		            cout << "2 - Gas" << endl;
+		            cout << "----------------------------------------------------------------------------" << endl;
+		
+		            CTipoFluido tipoFluido;
+		
+		            cin >> tipoFluido;
+		            cin.get();
+		
+		            bool chs = true;
+		
+		            while(chs)
+		            
+					{
+		                
+						switch (tipoFluido)
+		                
 						{
-
-                        fluido = new COleo;
-                        cout << "Entre com fator volume de formacao do oleo:" << endl;
-                        double Bo;
-                        cin >> Bo;
-                        fluido->FatorVolumeFormacao(Bo);
-                        cout << "Entre com a viscosidade do fluido (CP):" << endl;
-                        double viscosidade;
-                        cin >> viscosidade;
-                        fluido->Viscosidade(viscosidade);
-
-                        chs = false;
-                        break;
-                        
+		                    
+							case CTipoFluido::oleo:
+		                        
+								{
+		
+		                        fluido = new COleo;
+		                        cout << "Entre com fator volume de formacao do oleo:" << endl;
+		                        double Bo;
+		                        cin >> Bo;
+		                        fluido->FatorVolumeFormacao(Bo);
+		                        cout << "Entre com a viscosidade do fluido (CP):" << endl;
+		                        double viscosidade;
+		                        cin >> viscosidade;
+		                        fluido->Viscosidade(viscosidade);
+		
+		                        chs = false;
+		                        break;
+		                        
+								}
+		                    
+							case CTipoFluido::gas:
+		                        
+								{
+		
+		                        fluido = new CGas;
+		                        cout << "Entre com fator volume de formacao do gas:" << endl;
+		                        double Bg;
+		                        cin >> Bg;
+		                        fluido->FatorVolumeFormacao(Bg);
+		                        cout << "Entre com a viscosidade do fluido (CP):" << endl;
+		                        double viscosidade;
+		                        cin >> viscosidade;
+		                        fluido->Viscosidade(viscosidade);
+		
+		                        chs = false;
+		                        break;
+		                        
+								}
+		                    
+							default:
+		                        cout << "Entrada invalida!" << endl;
+		                        cout << "Qual tipo de fluido presente no reservatorio?" << endl;
+		                        cin >> tipoFluido;
+		                        cin.get();
+		                
 						}
-                    
-					case CTipoFluido::gas:
-                        
-						{
-
-                        fluido = new CGas;
-                        cout << "Entre com fator volume de formacao do gas:" << endl;
-                        double Bg;
-                        cin >> Bg;
-                        fluido->FatorVolumeFormacao(Bg);
-                        cout << "Entre com a viscosidade do fluido (CP):" << endl;
-                        double viscosidade;
-                        cin >> viscosidade;
-                        fluido->Viscosidade(viscosidade);
-
-                        chs = false;
-                        break;
-                        
-						}
-                    
-					default:
-                        cout << "Entrada invalida!" << endl;
-                        cout << "Qual tipo de fluido presente no reservatorio?" << endl;
-                        cin >> tipoFluido;
-                        cin.get();
-                
+		
+		            }
+		            
+		            cout << "Entre com a espessura do reservatorio (FT):" << endl;
+		
+		            double espreservatorio;
+		
+		            cin >> espreservatorio;
+		
+		            reservatorio.Espessura(espreservatorio);
+		
+		            cout << "Entre com a permeabilidade da rocha (MD):" << endl;
+		
+		            double perm;
+		
+		            cin >> perm;
+		
+		            reservatorio.Permeabilidade(perm);
+		
+		            cout << "Entre com fator de pelicula do reservatorio:" << endl;
+		
+		            double s;
+		
+		            cin >> s;
+		
+		            reservatorio.FatorPelicula(s);
+		
+		            reservatorio.IndiceProdutividade(fluido, forma, poco);
+		            
+		            IPR = new CIPRGeneralizada();  
+		            
+		            break;
+				
 				}
-
-            }
             
-            cout << "Entre com a espessura do reservatorio (FT):" << endl;
-
-            double espreservatorio;
-
-            cin >> espreservatorio;
-
-            reservatorio.Espessura(espreservatorio);
-
-            cout << "Entre com a permeabilidade da rocha (MD):" << endl;
-
-            double perm;
-
-            cin >> perm;
-
-            reservatorio.Permeabilidade(perm);
-
-            cout << "Entre com fator de pelicula do reservatorio:" << endl;
-
-            double s;
-
-            cin >> s;
-
-            reservatorio.FatorPelicula(s);
-
-            reservatorio.IndiceProdutividade(fluido, forma, poco);
-            
-            IPR = new CIPRGeneralizada();  
-            
-            break;
-        
+				case CTipoGeometria::radial: // Caso geometria radial cria objeto do tipo CRadial
+				
+				{
+					
+					cin.get();
+		
+		            forma = new CRadial;
+		            CRadial* cast = dynamic_cast<CRadial*>(forma);
+		
+		            reservatorio.CoeficienteDietz(geometria);
+		
+		            cout << "Entre com o raio externo do reservatorio (FT)" << endl;
+		
+		            double Re;
+		
+		            cin >> Re;
+		
+		            cast->RaioExterno(Re);
+		            cast->Area();
+		
+		            cout << "Entre com a raio do poco (FT)" << endl;
+		
+		            double raio;
+		
+		            cin >> raio;
+		
+		            poco.setRaioPoco(raio);
+		
+		            cout << "Entre com a pressao inicial (PSIA):" << endl;
+		
+		            double pi;
+		
+		            cin >> pi;
+		
+		            reservatorio.PressaoInicial(pi);
+		
+		            cout << "Entre com a pressao de bolha (PSIA): " << endl;
+		
+		            double pb;
+		
+		            cin >> pb;
+		
+		            reservatorio.PressaoBolha(pb);
+		
+		            poco.CalcArea();
+		
+		            cout << "Qual tipo de fluido presente no reservatorio?" << endl;
+		            cout << "1 - Oleo" << endl;
+		            cout << "2 - Gas" << endl;
+		            cout << "----------------------------------------------------------------------------" << endl;
+		
+		            CTipoFluido tipoFluido;
+		
+		            cin >> tipoFluido;
+		            cin.get();
+		
+		            bool chs = true;
+		
+		            while(chs)
+		            
+					{
+		                
+						switch (tipoFluido)
+		                
+						{
+		                    
+							case CTipoFluido::oleo:
+		                        
+								{
+		
+		                        fluido = new COleo;
+		                        cout << "Entre com fator volume de formacao do oleo:" << endl;
+		                        double Bo;
+		                        cin >> Bo;
+		                        fluido->FatorVolumeFormacao(Bo);
+		                        cout << "Entre com a viscosidade do fluido (CP):" << endl;
+		                        double viscosidade;
+		                        cin >> viscosidade;
+		                        fluido->Viscosidade(viscosidade);
+		
+		                        chs = false;
+		                        break;
+		                        
+								}
+		                    
+							case CTipoFluido::gas:
+		                        
+								{
+		
+		                        fluido = new CGas;
+		                        cout << "Entre com fator volume de formacao do gas:" << endl;
+		                        double Bg;
+		                        cin >> Bg;
+		                        fluido->FatorVolumeFormacao(Bg);
+		                        cout << "Entre com a viscosidade do fluido (CP):" << endl;
+		                        double viscosidade;
+		                        cin >> viscosidade;
+		                        fluido->Viscosidade(viscosidade);
+		
+		                        chs = false;
+		                        break;
+		                        
+								}
+		                    
+							default:
+		                        cout << "Entrada invalida!" << endl;
+		                        cout << "Qual tipo de fluido presente no reservatorio?" << endl;
+		                        cin >> tipoFluido;
+		                        cin.get();
+		                
+						}
+	
+	            	}
+	            
+		            cout << "Entre com a espessura do reservatorio (FT):" << endl;
+		
+		            double espreservatorio;
+		
+		            cin >> espreservatorio;
+		
+		            reservatorio.Espessura(espreservatorio);
+		
+		            cout << "Entre com a permeabilidade da rocha (MD):" << endl;
+		
+		            double perm;
+		
+		            cin >> perm;
+		
+		            reservatorio.Permeabilidade(perm);
+		
+		            cout << "Entre com fator de pelicula do reservatorio:" << endl;
+		
+		            double s;
+		
+		            cin >> s;
+		
+		            reservatorio.FatorPelicula(s);
+		
+		            reservatorio.IndiceProdutividade(fluido, forma, poco);
+		            
+		            IPR = new CIPRGeneralizada();  
+		            
+		            break;
+	        
+					}
+					
 		}
         
 		case CMetodo::IPR_FETKOVICH:
-            
-			{
-            
-			CTipoGeometria geometria = CTipoGeometria::radial;
-            cin.get();
-
-            forma = new CRadial;
-            CRadial* cast = dynamic_cast<CRadial*>(forma);
-
-            reservatorio.CoeficienteDietz(geometria);
-
-            cout << "Entre com o raio externo do reservatorio (FT)" << endl;
-
-            double Re;
-
-            cin >> Re;
-
-            cast->RaioExterno(Re);
-            cast->Area();
-
-            cout << "Entre com a raio do poco ." << endl;
-
-            double raio;
-
-            cin >> raio;
-
-            poco.setRaioPoco(raio);
-
-            cout << "Entre com a pressao media do reservatorio (PSIA): " << endl;
-
-            double pi;
-
-            cin >> pi;
-
-            reservatorio.PressaoInicial(pi);
-
-            cout << "Entre com a pressao de bolha (PSIA): " << endl;
-
-            double pb;
-
-            cin >> pb;
-
-            reservatorio.PressaoBolha(pb);
-
-
-            cout << "Entre com a pressao de fundo no poco A (PSIA):" << endl;
-
-            double pwf1;
-
-            cin >> pwf1;
-
-            poco.setPressao(pwf1);
-
-            cout << "Entre com a vazao no poco A (STB/d):" << endl;
-
-            double q1;
-
-            cin >> q1;
-
-            poco.setVazaoProducao(q1);
-
-            cout << "Entre com a pressao de fundo no poco B (PSIA):" << endl;
-
-            double pwf2;
-
-            cin >> pwf2;
-
-            pocoDois.setPressao(pwf2);
-
-            cout << "Entre com a vazao no poco B (STB/d):" << endl;
-
-            double q2;
-
-            cin >> q2;
-
-            pocoDois.setVazaoProducao(q2);
-
-            poco.CalcArea();
-
-            cout << "Qual tipo de fluido presente no reservatorio?" << endl;
-            cout << "1 - Oleo" << endl;
-            cout << "2 - Gas" << endl;
-            cout << "----------------------------------------------------------------------------" << endl;
-
-            CTipoFluido tipoFluido;
-
-            cin >> tipoFluido;
-            cin.get();
-
-            bool chs = true;
-
-            while(chs)
-            
-			{
-                
-				switch (tipoFluido)
-                
-				{
-                    case CTipoFluido::oleo:
-                        
-						{
-
-                        fluido = new COleo;
-                        cout << "Entre com fator volume de formacao do oleo:" << endl;
-                        double Bo;
-                        cin >> Bo;
-                        fluido->FatorVolumeFormacao(Bo);
-                        cout << "Entre com a viscosidade do fluido (CP):" << endl;
-                        double viscosidade;
-                        cin >> viscosidade;
-                        fluido->Viscosidade(viscosidade);
-
-                        chs = false;
-                        break;
-                        
-						}
-                    
-					case CTipoFluido::gas:
-                        
-						{
-
-                        fluido = new CGas;
-                        cout << "Entre com fator volume de formacao do gas:" << endl;
-                        double Bg;
-                        cin >> Bg;
-                        fluido->FatorVolumeFormacao(Bg);
-                        cout << "Entre com a viscosidade do fluido (CP):" << endl;
-                        double viscosidade;
-                        cin >> viscosidade;
-                        fluido->Viscosidade(viscosidade);
-
-                        chs = false;
-                        break;
-                        
-						}
-                    
-					default:
-                        cout << "Entrada invalida!" << endl;
-                        cout << "Qual tipo de fluido presente no reservatorio?" << endl;
-                        cin >> tipoFluido;
-                        cin.get();
-                
-				}
-
-            }
-            
-            cout << "Entre com a espessura do reservatorio (FT):" << endl;
-
-            double espreservatorio;
-
-            cin >> espreservatorio;
-
-            reservatorio.Espessura(espreservatorio);
-
-            cout << "Entre com a permeabilidade da rocha reservatorio (MD):" << endl;
-
-            double perm;
-
-            cin >> perm;
-
-            reservatorio.Permeabilidade(perm);
-
-            cout << "Entre com fator de pelicula do reservatorio:" << endl;
-
-            double s;
-
-            cin >> s;
-
-            reservatorio.FatorPelicula(s);
-
-            reservatorio.IndiceProdutividade(fluido, forma, poco);
-            
-            IPR = new CIPRFetkovich();  
-            
-            break;
         
-		}
+		{
+		    
+			switch(geometria)
+			
+			{
+            	
+            	case CTipoGeometria::linear:
+            		
+            	{	
+            		
+			        cin.get();
+			
+			        forma = new CLinear;
+			        CLinear* cast = dynamic_cast<CLinear*>(forma);
+			
+			        reservatorio.CoeficienteDietz(geometria);
+			
+			        cout << "Entre com o comprimento do reservatorio (FT)" << endl;
+	
+		            double esp;
+		
+		            cin >> esp;
+		
+		            cout << "Entre com a largura do reservatorio (FT)" << endl;
+		
+		            double lar;
+		
+		            cin >> lar;
+		
+		            cast-> Length(esp);
+			        cast-> Width(lar);
+			        cast-> Area();
+			
+			        cout << "Entre com a raio do poco ." << endl;
+			
+			        double raio;
+			
+			        cin >> raio;
+			
+			        poco.setRaioPoco(raio);
+			
+			        cout << "Entre com a pressao media do reservatorio (PSIA): " << endl;
+			
+			        double pi;
+			
+			        cin >> pi;
+			
+			        reservatorio.PressaoInicial(pi);
+			
+			        cout << "Entre com a pressao de bolha (PSIA): " << endl;
+			
+			        double pb;
+			
+			        cin >> pb;
+			
+			        reservatorio.PressaoBolha(pb);
+			
+			
+			        cout << "Entre com a pressao de fundo no poco A (PSIA):" << endl;
+			
+			        double pwf1;
+			
+			        cin >> pwf1;
+			
+			        poco.setPressao(pwf1);
+			
+			        cout << "Entre com a vazao no poco A (STB/d):" << endl;
+			
+			        double q1;
+			
+			        cin >> q1;
+			
+			        poco.setVazaoProducao(q1);
+			
+			        cout << "Entre com a pressao de fundo no poco B (PSIA):" << endl;
+			
+			        double pwf2;
+			
+			        cin >> pwf2;
+			
+			        pocoDois.setPressao(pwf2);
+			
+			        cout << "Entre com a vazao no poco B (STB/d):" << endl;
+			
+			        double q2;
+			
+			        cin >> q2;
+			
+			        pocoDois.setVazaoProducao(q2);
+			
+			        poco.CalcArea();
+			
+			        cout << "Qual tipo de fluido presente no reservatorio?" << endl;
+			        cout << "1 - Oleo" << endl;
+			        cout << "2 - Gas" << endl;
+			        cout << "----------------------------------------------------------------------------" << endl;
+			
+			        CTipoFluido tipoFluido;
+			
+			        cin >> tipoFluido;
+			        cin.get();
+			
+			        bool chs = true;
+			
+			        while(chs)
+			            
+					{
+			                
+						switch (tipoFluido)
+			                
+						{
+			                case CTipoFluido::oleo:
+			                        
+								{
+			
+			                    fluido = new COleo;
+			                    cout << "Entre com fator volume de formacao do oleo:" << endl;
+			                    double Bo;
+			                    cin >> Bo;
+			                    fluido->FatorVolumeFormacao(Bo);
+			                    cout << "Entre com a viscosidade do fluido (CP):" << endl;
+			                    double viscosidade;
+			                    cin >> viscosidade;
+			                    fluido->Viscosidade(viscosidade);
+	
+		                        chs = false;
+		                        break;
+			                        
+								}
+			                    
+							case CTipoFluido::gas:
+			                        
+								{
+			
+		                        fluido = new CGas;
+		                        cout << "Entre com fator volume de formacao do gas:" << endl;
+			                    double Bg;
+			                    cin >> Bg;
+			                    fluido->FatorVolumeFormacao(Bg);
+		                        cout << "Entre com a viscosidade do fluido (CP):" << endl;
+		                        double viscosidade;
+		                        cin >> viscosidade;
+		                        fluido->Viscosidade(viscosidade);
+			
+		                        chs = false;
+		                        break;
+			                        
+								}
+			                    
+							default:
+			                    cout << "Entrada invalida!" << endl;
+			                    cout << "Qual tipo de fluido presente no reservatorio?" << endl;
+			                    cin >> tipoFluido;
+			                    cin.get();
+		                
+			            }
+			
+			            double espreservatorio;
+			
+			            cin >> espreservatorio;
+			
+			            reservatorio.Espessura(espreservatorio);
+			
+			            cout << "Entre com a permeabilidade da rocha reservatorio (MD):" << endl;
+			
+			            double perm;
+			
+			            cin >> perm;
+			
+			            reservatorio.Permeabilidade(perm);
+			
+			            cout << "Entre com fator de pelicula do reservatorio:" << endl;
+			
+			            double s;
+			
+			            cin >> s;
+			
+			            reservatorio.FatorPelicula(s);
+			
+			            reservatorio.IndiceProdutividade(fluido, forma, poco);
+			            
+			            IPR = new CIPRFetkovich();  
+			            
+			            break;
+			            
+			    	}
+			}
+	           	
+				case CTipoGeometria::radial:
+					
+				{
+					
+			        cin.get();
+			
+			        forma = new CRadial;
+			        CRadial* cast = dynamic_cast<CRadial*>(forma);
+			
+			        reservatorio.CoeficienteDietz(geometria);
+			
+			        cout << "Entre com o raio externo do reservatorio (FT)" << endl;
+			
+			        double Re;
+			
+			        cin >> Re;
+			
+			        cast->RaioExterno(Re);
+			        cast->Area();
+			
+			        cout << "Entre com a raio do poco ." << endl;
+			
+			        double raio;
+			
+			        cin >> raio;
+			
+			        poco.setRaioPoco(raio);
+			
+			        cout << "Entre com a pressao media do reservatorio (PSIA): " << endl;
+			
+			        double pi;
+			
+			        cin >> pi;
+			
+			        reservatorio.PressaoInicial(pi);
+			
+			        cout << "Entre com a pressao de bolha (PSIA): " << endl;
+			
+			        double pb;
+			
+			        cin >> pb;
+			
+			        reservatorio.PressaoBolha(pb);
+			
+			
+			        cout << "Entre com a pressao de fundo no poco A (PSIA):" << endl;
+			
+			        double pwf1;
+			
+			        cin >> pwf1;
+			
+			        poco.setPressao(pwf1);
+			
+			        cout << "Entre com a vazao no poco A (STB/d):" << endl;
+			
+			        double q1;
+			
+			        cin >> q1;
+			
+			        poco.setVazaoProducao(q1);
+			
+			        cout << "Entre com a pressao de fundo no poco B (PSIA):" << endl;
+			
+			        double pwf2;
+			
+			        cin >> pwf2;
+			
+			        pocoDois.setPressao(pwf2);
+			
+			        cout << "Entre com a vazao no poco B (STB/d):" << endl;
+			
+			        double q2;
+		
+		            cin >> q2;
+			
+		            pocoDois.setVazaoProducao(q2);
+			
+		            poco.CalcArea();
+			
+		            cout << "Qual tipo de fluido presente no reservatorio?" << endl;
+		            cout << "1 - Oleo" << endl;
+		            cout << "2 - Gas" << endl;
+		            cout << "----------------------------------------------------------------------------" << endl;
+			
+		            CTipoFluido tipoFluido;
+			
+		            cin >> tipoFluido;
+		            cin.get();
+			
+		            bool chs = true;
+			
+		            while(chs)
+			            
+					{
+			                
+						switch (tipoFluido)
+			                
+						{
+			                case CTipoFluido::oleo:
+			                        
+								{
+			
+			                    fluido = new COleo;
+			                    cout << "Entre com fator volume de formacao do oleo:" << endl;
+			                    double Bo;
+			                    cin >> Bo;
+			                    fluido->FatorVolumeFormacao(Bo);
+			                    cout << "Entre com a viscosidade do fluido (CP):" << endl;
+			                    double viscosidade;
+			                    cin >> viscosidade;
+			                    fluido->Viscosidade(viscosidade);
+			
+			                    chs = false;
+			                    break;
+			                        
+								}
+			                    
+							case CTipoFluido::gas:
+			                        
+								{
+			
+			                    fluido = new CGas;
+			                    cout << "Entre com fator volume de formacao do gas:" << endl;
+			                    double Bg;
+			                    cin >> Bg;
+			                    fluido->FatorVolumeFormacao(Bg);
+			                    cout << "Entre com a viscosidade do fluido (CP):" << endl;
+			                    double viscosidade;
+			                    cin >> viscosidade;
+			                    fluido->Viscosidade(viscosidade);
+			
+			                    chs = false;
+			                    break;
+			                        
+								}
+			                    
+							default:
+			                    cout << "Entrada invalida!" << endl;
+			                    cout << "Qual tipo de fluido presente no reservatorio?" << endl;
+			                    cin >> tipoFluido;
+			                    cin.get();
+		                
+			            }
+			
+			            double espreservatorio;
+			
+			            cin >> espreservatorio;
+			
+			            reservatorio.Espessura(espreservatorio);
+			
+			            cout << "Entre com a permeabilidade da rocha reservatorio (MD):" << endl;
+			
+			            double perm;
+			
+			            cin >> perm;
+			
+			            reservatorio.Permeabilidade(perm);
+			
+			            cout << "Entre com fator de pelicula do reservatorio:" << endl;
+			
+			            double s;
+			
+			            cin >> s;
+			
+			            reservatorio.FatorPelicula(s);
+			
+			            reservatorio.IndiceProdutividade(fluido, forma, poco);
+			            
+			            IPR = new CIPRFetkovich();  
+			            
+			            break;
+			            
+			    	}
+			    
+				}
+	        
+			}
         
 		case CMetodo::IPR_VOGEL:
             
+			switch (geometria) 
+			
 			{
             
-			CTipoGeometria geometria = CTipoGeometria::radial;
-            cin.get();
-
-            forma = new CRadial;
-            CRadial* cast = dynamic_cast<CRadial*>(forma);
-
-            reservatorio.CoeficienteDietz(geometria);
-
-            cout << "Entre com o raio externo do reservatorio (FT)" << endl;
-
-            double Re;
-
-            cin >> Re;
-
-            cast->RaioExterno(Re);
-            cast->Area();
-
-            cout << "Entre com a raio do poco (FT):" << endl;
-
-            double raio;
-
-            cin >> raio;
-
-            poco.setRaioPoco(raio);
-
-            cout << "Entre com a pressao inicial do reservatorio (PSIA):" << endl;
-
-            double pi;
-
-            cin >> pi;
-
-            reservatorio.PressaoInicial(pi);
-
-            cout << "Entre com a pressao de bolha (PSIA): " << endl;
-
-            double pb;
-
-            cin >> pb;
-
-            reservatorio.PressaoBolha(pb);
-
-            poco.CalcArea();
-
-            cout << "Qual tipo de fluido presente no reservatorio?" << endl;
-            cout << "1 - Oleo" << endl;
-            cout << "2 - Gas" << endl;
-            cout << "----------------------------------------------------------------------------" << endl;
-
-            CTipoFluido tipoFluido;
-
-            cin >> tipoFluido;
-            cin.get();
-
-            bool chs = true;
-
-            while(chs)
-            
+			case CTipoGeometria::linear:
+				
 			{
-                
-				switch (tipoFluido)
-                
+				
+	            cin.get();
+	
+	            forma = new CLinear;
+	            CLinear* cast = dynamic_cast<CLinear*>(forma);
+	
+	            reservatorio.CoeficienteDietz(geometria);
+	
+	            cout << "Entre com o comprimento do reservatorio (FT)" << endl;
+	
+		        double esp;
+		
+		        cin >> esp;
+		
+		        cout << "Entre com a largura do reservatorio (FT)" << endl;
+		
+	            double lar;
+		
+		        cin >> lar;
+		
+		        cast-> Length(esp);
+			    cast-> Width(lar);
+		        cast-> Area();
+	
+		        cout << "Entre com a raio do poco (FT):" << endl;
+	
+	   	        double raio;
+	
+	            cin >> raio;
+	
+	            poco.setRaioPoco(raio);
+	
+	            cout << "Entre com a pressao inicial do reservatorio (PSIA):" << endl;
+	
+	            double pi;
+	
+	            cin >> pi;
+	
+	            reservatorio.PressaoInicial(pi);
+	
+	            cout << "Entre com a pressao de bolha (PSIA): " << endl;
+	
+	            double pb;
+	
+	            cin >> pb;
+	
+	            reservatorio.PressaoBolha(pb);
+	
+	            poco.CalcArea();
+	
+	            cout << "Qual tipo de fluido presente no reservatorio?" << endl;
+	            cout << "1 - Oleo" << endl;
+	            cout << "2 - Gas" << endl;
+	            cout << "----------------------------------------------------------------------------" << endl;
+	
+	            CTipoFluido tipoFluido;
+	
+	            cin >> tipoFluido;
+	            cin.get();
+	
+	            bool chs = true;
+	
+	            while(chs)
+	            
 				{
-                    
-					case CTipoFluido::oleo:
-                        
-						{
-
-                        fluido = new COleo;
-                        cout << "Entre com fator volume de formacao do oleo:" << endl;
-                        double Bo;
-                        cin >> Bo;
-                        fluido->FatorVolumeFormacao(Bo);
-                        cout << "Entre com a viscosidade do fluido (CP):" << endl;
-                        double viscosidade;
-                        cin >> viscosidade;
-                        fluido->Viscosidade(viscosidade);
-
-                        chs = false;
-                        break;
-                        
-						}
-                    
-					case CTipoFluido::gas:
-                        
-						{
-
-                        fluido = new CGas;
-                        cout << "Entre com fator volume de formacao do gas:" << endl;
-                        double Bg;
-                        cin >> Bg;
-                        fluido->FatorVolumeFormacao(Bg);
-                        cout << "Entre com a viscosidade do fluido (CP):" << endl;
-                        double viscosidade;
-                        cin >> viscosidade;
-                        fluido->Viscosidade(viscosidade);
-
-                        chs = false;
-                        break;
-                        
-						}
-                    
-					default:
-                        cout << "Entrada invalida!" << endl;
-                        cout << "Qual tipo de fluido presente no reservatorio? " << endl;
-                        cin >> tipoFluido;
-                        cin.get();
-                
-				}
-
-            }
-            
-            cout << "Entre com a espessura do reservatorio (FT):" << endl;
-
-            double espreservatorio;
-
-            cin >> espreservatorio;
-
-            reservatorio.Espessura(espreservatorio);
-
-            cout << "Entre com a permeabilidade da rocha (MD):" << endl;
-
-            double perm;
-
-            cin >> perm;
-
-            reservatorio.Permeabilidade(perm);
-
-            cout << "Entre com fator de pelicula do reservatorio:" << endl;
-
-            double s;
-
-            cin >> s;
-
-            reservatorio.FatorPelicula(s);
-
-            reservatorio.IndiceProdutividade(fluido, forma, poco);
-            
-            IPR = new CIPRVogel();  
-            
-            break;
-        
-		}
+	                
+					switch (tipoFluido)
+	                
+					{
+	                    
+						case CTipoFluido::oleo:
+	                        
+							{
+	
+	                        fluido = new COleo;
+	                        cout << "Entre com fator volume de formacao do oleo:" << endl;
+	                        double Bo;
+	                        cin >> Bo;
+	                        fluido->FatorVolumeFormacao(Bo);
+	                        cout << "Entre com a viscosidade do fluido (CP):" << endl;
+	                        double viscosidade;
+	                        cin >> viscosidade;
+	                        fluido->Viscosidade(viscosidade);
+	
+	                        chs = false;
+	                        break;
+	                        
+							}
+	                    
+						case CTipoFluido::gas:
+	                        
+							{
+	
+	                        fluido = new CGas;
+	                        cout << "Entre com fator volume de formacao do gas:" << endl;
+	                        double Bg;
+	                        cin >> Bg;
+	                        fluido->FatorVolumeFormacao(Bg);
+	                        cout << "Entre com a viscosidade do fluido (CP):" << endl;
+	                        double viscosidade;
+	                        cin >> viscosidade;
+	                        fluido->Viscosidade(viscosidade);
+	
+	                        chs = false;
+	                        break;
+	                        
+							}
+	                    
+							default:
+	                        cout << "Entrada invalida!" << endl;
+	                        cout << "Qual tipo de fluido presente no reservatorio? " << endl;
+	                        cin >> tipoFluido;
+	                        cin.get();
+	                
+					}
+	
+	            }
+	            
+	            cout << "Entre com a espessura do reservatorio (FT):" << endl;
+	
+	            double espreservatorio;
+	
+	            cin >> espreservatorio;
+	
+	            reservatorio.Espessura(espreservatorio);
+	
+	            cout << "Entre com a permeabilidade da rocha (MD):" << endl;
+	
+	            double perm;
+	
+	            cin >> perm;
+	
+	            reservatorio.Permeabilidade(perm);
+	
+	            cout << "Entre com fator de pelicula do reservatorio:" << endl;
+	
+	            double s;
+	
+	            cin >> s;
+	
+	            reservatorio.FatorPelicula(s);
+	
+	            reservatorio.IndiceProdutividade(fluido, forma, poco);
+	            
+	            IPR = new CIPRVogel();  
+	            
+	            break;
+	        
+			}
+		
+			case CTipoGeometria::radial:
+				
+			{
+				
+	            cin.get();
+	
+	            forma = new CRadial;
+	            CRadial* cast = dynamic_cast<CRadial*>(forma);
+	
+	            reservatorio.CoeficienteDietz(geometria);
+	
+	            cout << "Entre com o raio externo do reservatorio (FT)" << endl;
+	
+	            double Re;
+	
+	            cin >> Re;
+	
+	            cast->RaioExterno(Re);
+	            cast->Area();
+	
+	            cout << "Entre com a raio do poco (FT):" << endl;
+	
+	            double raio;
+	
+	            cin >> raio;
+	
+	            poco.setRaioPoco(raio);
+	
+	            cout << "Entre com a pressao inicial do reservatorio (PSIA):" << endl;
+	
+	            double pi;
+	
+	            cin >> pi;
+	
+	            reservatorio.PressaoInicial(pi);
+	
+	            cout << "Entre com a pressao de bolha (PSIA): " << endl;
+	
+	            double pb;
+	
+	            cin >> pb;
+	
+	            reservatorio.PressaoBolha(pb);
+	
+	            poco.CalcArea();
+	
+	            cout << "Qual tipo de fluido presente no reservatorio?" << endl;
+	            cout << "1 - Oleo" << endl;
+	            cout << "2 - Gas" << endl;
+	            cout << "----------------------------------------------------------------------------" << endl;
+	
+	            CTipoFluido tipoFluido;
+	
+	            cin >> tipoFluido;
+	            cin.get();
+	
+	            bool chs = true;
+	
+	            while(chs)
+	            
+				{
+	                
+					switch (tipoFluido)
+	                
+					{
+	                    
+						case CTipoFluido::oleo:
+	                        
+							{
+	
+	                        fluido = new COleo;
+	                        cout << "Entre com fator volume de formacao do oleo:" << endl;
+	                        double Bo;
+	                        cin >> Bo;
+	                        fluido->FatorVolumeFormacao(Bo);
+	                        cout << "Entre com a viscosidade do fluido (CP):" << endl;
+	                        double viscosidade;
+	                        cin >> viscosidade;
+	                        fluido->Viscosidade(viscosidade);
+	
+	                        chs = false;
+	                        break;
+	                        
+							}
+	                    
+						case CTipoFluido::gas:
+	                        
+							{
+	
+	                        fluido = new CGas;
+	                        cout << "Entre com fator volume de formacao do gas:" << endl;
+	                        double Bg;
+	                        cin >> Bg;
+	                        fluido->FatorVolumeFormacao(Bg);
+	                        cout << "Entre com a viscosidade do fluido (CP):" << endl;
+	                        double viscosidade;
+	                        cin >> viscosidade;
+	                        fluido->Viscosidade(viscosidade);
+	
+	                        chs = false;
+	                        break;
+	                        
+							}
+	                    
+						default:
+	                        cout << "Entrada invalida!" << endl;
+	                        cout << "Qual tipo de fluido presente no reservatorio? " << endl;
+	                        cin >> tipoFluido;
+	                        cin.get();
+	                
+					}
+	
+	            }
+	            
+	            cout << "Entre com a espessura do reservatorio (FT):" << endl;
+	
+	            double espreservatorio;
+	
+	            cin >> espreservatorio;
+	
+	            reservatorio.Espessura(espreservatorio);
+	
+	            cout << "Entre com a permeabilidade da rocha (MD):" << endl;
+	
+	            double perm;
+	
+	            cin >> perm;
+	
+	            reservatorio.Permeabilidade(perm);
+	
+	            cout << "Entre com fator de pelicula do reservatorio:" << endl;
+	
+	            double s;
+	
+	            cin >> s;
+	
+	            reservatorio.FatorPelicula(s);
+	
+	            reservatorio.IndiceProdutividade(fluido, forma, poco);
+	            
+	            IPR = new CIPRVogel();  
+	            
+	            break;
+	        
+			}
         
 		default:
             break;
+            
+        }
+    }
+}
     
     }
 
@@ -940,9 +1619,9 @@ while (run)
             break;
         default:
             break;
+            
+        }
 
-    } 
-
-}
+    }
 
 }
