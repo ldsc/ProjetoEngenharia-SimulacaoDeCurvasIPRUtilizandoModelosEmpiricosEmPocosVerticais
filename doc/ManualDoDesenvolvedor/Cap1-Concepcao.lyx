@@ -97,11 +97,12 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes false
-\output_changes false
+\tracking_changes true
+\output_changes true
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author -1380949907 "andre duarte bueno"
 \end_header
 
 \begin_body
@@ -156,9 +157,9 @@ Nesta seção do projeto de engenharia, é apresentada a especificação do soft
  utilizado modelos empíricos em poços verticais.
  Para a indústria de Óleo e Gás, este processo é altamente relevante, pois
  ao dispor de um software capaz de construir curvas IPR (Figura 
-\begin_inset CommandInset label
-LatexCommand label
-name "Ref: cap:IPR-tipica"
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:IPR-tipica"
 
 \end_inset
 
@@ -270,9 +271,12 @@ s específicos do poço, tais como propriedades dos fluidos e do reservatório,
 \end_layout
 
 \begin_layout Plain Layout
-- Cálculos de Produtividade: O software executará cálculos complexos para
- estimar a produtividade prevista em um poço vertical, com base nos modelos
- empíricos selecionados e nos dados fornecidos.
+- Cálculos de Produtividade: O software executará cálculos 
+\change_deleted -1380949907 1702484182
+complexos
+\change_unchanged
+ para estimar a produtividade prevista em um poço vertical, com base nos
+ modelos empíricos selecionados e nos dados fornecidos.
 \end_layout
 
 \begin_layout Plain Layout
@@ -339,10 +343,27 @@ especificação
 
 \begin_layout Standard
 O presente projeto tem como objetivo a criação de um software avançado de
- simulação de curvas IPR (Inflow Performance Relationship), utilizando modelos
- empíricos para poços verticais de petróleo.
- A simulação de curvas IPR desempenha um papel crucial na indústria de petróleo,
- permitindo estimativas precisas da produtividade dos poços e auxiliando
+ simulação de curvas IPR (
+\emph on
+Inflow Performance Relationship
+\emph default
+), utilizando modelos empíricos para poços verticais de petróleo.
+ A simulação de curvas IPR 
+\change_deleted -1380949907 1702484364
+desempenha um papel crucial na indústria de petróleo,
+\change_unchanged
+ permit
+\change_deleted -1380949907 1702484367
+indo
+\change_inserted -1380949907 1702484367
+e
+\change_unchanged
+ estimativas precisas da produtividade dos poços e auxilia
+\change_deleted -1380949907 1702484377
+ndo
+\change_inserted -1380949907 1702484377
+m
+\change_unchanged
  na tomada de decisões estratégicas.
  O software a ser desenvolvido busca proporcionar uma ferramenta poderosa
  para engenheiros e profissionais do setor, que desejam analisar e otimizar
@@ -374,12 +395,26 @@ Os modelos empíricos como Fetkovich e Vogel têm sido amplamente utilizados
 \end_layout
 
 \begin_layout Standard
-Em suma, o projeto em questão assume uma importância significativa na indústria
- de petróleo, fornecendo uma solução de simulação avançada para a análise
- de curvas IPR em poços verticais.
- Com modelos empíricos consagrados como Fetkovich e Vogel, juntamente com
- adaptações para poços estratificados e outras variações, o software busca
- simplificar e aprimorar a avaliação da produtividade de poços de petróleo.
+Em suma, o projeto em questão 
+\change_deleted -1380949907 1702484521
+assume uma importância significativa na indústria de petróleo, 
+\change_unchanged
+fornece
+\change_deleted -1380949907 1702484523
+ndo
+\change_unchanged
+ uma solução de simulação 
+\change_deleted -1380949907 1702484528
+avançada 
+\change_unchanged
+para a análise de curvas IPR em poços verticais.
+ Com modelos empíricos consagrados
+\change_inserted -1380949907 1702484586
+,
+\change_unchanged
+ como Fetkovich e Vogel, juntamente com adaptações para poços estratificados
+ e outras variações, o software busca simplificar e aprimorar a avaliação
+ da produtividade de poços de petróleo.
  Com isso, engenheiros e profissionais do setor terão uma ferramenta valiosa
  para otimizar a produção e tomar decisões embasadas no setor de exploração
  e produção de petróleo.
@@ -389,6 +424,14 @@ Em suma, o projeto em questão assume uma importância significativa na indústr
 O software será desenvolvido utilizando o conceito de programação orientada
  a objeto, interface intuitiva e utilizará o software externo Gnuplot para
  gerar e salvar os gráficos.
+\change_inserted -1380949907 1702484619
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1380949907 1702484627
+O software tem licença GPL 2.0.
 \end_layout
 
 \begin_layout Standard
@@ -403,10 +446,71 @@ Requisitos funcionais
 \end_layout
 
 \begin_layout Standard
+
+\change_inserted -1380949907 1702484814
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -1380949907 1702484814
+Apresenta-se a seguir os requisitos funcionais.
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted -1380949907 1702484814
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle" tabularwidth="14cm">
+<column alignment="block" valignment="top">
+<column alignment="block" valignment="top" width="11.5cm">
+<row>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1380949907 1702484814
+
+\series bold
+RF-01
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="2cm" alignment="block" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1380949907 1702484814
+O usuário deve ter liberdade para escolher quais parâmetros de entrada utilizar,
+ utilizando teclado ou um arquivo .txt.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_deleted -1380949907 1702484814
 Apresenta-se a seguir os requisitos funcionais.
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -1380949907 1702484814
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
 <features tabularvalignment="middle" tabularwidth="14cm">
@@ -439,6 +543,8 @@ O usuário deve ter liberdade para escolher quais parâmetros de entrada utiliza
 
 \end_inset
 
+
+\change_unchanged
 
 \end_layout
 
@@ -511,7 +617,11 @@ RF-03
 \begin_inset Text
 
 \begin_layout Plain Layout
-O usuário poderá plotar suas curvas em um gráfico utilizando o Gnuplot.
+O usuário poderá plotar suas curvas em um gráfico utilizando o
+\change_inserted -1380949907 1702484833
+ software externo
+\change_unchanged
+ Gnuplot.
  O gráfico poderá ser salvo como imagem.
 \end_layout
 
@@ -666,7 +776,7 @@ Mac
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Casos de uso
 \begin_inset Index idx
 status collapsed
@@ -681,10 +791,68 @@ Casos de uso
 \end_layout
 
 \begin_layout Standard
-Nesta seção, apresenta-se uma tabela que especifica um caso de uso para
- o software, o diagrama de caso de uso geral e o diagrama de caso de uso
- específico para casos onde o reservatório é estratificado, isto é, cada
- camada possui diferentes propriedades.
+Nesta seção, apresenta-se 
+\change_deleted -1380949907 1702484860
+uma 
+\change_inserted -1380949907 1702484861
+a 
+\change_deleted -1380949907 1702484862
+t
+\change_inserted -1380949907 1702484862
+T
+\change_unchanged
+abela 
+\change_inserted -1380949907 1702484868
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Caso-de-uso (tabela)"
+
+\end_inset
+
+ 
+\change_unchanged
+que especifica um caso de uso 
+\change_inserted -1380949907 1702484890
+geral 
+\change_unchanged
+para o software
+\change_deleted -1380949907 1702484893
+,
+\change_inserted -1380949907 1702484893
+.
+
+\change_unchanged
+ 
+\change_deleted -1380949907 1702484894
+o
+\change_inserted -1380949907 1702484894
+O
+\change_unchanged
+ diagrama de caso de uso geral 
+\change_inserted -1380949907 1702484937
+(Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Diagrama-caso-uso-geral"
+
+\end_inset
+
+) 
+\change_unchanged
+e o diagrama de caso de uso específico
+\change_inserted -1380949907 1702484947
+ (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Diagrama-de-caso-de-uso-especifico"
+
+\end_inset
+
+)
+\change_unchanged
+ para casos onde o reservatório é estratificado, isto é, cada camada possui
+ diferentes propriedades.
 \end_layout
 
 \begin_layout Standard
@@ -788,8 +956,27 @@ Etapas:
 
 \begin_layout Plain Layout
 2.
- Entrada de dados do reservatório, fluidos e poço via teclado ou arquivo
- .txt.
+ Entrada de dados do reservatório, fluidos e poço via teclado 
+\change_deleted -1380949907 1702484971
+ou arquivo .txt
+\change_inserted -1380949907 1702484971
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -1380949907 1702484971
+ou arquivo .txt
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
 \end_layout
 
 \begin_layout Plain Layout
@@ -944,7 +1131,11 @@ noprefix "false"
 \end_inset
 
 .
- Para reservatórios estratificados, o processo é detalhado na Figura 
+ Para reservatórios estratificados
+\change_deleted -1380949907 1702485022
+,
+\change_unchanged
+ o processo é detalhado na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "cap:Diagrama-de-caso-de-uso-especifico"

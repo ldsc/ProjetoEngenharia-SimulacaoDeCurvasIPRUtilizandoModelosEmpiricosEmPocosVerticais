@@ -134,6 +134,56 @@ Com a finalidade de melhorar o projeto, sugere-se que os tópicos abaixo
 \end_layout
 
 \begin_layout Itemize
+Espeficicação:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Apresenta-se a seguir os requisitos funcionais.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle" tabularwidth="14cm">
+<column alignment="block" valignment="top">
+<column alignment="block" valignment="top" width="11.5cm">
+<row>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+RF-01
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="2cm" alignment="block" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+O usuário deve ter liberdade para escolher quais parâmetros de entrada utilizar,
+ utilizando teclado ou um arquivo .txt.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
 Formulação Teórica:
 \end_layout
 

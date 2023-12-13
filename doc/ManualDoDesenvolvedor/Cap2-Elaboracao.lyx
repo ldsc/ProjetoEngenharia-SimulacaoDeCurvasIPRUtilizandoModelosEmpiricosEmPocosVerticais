@@ -102,6 +102,7 @@
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author -1380949907 "andre duarte bueno"
 \author 267031021 "marce"
 \author 1635264300 "andreduartebueno" andreduartebueno@gmail.com
 \end_header
@@ -260,7 +261,7 @@ Nesta seção, apresenta-se a formulação teórica dos conceitos fundamentais
 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Simulacao-IPR"
+key "Boyun-2007"
 literal "false"
 
 \end_inset
@@ -305,10 +306,26 @@ Inflow Performance Relationship
 \emph default
 ) é usada para avaliar a capacidade de entrega do reservatório na engenharia
  de produção.
- A curva IPR é uma apresentação gráfica da relação entre a pressão de fluxo
- no fundo do poço e a taxa de produção de líquidos.
+ 
+\change_deleted -1380949907 1702485197
+A curva IPR é
+\change_inserted -1380949907 1702485197
+É
+\change_unchanged
+ uma apresentação gráfica da relação entre a pressão de fluxo no fundo do
+ poço e a taxa de produção de líquidos.
  A magnitude da inclinação da curva IPR é chamada de “índice de produtividade”
- (J):
+ (
+\change_deleted -1380949907 1702485215
+J
+\change_inserted -1380949907 1702485215
+
+\begin_inset Formula $J$
+\end_inset
+
+
+\change_unchanged
+):
 \end_layout
 
 \begin_layout Standard
@@ -335,7 +352,17 @@ IPR Linear
 A IPR Linear é aplicada na suposição de fluxo líquido monofásico e, dessa
  forma, funciona para zonas do reservatório acima do ponto de bolha ou para
  óleos subsaturados.
- As equações definem o índice de produtividade (J) (equação 
+ As equações definem o índice de produtividade (
+\change_deleted -1380949907 1702485236
+J
+\change_inserted -1380949907 1702485236
+
+\begin_inset Formula $J$
+\end_inset
+
+
+\change_unchanged
+) (equação 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:IP*"
@@ -359,10 +386,19 @@ J^{*}=\frac{q}{\left(p_{e}-p_{wf}\right)}=\frac{kh}{141.2B_{o}\left(\frac{1}{2}l
 \end_layout
 
 \begin_layout Standard
-Como o índice de produtividade (J) acima da pressão do ponto de bolha é
- independente da taxa de produção, a curva IPR para um reservatório monofásico
- (líquido) é uma linha reta traçada da pressão do reservatório até a pressão
- do ponto de bolha.
+Como o índice de produtividade (
+\change_deleted -1380949907 1702485245
+J
+\change_inserted -1380949907 1702485245
+
+\begin_inset Formula $J$
+\end_inset
+
+
+\change_unchanged
+) acima da pressão do ponto de bolha é independente da taxa de produção,
+ a curva IPR para um reservatório monofásico (líquido) é uma linha reta
+ traçada da pressão do reservatório até a pressão do ponto de bolha.
  Se a pressão do ponto de bolha for 
 \begin_inset Formula $0$
 \end_inset
@@ -371,8 +407,27 @@ Como o índice de produtividade (J) acima da pressão do ponto de bolha é
 \begin_inset Formula $psig$
 \end_inset
 
-, o fluxo aberto absoluto (AOF) é o índice de produtividade (J) vezes a
- pressão do reservatório
+, o fluxo aberto absoluto (
+\change_deleted -1380949907 1702485250
+AOF
+\change_inserted -1380949907 1702485250
+
+\begin_inset Formula $AOF$
+\end_inset
+
+
+\change_unchanged
+) é o índice de produtividade (
+\change_deleted -1380949907 1702485253
+J
+\change_inserted -1380949907 1702485253
+
+\begin_inset Formula $J$
+\end_inset
+
+
+\change_unchanged
+) vezes a pressão do reservatório
 \change_inserted 267031021 1698289627
  
 \change_unchanged
@@ -380,6 +435,22 @@ Como o índice de produtividade (J) acima da pressão do ponto de bolha é
 
 \change_inserted 267031021 1698289458
  
+\change_inserted -1380949907 1702485256
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -1380949907 1702485266
+Arrumar indices das equações; usar ctrl+m
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
 \change_unchanged
 
 \begin_inset Formula 
@@ -426,7 +497,13 @@ Reservatórios Bifásicos
 \begin_layout Standard
 Acima da pressão de bolha, o óleo contido no reservatório se encontra subsaturad
 o, ou seja, o gás contido no óleo se encontra todo dissolvido, fazendo com
- que a IPR apresente um comportamente linear.
+ que a IPR apresente um comportament
+\change_deleted -1380949907 1702485298
+e
+\change_inserted -1380949907 1702485298
+o
+\change_unchanged
+ linear.
  Abaixo da pressão do ponto de bolha, o gás em solução escapa do óleo e
  se torna gás livre.
  
@@ -484,6 +561,8 @@ coloque como equação numerada as equações importantes e adicione label
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -1380949907 1702485330
 \begin_inset Formula $q=q_{max}\left[1-0.2\left(\frac{p_{wf}}{\overline{p}}\right)-0.8\left(\frac{p_{wf}}{\overline{p}}\right)^{2}\right]$
 \end_inset
 
@@ -491,6 +570,18 @@ coloque como equação numerada as equações importantes e adicione label
 \begin_inset Formula $p_{wf}=0.125\overline{p}\left[\sqrt{81-80\left(\frac{q}{q_{max}}\right)}-1\right]$
 \end_inset
 
+
+\change_inserted -1380949907 1702485330
+
+\begin_inset Formula 
+\begin{equation}
+q=q_{max}\left[1-0.2\left(\frac{p_{wf}}{\overline{p}}\right)-0.8\left(\frac{p_{wf}}{\overline{p}}\right)^{2}\right]oup_{wf}=0.125\overline{p}\left[\sqrt{81-80\left(\frac{q}{q_{max}}\right)}-1\right]\label{eq:Vogel}
+\end{equation}
+
+\end_inset
+
+
+\change_unchanged
 ,
 \end_layout
 
@@ -500,7 +591,23 @@ onde
 qmax
 \change_inserted 1635264300 1698148012
 
-\begin_inset Formula $qmax$
+\begin_inset Formula $qmax[ft³/d]$
+\end_inset
+
+
+\change_inserted -1380949907 1702485491
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -1380949907 1702485494
+colocar unidades
+\change_unchanged
+
+\end_layout
+
 \end_inset
 
 
@@ -544,6 +651,8 @@ numerar as equações e colocar label quando for referenciada
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -1380949907 1702485374
 \begin_inset Formula $q=q_{max}\left[1-\left(\frac{p_{wf}}{\overline{p}}\right)^{2}\right]^{n}$
 \end_inset
 
@@ -551,6 +660,18 @@ numerar as equações e colocar label quando for referenciada
 \begin_inset Formula $q=C\left(\overline{p}^{2}-p_{wf}^{2}\right)^{n}$
 \end_inset
 
+
+\change_inserted -1380949907 1702485374
+
+\begin_inset Formula 
+\begin{equation}
+q=q_{max}\left[1-\left(\frac{p_{wf}}{\overline{p}}\right)^{2}\right]^{n}ouq=C\left(\overline{p}^{2}-p_{wf}^{2}\right)^{n}\label{eq:Fetkovich}
+\end{equation}
+
+\end_inset
+
+
+\change_unchanged
 ,
 \end_layout
 
@@ -595,10 +716,24 @@ Acima do ponto de bolha a IPR apresenta comportamento linear e a vazão na
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -1380949907 1702485398
 \begin_inset Formula $q=J^{*}(\overline{p}-p_{b})$
 \end_inset
 
 .
+\change_inserted -1380949907 1702485398
+
+\begin_inset Formula 
+\begin{equation}
+q=J^{*}(\overline{p}-p_{b}).
+\end{equation}
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -607,10 +742,26 @@ Baseado na equação de Vogel, a vazão adicional causada pela queda de pressão
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -1380949907 1702485404
 \begin_inset Formula $\varDelta q=q_{v}\left[1-0.2\left(\frac{p_{wf}}{p_{b}}\right)-0.8\left(\frac{p_{wf}}{p_{b}}\right)^{2}\right]$
 \end_inset
 
-, onde 
+, 
+\change_inserted -1380949907 1702485404
+
+\begin_inset Formula 
+\begin{equation}
+\varDelta q=q_{v}\left[1-0.2\left(\frac{p_{wf}}{p_{b}}\right)-0.8\left(\frac{p_{wf}}{p_{b}}\right)^{2}\right],
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+onde 
 \begin_inset Formula $q_{v}=\frac{J^{*}p_{b}}{1.8}$
 \end_inset
 
@@ -623,10 +774,24 @@ Portanto, a vazão para uma determinada pressão abaixo da pressão de bolha
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -1380949907 1702485412
 \begin_inset Formula $q=J^{*}\left(\overline{p}-p_{b}\right)+\frac{J^{*}p_{b}}{1.8}*\left[1-0.2\left(\frac{p_{wf}}{p_{b}}\right)-0.8\left(\frac{p_{wf}}{p_{b}}\right)^{2}\right]$
 \end_inset
 
 .
+\change_inserted -1380949907 1702485412
+
+\begin_inset Formula 
+\begin{equation}
+q=J^{*}\left(\overline{p}-p_{b}\right)+\frac{J^{*}p_{b}}{1.8}*\left[1-0.2\left(\frac{p_{wf}}{p_{b}}\right)-0.8\left(\frac{p_{wf}}{p_{b}}\right)^{2}\right].
+\end{equation}
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Subsection
@@ -637,6 +802,24 @@ Fluxo Monofásico
 Para camadas de reservatório contendo óleos subsaturados, se a pressão de
  fluxo no fundo do poço estiver acima das pressões do ponto de bolha dos
  óleos em todas as camadas, é esperado fluxo monofásico.
+\change_inserted -1380949907 1702485417
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -1380949907 1702485433
+numerar as equações e dar labels para as referenciadas - principais
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -907,7 +1090,11 @@ Permite calcular o parâmetro de índice de produtividade o qual será utilizado
 
 \end_deeper
 \begin_layout Itemize
-Pacote Simulador: 
+Pacote Simulador
+\change_inserted -1380949907 1702485636
+CurvasIPR
+\change_unchanged
+: 
 \change_inserted 1635264300 1698148186
 
 \end_layout
@@ -1044,6 +1231,24 @@ status open
 
 \end_inset
 
+
+\change_inserted -1380949907 1702485648
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -1380949907 1702485658
+SimuladorIPR que acessa
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 

@@ -1,0 +1,40 @@
+Deixar mais claro o escopo atendido.
+
+
+
+Fgura 3.1
+O simulador acessa poco, rocha fluido e não o contrario.
+
+Trocar
+CRadial por CReservatorioRadial
+CLinear por CReservatorioLinear
+
+Se for enumeração trocar CMetodo -> por EMetodo
+
+CTipoFluido -> ETipoFluido
+
+Montar um diagrama de seqûencia específico que mostre algum cenário específico/diferente.
+
+A seção 4.4.2 cita diagrama sequencia específico mas nao tem ele.
+
+Colocar testes dentro diretório test.
+Colocar lá arquivos entrada/saída.
+
+Colocar em MaterialExterno materiais de terceiros utilizados.
+
+
+
+
+Adicionar testes para parte física, mostrando casos reais.
+
+titulos, todos mesmo padrão
+Diagrama de Pacotes .
+Diagrama de pacotes .
+
+texto em ingles em itálico
+Inflow Performance Relationship
+
+
+
+
+

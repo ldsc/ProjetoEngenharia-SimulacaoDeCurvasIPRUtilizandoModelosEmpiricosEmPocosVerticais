@@ -308,7 +308,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CFluido}, label={CFluid
 o-h},extendedchars=true,breaklines=true,basicstyle=
@@ -356,7 +356,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe COleo}, label={COleo-h}
 ,extendedchars=true,breaklines=true,basicstyle=
@@ -404,7 +404,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CGas}, label={CGas-h},e
 xtendedchars=true,breaklines=true,basicstyle=
@@ -450,7 +450,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CTipoFluido}, label={CT
 ipoFluido-h},extendedchars=true,breaklines=true,basicstyle=
@@ -498,7 +498,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CRocha.}, label={CRocha.-
 h},extendedchars=true,breaklines=true,basicstyle=
@@ -546,7 +546,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CReservatorio},
  label={CReservatorio-h},extendedchars=true,breaklines=true,basicstyle=
@@ -595,7 +595,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CReservatorio},
  label={CReservatorio-cpp},extendedchars=true,breaklines=true,basicstyle=
@@ -643,7 +643,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CGeometria}, label={CGe
 ometria-h},extendedchars=true,breaklines=true,basicstyle=
@@ -691,7 +691,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CLinear}, label={CLinea
 r-h},extendedchars=true,breaklines=true,basicstyle=
@@ -740,7 +740,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CLinear}, label={CL
 inear-cpp},extendedchars=true,breaklines=true,basicstyle=
@@ -788,7 +788,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CRadial}, label={CRadia
 l-h},extendedchars=true,breaklines=true,basicstyle=
@@ -837,7 +837,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CRadial}, label={CR
 adial-cpp},extendedchars=true,breaklines=true,basicstyle=
@@ -883,7 +883,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CTipoGeometria},
  label={CTipoGeometria-h},extendedchars=true,breaklines=true,basicstyle=
@@ -931,7 +931,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CPoco}, label={CPoco-h}
 ,extendedchars=true,breaklines=true,basicstyle=
@@ -980,7 +980,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CPoco}, label={CPoc
 o-cpp},extendedchars=true,breaklines=true,basicstyle=
@@ -1028,7 +1028,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CIPR}, label={CIPR-h},e
 xtendedchars=true,breaklines=true,basicstyle=
@@ -1077,7 +1077,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CIPR}, label={CIPR-
 cpp},extendedchars=true,breaklines=true,basicstyle=
@@ -1125,7 +1125,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CIPRLinear}, label={CIP
 RLinear-h},extendedchars=true,breaklines=true,basicstyle=
@@ -1174,7 +1174,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CIPRLinear},
  label={CIPRLinear-cpp},extendedchars=true,breaklines=true,basicstyle=
@@ -1222,7 +1222,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CIPRFetkovich},
  label={CIPRFetkovich-h},extendedchars=true,breaklines=true,basicstyle=
@@ -1271,7 +1271,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CIPRFetkovich},
  label={CIPRFetkovich-cpp},extendedchars=true,breaklines=true,basicstyle=
@@ -1319,7 +1319,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CIPRVogel}, label={CIPR
 Vogel-h},extendedchars=true,breaklines=true,basicstyle=
@@ -1368,7 +1368,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CIPRVogel},
  label={CIPRVogel-cpp},extendedchars=true,breaklines=true,basicstyle=
@@ -1416,7 +1416,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CIPRGeneralizada},
  label={CIPRGeneralizada-h},extendedchars=true,breaklines=true,basicstyle=
@@ -1465,7 +1465,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CIPRGeneralizada},
  label={CIPRGeneralizada-cpp},extendedchars=true,breaklines=true,basicstyle=
@@ -1513,7 +1513,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CReservatorio},
  label={CReservatorio-h},extendedchars=true,breaklines=true,basicstyle=
@@ -1561,7 +1561,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CSimuladorCurvasIPR},
  label={CSimuladorCurvasIPR-h},extendedchars=true,breaklines=true,basicstyle=
@@ -1610,7 +1610,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CSimuladorCurvasIPR
 }, label={CSimuladorCurvasIPR-cpp},extendedchars=true,breaklines=true,basicstyle
@@ -1660,7 +1660,7 @@ status open
 
 
 \backslash
-lstset{language=C++} 
+lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da função 
 \backslash

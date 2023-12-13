@@ -101,6 +101,7 @@
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author -1380949907 "andre duarte bueno"
 \author -627105657 "Atila Junior"
 \author 1635264300 "andreduartebueno" andreduartebueno@gmail.com
 \end_header
@@ -1382,6 +1383,24 @@ name "cap:Diagrama-de-componentes"
 
 \end_inset
 
+
+\change_inserted -1380949907 1702488411
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -1380949907 1702488423
+adicionar diagrama distribuição o que levo para petrobras
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 

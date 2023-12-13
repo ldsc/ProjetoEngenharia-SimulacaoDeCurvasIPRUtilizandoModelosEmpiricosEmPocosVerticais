@@ -88,6 +88,7 @@
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author -1380949907 "andre duarte bueno"
 \author -627105657 "Atila Junior"
 \author 1635264300 "andreduartebueno" andreduartebueno@gmail.com
 \end_header
@@ -351,22 +352,38 @@ Classe CGeometria: representa a classe responsável por definir a geometria
 \begin_layout Itemize
 
 \change_inserted -627105657 1698275424
-Classe CRadial: representa a classe responsável por receber e calcular dimensões
+Classe 
+\change_deleted -1380949907 1702485993
+C
+\change_inserted -1380949907 1702485993
+CGeometria
+\change_inserted -627105657 1698275424
+Radial: representa a classe responsável por receber e calcular dimensões
  do reservatório de geometria radial.
 \end_layout
 
 \begin_layout Itemize
 
 \change_inserted -627105657 1698275443
-Classe CLinear: representa a classe responsável por receber e calcular dimensões
+Classe 
+\change_deleted -1380949907 1702485995
+C
+\change_inserted -1380949907 1702485995
+CGeometria
+\change_inserted -627105657 1698275443
+Linear: representa a classe responsável por receber e calcular dimensões
  do reservatório de geometria linear.
 \end_layout
 
 \begin_layout Itemize
 
 \change_inserted -627105657 1698275500
-ClasseCIPR: representa a classe base que recebe os vetores de pressão de
- fundo e vazão.
+Classe
+\change_inserted -1380949907 1702486004
+ 
+\change_inserted -627105657 1698275500
+CIPR: representa a classe base que recebe os vetores de pressão de fundo
+ e vazão.
 \end_layout
 
 \begin_layout Itemize
@@ -426,21 +443,67 @@ Classe CIPRGeneralizada: representa a classe responsável pelo cálculo da
 \begin_layout Itemize
 
 \change_inserted -627105657 1701549796
-Classe CMetodo: classe que representa a enumeração dos tipos de métodos
- de cálculo de IPR.
+Classe 
+\change_deleted -1380949907 1702486020
+C
+\change_inserted -1380949907 1702486020
+E
+\change_inserted -627105657 1701549796
+Metodo: 
+\change_deleted -1380949907 1702486023
+classe
+\change_inserted -1380949907 1702486025
+enumeração
+\change_inserted -627105657 1701549796
+ que representa 
+\change_deleted -1380949907 1702486037
+a enumeração d
+\change_inserted -627105657 1701549796
+os tipos de métodos de cálculo de IPR.
 \end_layout
 
 \begin_layout Itemize
 
 \change_inserted -627105657 1701549767
-Classe CTipoGeometria: classe que representa a enumeração dos tipos de geometria
- do reservatório.
+Classe 
+\change_deleted -1380949907 1702486030
+C
+\change_inserted -1380949907 1702486030
+E
+\change_inserted -627105657 1701549767
+TipoGeometria: 
+\change_deleted -1380949907 1702486033
+classe 
+\change_inserted -1380949907 1702486041
+enumeração 
+\change_inserted -627105657 1701549767
+que representa 
+\change_deleted -1380949907 1702486044
+a enumeração d
+\change_inserted -627105657 1701549767
+os tipos de geometria do reservatório.
 \end_layout
 
 \begin_layout Itemize
 
 \change_inserted -627105657 1701549741
-Classe CTipoFluido: classe que representa a enumeração dos tipos de fluidos.
+Classe 
+\change_deleted -1380949907 1702486057
+C
+\change_inserted -1380949907 1702486057
+E
+\change_inserted -627105657 1701549741
+TipoFluido: 
+\change_deleted -1380949907 1702486053
+classe
+\change_inserted -1380949907 1702486055
+enumeração
+\change_inserted -627105657 1701549741
+ que representa 
+\change_deleted -1380949907 1702486050
+a enumeração d
+\change_inserted -627105657 1701549741
+os tipos de fluidos.
 \change_unchanged
 
 \end_layout
@@ -452,7 +515,13 @@ IPR
 \change_inserted -627105657 1698275524
 CurvasIPR
 \change_unchanged
-: representa a classe responsável pela simulação do software.
+: representa a classe responsável pela simulação do 
+\change_deleted -1380949907 1702486070
+software
+\change_inserted -1380949907 1702486075
+cálculo das curvas de IPR
+\change_unchanged
+.
  Recebe as escolhas do usuário quanto aos parâmetros do poço, reservatório
  e fluidos, além da escolha do modelo adequado para a obtenção das curvas
  de IPR.
@@ -585,8 +654,27 @@ reference "cap:Diagrama-de-sequencia"
 .
 
 \change_inserted -627105657 1698276676
- Notar que a entrada de dados pode ser realizada tanto via disco como via
- teclado, deixando a escolha do usuário
+ Notar que a entrada de dados pode ser realizada 
+\change_deleted -1380949907 1702486109
+tanto via disco como 
+\change_inserted -1380949907 1702486109
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -1380949907 1702486109
+tanto via disco como 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_inserted -627105657 1698276676
+via teclado, deixando a escolha do usuário
 \change_unchanged
 
 \begin_inset Note Note
@@ -666,10 +754,15 @@ Diagrama de sequência específico
 
 \begin_layout Standard
 Para o caso de um diagrama de sequência específico para cálculo dos parâmetros
- das curvas de IPR, é necessário que o usuário forneça os dados de fluido,
- reservatório e poço
+ das curvas de IPR
+\change_deleted -1380949907 1702486137
+,
+\change_unchanged
+ é necessário que o usuário forneça os dados de fluido, reservatório e poço
+\change_deleted -1380949907 1702486148
+ através do teclado
 \change_inserted -627105657 1698277986
- através do teclado,
+,
 \change_unchanged
  bem como escolha o método que deseja utilizar para calcular e obter os
  resultados que serão utilizados no gráfico final
@@ -702,6 +795,30 @@ status open
 
 \end_inset
 
+
+\change_inserted -1380949907 1702486173
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -1380949907 1702487857
+Usuário->Engenheiro (ou estudante engenharia)
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted -1380949907 1702487865
+Corrigir usando código no umbrello
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 
@@ -896,8 +1013,18 @@ name "subsec:diagrama de estados"
 \begin_layout Standard
 Um diagrama de máquina de estado, também conhecido como diagrama de estados
  ou diagrama de transição de estados, é uma representação visual que descreve
- o comportamento de um sistema ou entidade em relação aos diferentes estados
- em que pode estar e às transições entre esses estados.
+ o comportamento de um
+\change_inserted -1380949907 1702486923
+a
+\change_unchanged
+ 
+\change_deleted -1380949907 1702486925
+sistema 
+\change_inserted -1380949907 1702486925
+classe 
+\change_unchanged
+ou entidade em relação aos diferentes estados em que pode estar e às transições
+ entre esses estados.
  Essa ferramenta é amplamente utilizada na engenharia de software, engenharia
  de sistemas e em outros campos para modelar o comportamento de sistemas
  complexos.
@@ -942,6 +1069,10 @@ status open
 
 \begin_layout Plain Layout
 Diagrama de máquina de estado
+\change_inserted -1380949907 1702486934
+ da classe XXX
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "cap:Diagrama-de-maquina-de-estado"
@@ -1012,6 +1143,10 @@ status open
 
 \begin_layout Plain Layout
 Diagrama de atividades
+\change_inserted -1380949907 1702488115
+ da classe X método Y
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "cap:Diagrama-de-atividades"

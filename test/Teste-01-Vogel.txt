@@ -1,0 +1,168 @@
+-------------- SIMULADOR DE CURVAS IPR PARA POCOS VERTICAIS ---------------
+----------------------------------------------------------------------------
+------------ Atila Junior, Giovanna Massardi e Marcelo Bernardo ------------
+-------------------------------- UENF/LENEP --------------------------------
+
+
+--------------- SIMULADOR DE CURVAS IPR PARA POCOS VERTICAIS ---------------
+----------------------------------------------------------------------------
+------------ Atila Junior, Giovanna Massardi e Marcelo Bernardo ------------
+-------------------------------- UENF/LENEP --------------------------------
+
+Qual o metodo sera utilizado?
+1 - IPR Linear
+2 - IPR Generalizada
+3 - IPR de Fetkovich (Ideal para reservatorios de gas)
+4 - IPR de Vogel
+----------------------------------------------------------------------------
+2
+
+Entre com o raio externo do reservatorio (FT)
+2980
+Entre com a raio do poco (FT)
+0.328
+Entre com a pressao inicial (PSIA):
+5651
+Entre com a pressao de bolha (PSIA):
+5651
+Qual tipo de fluido presente no reservatorio?
+1 - Oleo
+2 - Gas
+----------------------------------------------------------------------------
+1
+Entre com fator volume de formacao do oleo:
+1.1
+Entre com a viscosidade do fluido (CP):
+1.7
+Entre com a espessura do reservatorio (FT):
+53
+Entre com a permeabilidade da rocha (MD):
+8.2
+Entre com fator de pelicula do reservatorio:
+0
+
+
+Calculando IPR...
+
+
+Deseja realizar o calculo de pressoes em quantas partes?
+Digite um numero inteiro.
+100
+Pwf: 5651, Vazao: 0
+Pwf: 5594.49, Vazao: 11.1199
+Pwf: 5537.98, Vazao: 22.2398
+Pwf: 5481.47, Vazao: 33.3597
+Pwf: 5424.96, Vazao: 44.4796
+Pwf: 5368.45, Vazao: 55.5996
+Pwf: 5311.94, Vazao: 66.7195
+Pwf: 5255.43, Vazao: 77.8394
+Pwf: 5198.92, Vazao: 88.9593
+Pwf: 5142.41, Vazao: 100.079
+Pwf: 5085.9, Vazao: 111.199
+Pwf: 5029.39, Vazao: 122.319
+Pwf: 4972.88, Vazao: 133.439
+Pwf: 4916.37, Vazao: 144.559
+Pwf: 4859.86, Vazao: 155.679
+Pwf: 4803.35, Vazao: 166.799
+Pwf: 4746.84, Vazao: 177.919
+Pwf: 4690.33, Vazao: 189.038
+Pwf: 4633.82, Vazao: 200.158
+Pwf: 4577.31, Vazao: 211.278
+Pwf: 4520.8, Vazao: 222.398
+Pwf: 4464.29, Vazao: 233.518
+Pwf: 4407.78, Vazao: 244.638
+Pwf: 4351.27, Vazao: 255.758
+Pwf: 4294.76, Vazao: 266.878
+Pwf: 4238.25, Vazao: 277.998
+Pwf: 4181.74, Vazao: 289.118
+Pwf: 4125.23, Vazao: 300.238
+Pwf: 4068.72, Vazao: 311.358
+Pwf: 4012.21, Vazao: 322.477
+Pwf: 3955.7, Vazao: 333.597
+Pwf: 3899.19, Vazao: 344.717
+Pwf: 3842.68, Vazao: 355.837
+Pwf: 3786.17, Vazao: 366.957
+Pwf: 3729.66, Vazao: 378.077
+Pwf: 3673.15, Vazao: 389.197
+Pwf: 3616.64, Vazao: 400.317
+Pwf: 3560.13, Vazao: 411.437
+Pwf: 3503.62, Vazao: 422.557
+Pwf: 3447.11, Vazao: 433.677
+Pwf: 3390.6, Vazao: 444.796
+Pwf: 3334.09, Vazao: 455.916
+Pwf: 3277.58, Vazao: 467.036
+Pwf: 3221.07, Vazao: 478.156
+Pwf: 3164.56, Vazao: 489.276
+Pwf: 3108.05, Vazao: 500.396
+Pwf: 3051.54, Vazao: 511.516
+Pwf: 2995.03, Vazao: 522.636
+Pwf: 2938.52, Vazao: 533.756
+Pwf: 2882.01, Vazao: 544.876
+Pwf: 2825.5, Vazao: 555.996
+Pwf: 2768.99, Vazao: 567.115
+Pwf: 2712.48, Vazao: 578.235
+Pwf: 2655.97, Vazao: 589.355
+Pwf: 2599.46, Vazao: 600.475
+Pwf: 2542.95, Vazao: 611.595
+Pwf: 2486.44, Vazao: 622.715
+Pwf: 2429.93, Vazao: 633.835
+Pwf: 2373.42, Vazao: 644.955
+Pwf: 2316.91, Vazao: 656.075
+Pwf: 2260.4, Vazao: 667.195
+Pwf: 2203.89, Vazao: 678.315
+Pwf: 2147.38, Vazao: 689.435
+Pwf: 2090.87, Vazao: 700.554
+Pwf: 2034.36, Vazao: 711.674
+Pwf: 1977.85, Vazao: 722.794
+Pwf: 1921.34, Vazao: 733.914
+Pwf: 1864.83, Vazao: 745.034
+Pwf: 1808.32, Vazao: 756.154
+Pwf: 1751.81, Vazao: 767.274
+Pwf: 1695.3, Vazao: 778.394
+Pwf: 1638.79, Vazao: 789.514
+Pwf: 1582.28, Vazao: 800.634
+Pwf: 1525.77, Vazao: 811.754
+Pwf: 1469.26, Vazao: 822.873
+Pwf: 1412.75, Vazao: 833.993
+Pwf: 1356.24, Vazao: 845.113
+Pwf: 1299.73, Vazao: 856.233
+Pwf: 1243.22, Vazao: 867.353
+Pwf: 1186.71, Vazao: 878.473
+Pwf: 1130.2, Vazao: 889.593
+Pwf: 1073.69, Vazao: 900.713
+Pwf: 1017.18, Vazao: 911.833
+Pwf: 960.67, Vazao: 922.953
+Pwf: 904.16, Vazao: 934.073
+Pwf: 847.65, Vazao: 945.192
+Pwf: 791.14, Vazao: 956.312
+Pwf: 734.63, Vazao: 967.432
+Pwf: 678.12, Vazao: 978.552
+Pwf: 621.61, Vazao: 989.672
+Pwf: 565.1, Vazao: 1000.79
+Pwf: 508.59, Vazao: 1011.91
+Pwf: 452.08, Vazao: 1023.03
+Pwf: 395.57, Vazao: 1034.15
+Pwf: 339.06, Vazao: 1045.27
+Pwf: 282.55, Vazao: 1056.39
+Pwf: 226.04, Vazao: 1067.51
+Pwf: 169.53, Vazao: 1078.63
+Pwf: 113.02, Vazao: 1089.75
+Pwf: 56.51, Vazao: 1100.87
+Pwf: 0, Vazao: 1111.99
+Deseja plotar o grafico?
+ 1 - Sim
+ 2 - Nao
+----------------------------------------------------------------------------
+1
+
+Deseja salvar o grafico?
+ 1 - Sim
+ 2 - Nao
+----------------------------------------------------------------------------
+1
+Deseja realizar os calculos utilizando outro metodo?
+1 - Sim
+2 - Nao
+----------------------------------------------------------------------------
+2
+Obrigado por utilizar o software!
