@@ -55,12 +55,7 @@ void CSimuladorCurvasIPR::EntradaDados() {
     cout << "-------------------------------- UENF/LENEP --------------------------------" << endl;
     cout << endl;
 
-    cout << "Aperte Enter para prosseguir..." << endl;
-
-    cin.get();
-
-
-    cout << "Qual o metodo sera utilizado?" << endl;
+	cout << "Qual o metodo sera utilizado?" << endl;
     cout << "1 - IPR Linear" << endl;
     cout << "2 - IPR Generalizada" << endl;
     cout << "3 - IPR de Fetkovich (Ideal para reservatorios de gas)" << endl;
@@ -805,10 +800,72 @@ void CSimuladorCurvasIPR::Executar() {
     cout << "-------------------------------- UENF/LENEP --------------------------------" << endl;
     cout << endl;
 
+	EntradaDados();
+    Calculos();
+    Plotar();
 
-    cout << " Deseja executar o programa ?" << endl;
+    cout << "Deseja salvar o grafico?" << endl;
     cout << " 1 - Sim" << endl;
-    cout << " 2 - Nao " << endl;
+	cout << " 2 - Nao " << endl;
+	cout << "----------------------------------------------------------------------------" << endl;
+
+    bool test = true;
+
+    char chse; // Variavel para receber a resposta do usuario
+
+    cin >> chse;
+    cin.get();
+
+    while(test)
+    
+	{
+        
+		switch(chse)
+        
+		{
+            
+			case '1':
+            
+			{
+                
+				SalvarGrafico();
+                test = false;
+                break;
+            
+			}
+            
+			case '2':
+            
+			{
+                
+				test = false;
+                break;
+            
+			}
+            
+            // Caso usuario entre com uma opcao diferente das apresentadas retorna mensagem de erro
+            
+            default:
+            
+			{
+                
+				cout << "Opcao Invalida!" << endl;
+                cout << "Deseja salvar o grafico?" << endl;
+    			cout << " 1 - Sim" << endl;
+				cout << " 2 - Nao " << endl;
+				cout << "----------------------------------------------------------------------------" << endl;
+                cin >> chse;
+                break;
+            
+			}
+        
+		}
+
+    }
+
+    cout << "Deseja realizar os calculos utilizando outro metodo?" << endl;
+    cout << "1 - Sim" << endl;
+    cout << "2 - Nao " << endl;
     cout << "----------------------------------------------------------------------------" << endl;
 
     char ans; // Variavel para receber a resposta do usuario
@@ -818,131 +875,131 @@ void CSimuladorCurvasIPR::Executar() {
 
 // Caso usuario entre com uma opcao diferente das apresentadas retorna mensagem de erro
 
-while (run)
-
-{
-    
-	while ( ans!= '1' && ans != '2')
-    
+	while (run)
+	
 	{
-        
-		cout << "Opcao invalida" << endl;
-        cout << " Deseja executar o programa ?" << endl;
-    	cout << " 1 - Sim" << endl;
-    	cout << " 2 - Nao " << endl;
-    	cout << "----------------------------------------------------------------------------" << endl;
-
-        cin >> ans;
-        cin.get();
-
-    }
-
-    switch(ans)
-    
-	{
-        
-		case '1': // Caso resposta positiva do usuario, executa o programa
-        
+	    
+		while ( ans!= '1' && ans != '2')
+	    
 		{
-            
-			EntradaDados();
-            Calculos();
-            Plotar();
-
-            cout << "Deseja salvar o grafico?" << endl;
-            cout << " 1 - Sim" << endl;
-    		cout << " 2 - Nao " << endl;
-    		cout << "----------------------------------------------------------------------------" << endl;
-
-            bool test = true;
-
-            char chse; // Variavel para receber a resposta do usuario
-
-            cin >> chse;
-            cin.get();
-
-            while(test)
-            
+	        
+			cout << "Opcao invalida" << endl;
+	        cout << "Deseja realizar os calculos utilizando outro metodo?" << endl;
+	    	cout << "1 - Sim" << endl;
+	    	cout << "2 - Nao " << endl;
+	    	cout << "----------------------------------------------------------------------------" << endl;
+	
+	        cin >> ans;
+	        cin.get();
+	
+	    }
+	
+	    switch(ans)
+	    
+		{
+	        
+			case '1': // Caso resposta positiva do usuario, executa o programa
+	        
 			{
-                
-				switch(chse)
-                
+	            
+				EntradaDados();
+	            Calculos();
+	            Plotar();
+	
+	            cout << "Deseja salvar o grafico?" << endl;
+	            cout << " 1 - Sim" << endl;
+	    		cout << " 2 - Nao " << endl;
+	    		cout << "----------------------------------------------------------------------------" << endl;
+	
+	            bool test = true;
+	
+	            char chse; // Variavel para receber a resposta do usuario
+	
+	            cin >> chse;
+	            cin.get();
+	
+	            while(test)
+	            
 				{
-                    
-					case '1':
-                    
+	                
+					switch(chse)
+	                
 					{
-                        
-						SalvarGrafico();
-                        test = false;
-                        break;
-                    
+	                    
+						case '1':
+	                    
+						{
+	                        
+							SalvarGrafico();
+	                        test = false;
+	                        break;
+	                    
+						}
+	                    
+						case '2':
+	                    
+						{
+	                        
+							test = false;
+	                        break;
+	                    
+						}
+	                    
+	                    // Caso usuario entre com uma opcao diferente das apresentadas retorna mensagem de erro
+	                    
+	                    default:
+	                    
+						{
+	                        
+							cout << "Opcao Invalida!" << endl;
+	                        cout << "Deseja salvar o grafico?" << endl;
+	            			cout << " 1 - Sim" << endl;
+	    					cout << " 2 - Nao " << endl;
+	    					cout << "----------------------------------------------------------------------------" << endl;
+	                        cin >> chse;
+	                        break;
+	                    
+						}
+	                
 					}
-                    
-					case '2':
-                    
-					{
-                        
-						test = false;
-                        break;
-                    
-					}
-                    
-                    // Caso usuario entre com uma opcao diferente das apresentadas retorna mensagem de erro
-                    
-                    default:
-                    
-					{
-                        
-						cout << "Opcao Invalida!" << endl;
-                        cout << "Deseja salvar o grafico?" << endl;
-            			cout << " 1 - Sim" << endl;
-    					cout << " 2 - Nao " << endl;
-    					cout << "----------------------------------------------------------------------------" << endl;
-                        cin >> chse;
-                        break;
-                    
-					}
-                
-				}
-
-            }
-
-            cout << " Deseja executar o programa?" << endl;
-            cout << " 1 - Sim" << endl;
-    		cout << " 2 - Nao " << endl;
-    		cout << "----------------------------------------------------------------------------" << endl;
-            cin >> ans;
-            cin.get();
-
-            while ( ans!= '1' && ans != '2')
-            
-			{
-                
-				cout << "Opcao invalida" << endl;
-                cout << " Deseja executar o programa ?" << endl;
-                cout << " 1 - Sim" << endl;
-    			cout << " 2 - Nao " << endl;
-    			cout << "----------------------------------------------------------------------------" << endl;
-
-                cin >> ans;
-                cin.get();
-
-            }
-            
-			break;
-        
-		}
-        
-		case '2':
-            run = false;
-            cout << "Obrigado por utilizar o software!" << endl;
-            break;
-        default:
-            break;
-
-    } 
-
-}
-
-}
+	
+	            }
+	
+	            cout << "Deseja realizar os calculos utilizando outro metodo?" << endl;
+	            cout << "1 - Sim" << endl;
+	    		cout << "2 - Nao " << endl;
+	    		cout << "----------------------------------------------------------------------------" << endl;
+	            cin >> ans;
+	            cin.get();
+	
+	            while ( ans!= '1' && ans != '2')
+	            
+				{
+	                
+					cout << "Opcao invalida" << endl;
+	                cout << "Deseja realizar os calculos utilizando outro metodo?" << endl;
+	                cout << "1 - Sim" << endl;
+	    			cout << "2 - Nao " << endl;
+	    			cout << "----------------------------------------------------------------------------" << endl;
+	
+	                cin >> ans;
+	                cin.get();
+	
+	            }
+	            
+				break;
+	        
+			}
+	        
+			case '2':
+	            run = false;
+	            cout << "Obrigado por utilizar o software!" << endl;
+	            break;
+	        default:
+	            break;
+	
+	    } 
+	
+	}
+	
+	}
