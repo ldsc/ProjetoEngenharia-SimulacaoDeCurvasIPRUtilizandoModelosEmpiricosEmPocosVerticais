@@ -1,0 +1,453 @@
+
+\chapter{Projeto \label{chap:Projeto-do-Sistema}}
+
+\lhead{\thechapter - Projeto} 
+
+Neste capítulo do projeto de engenharia veremos questões associadas
+ao projeto do sistema, incluindo protocolos, recursos, plataformas
+suportadas, implicações nos diagramas feitos anteriormente, diagramas
+de componentes e implantação. Na segunda parte revisamos os diagramas
+levando em conta as decisões do projeto do sistema.
+
+\section{Projeto do sistema\index{Projeto do sistema}\label{sec:Projeto-do-sistema}}
+
+Depois da análise orientada a objeto desenvolve-se o projeto do sistema,
+qual envolve etapas como a definição dos protocolos, da interface
+API, o uso de recursos, a subdivisão do sistema em subsistemas, a
+alocação dos subsistemas ao hardware e a seleção das estruturas de
+controle, a seleção das plataformas do sistema, das bibliotecas externas,
+dos padrões de projeto, além da tomada de decisões conceituais e políticas
+que formam a infraestrutura do projeto.
+
+Deve-se definir padrões de documentação, padrões para o nome das classes,
+padrões de retorno e de parâmetros em métodos, características da
+interface do usuário e características de desempenho.
+
+Segundo \cite{prog-UML-Rumbaugh,prog-UML-blaha}, o projeto do sistema
+é a estratégia de alto nível para resolver o problema e elaborar uma
+solução. Você deve se preocupar com itens como:
+\begin{enumerate}
+\item Protocolos\index{Protocolos}
+
+\begin{itemize}
+\item Definição dos protocolos de comunicação entre os diversos elementos
+externos 
+
+\begin{itemize}
+\item Neste projeto o software irá se comunicar com o componente externo
+Gnuplot.
+\end{itemize}
+\item Definição do formato dos arquivos gerados pelo software. Por exemplo:
+prefira formatos abertos, como arquivos txt e xml.
+
+\begin{itemize}
+\item Neste projeto será gerado um arquivo .txt com os valores de pressão
+e vazão obtidos dos resultados.
+\item Neste projeto será gerado um arquivo .png com as curvas IPR geradas.
+\end{itemize}
+\end{itemize}
+\item Recursos\index{Recursos}
+
+\begin{itemize}
+\item Identificação e alocação dos recursos globais, como os recursos do
+sistema serão alocados, utilizados, compartilhados e liberados. Implicam
+modificações no diagrama de componentes.
+
+\begin{itemize}
+\item Neste projeto serão utilizados todos os componentes do computador
+que estão dentro do gabinete: HD, processador, memória;
+\item Neste projeto serão utilizados todos os componentes :teclado, mouse
+e tela.
+\end{itemize}
+\end{itemize}
+\item Controle\index{Controle}
+\begin{itemize}
+\item Identificação da necessidade de otimização.
+
+\begin{itemize}
+\item Neste projeto não haverá a necessidade de grande quantidade de memória
+visto que não haverá grande quantidade de dados.
+\end{itemize}
+\item Identificação de concorrências -- quais algoritmos podem ser implementados
+usando processamento paralelo. 
+
+\begin{itemize}
+\item O software não necessitará de uma grande escala de processamento,
+logo, não haverá necessidade de processamento paralelo.
+\end{itemize}
+\end{itemize}
+\item Plataformas\index{Plataformas}
+\begin{itemize}
+\item Identificação e definição das plataformas a serem suportadas: hardware,
+sistema operacional e linguagem de software.
+
+\begin{itemize}
+\item Neste projeto será utilizado a linguagem de programação C++.
+\item O software deverá ser multiplataforma, podendo ser executado em Windows
+e GNU/Linux.
+\item O software será desenvolvido no sistema operacional Windows 11 em
+máquinas com processador Intel Core i5-11ª geração e Intel Core i3-10ª
+geração.
+\end{itemize}
+\item Seleção das bibliotecas externas a serem utilizadas.
+
+\begin{itemize}
+\item Neste projeto será utilizada a biblioteca padrão da linguagem C++,
+incluindo vector, string, iostream, fstream, sstream e iremos utilizar
+a classe CGnuplot, que fornece acesso ao programa externo Gnuplot
+(\href{http://www.gnuplot.info/}{link}).
+\end{itemize}
+\item Seleção do ambiente de desenvolvimento para montar a interface de
+desenvolvimento -- IDE. 
+
+\begin{itemize}
+\item Neste projeto a IDE utilizada será o software Embarcadero na versão
+6.3 (\href{https://www.embarcadero.com/br/}{link}) e o DEV C++ na
+versão 5.11 (\href{https://www.bloodshed.net/}{link})..
+\end{itemize}
+\end{itemize}
+\end{enumerate}
+
+\section{Projeto orientado a objeto -- POO\index{POO}\index{Projeto orientado a objeto}\label{sec:Projeto-orientado-a-objeto}}
+
+O projeto orientado a objeto é a etapa posterior ao projeto do sistema.
+Baseia-se na análise, mas considera as decisões do projeto do sistema.
+Acrescenta a análise desenvolvida e as características da plataforma
+escolhida (hardware, sistema operacional e linguagem de software).
+Passa pelo maior detalhamento do funcionamento do software, acrescentando
+atributos e métodos que envolvem a solução de problemas específicos
+não identificados durante a análise.
+
+Envolve a otimização da estrutura de dados e dos algoritmos, a minimização
+do tempo de execução, de memória e de custos. Existe um desvio de
+ênfase para os conceitos da plataforma selecionada.
+
+Por exemplo, na análise você define que existe um método para salvar
+um arquivo em disco, define um atributo nomeDoArquivo, mas não se
+preocupa com detalhes específicos da linguagem. Já no projeto, você
+inclui as bibliotecas necessárias para acesso ao disco, cria um objeto
+específico para acessar o disco, podendo, portanto, acrescentar novas
+classes àquelas desenvolvidas na análise.
+
+\subsubsection{Efeitos do projeto no modelo\index{modelo} estrutural\label{subsec:Efeito-do-projeto-no-modelo-estrutural}}
+\begin{itemize}
+\item Adicionar nos diagramas de pacotes as bibliotecas e subsistemas selecionados
+no projeto do sistema (exemplo: a biblioteca gráfica selecionada).
+
+\begin{itemize}
+\item Neste projeto, foi utilizada a classe \texttt{CGnuplot} a fim de gerar
+as curvas para realização de análises gráficas. Para isto, é necessário
+que haja a instalação do software Gnuplot para que o funcionamento
+do Simulador seja totalmente garantido.
+\end{itemize}
+\item Novas classes e associações oriundas das bibliotecas selecionadas
+e da linguagem escolhida devem ser acrescentadas ao modelo.
+
+\begin{itemize}
+\item Neste projeto, foram feitas associações entre as classes CGnuplot
+e CSimuladorCurvasIPR para que ocorra a geração de gráficos dos parâmetros
+calculados;
+\item As classes CRocha, CReservatorio, CPoco e CFluido estão associadas
+a CSimuladorCurvasIPR pois configuram os dados fundamentais que serão
+utilizados nos modelos empíricos;
+\item Por fim, as classes CIPRVogel, CIPRGeneralizada,CIPRLinear e CIPRFetkovich
+também estão relacionadas a CSimuladorCurvasIPR visto que são os modelos
+empíricos que serão utilizados nos cálculos que resultarão nos parâmetros
+principais das curvas de IPR (pressão e vazão).
+\end{itemize}
+\item Estabelecer as dependências e restrições associadas à plataforma escolhida.
+
+\begin{itemize}
+\item O software utiliza o HD, processador e o teclado do computador;
+\item Pode ser executado nas plataformas GNU/Linux, Windows ou Mac;
+\item Nos Sistemas Operacionais citados, há necessidade de instalação do
+software Gnuplot para o funcionamento total do programa. 
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Efeitos do projeto no modelo\index{modelo} dinâmico\label{subsec:Efeito-do-projeto-no-modelo-dinamico}}
+\begin{itemize}
+\item Revisar os diagramas de seqüência e de comunicação considerando a
+plataforma escolhida.
+
+\begin{itemize}
+\item Os diagramas de sequência e comunicação serão revisados, se necessário,
+durante as etapas de desenvolvimento do código.
+\end{itemize}
+\item Verificar a necessidade de se revisar, ampliar e adicionar novos diagramas
+de máquinas de estado e de atividades. 
+
+\begin{itemize}
+\item Os diagramas de máquina de estado e atividades sofrerão correções
+se surgir a necessidade à medida que o código for desenvolvido..
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Efeitos do projeto nos atributos\index{atributos}\label{subsec:Efeito-do-projeto-nos-atributos}}
+\begin{itemize}
+\item Atributos novos podem ser adicionados a uma classe, como, por exemplo,
+atributos específicos de uma determinada linguagem de software (acesso
+a disco, ponteiros, constantes e informações correlacionadas).
+
+\begin{itemize}
+\item Neste projeto, os atributos fin e fout deverão ser criados a fim de
+possibilitar a leitura dos dados a partir de um arquivo de disco bem
+como criar um arquivo com a saída de dados.
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Efeitos do projeto nos métodos\index{métodos}\index{Efeitos do projeto nos métodos}}
+\begin{itemize}
+\item Em função da plataforma escolhida, verifique as possíveis alterações
+nos métodos. O projeto do sistema costuma afetar os métodos de acesso
+aos diversos dispositivos (exemplo: hd, rede).
+
+\begin{itemize}
+\item Neste projeto, além da possibilidade de entrada de dados por um arquivo
+de disco, estes poderão também ser digitados pelo usuário utilizando
+o teclado do computador de maneira a não se limitar somente na utilização
+de uma das vias.
+\end{itemize}
+\item Revise os diagramas de classes, de sequência e de máquina de estado.
+
+\begin{itemize}
+\item As classes deverão ser revisadas a medida que for notada a necessidade
+de adicionar uma ou mais classes durante o desenvolvimento do código.
+Atualmente, foram adicionadas as classes CRocha, CGeometria, CRadial,
+CLinear, CIPR, COleo e CGas, com o intuito solucionar uma maior gama
+de problemas relacionados a IPR de gás e para reservatórios de diferentes
+geometrias.
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Efeitos do projeto nas heranças\index{heranças}\index{Efeitos do projeto nas heranças}\index{Heranças}}
+\begin{itemize}
+\item Reorganização das classes e dos métodos (criar métodos genéricos com
+parâmetros que nem sempre são necessários e englobam métodos existentes).
+
+\begin{itemize}
+\item Foi criada uma classe-base CIPR para as classes CIPRLinear, CIPRVogel,
+CIPRFetkovich e CIPRGeneralizada, duas classes herdeiras da classe
+CFluido, COleo e CGas, e as classes foram reordenadas de modo que
+a classe CRocha seja uma classe-base para CReservatorio, essa seja
+uma classe-base para CGeometria e, por fim, essa seja uma classe-base
+para duas classes herdeiras, CRadial e CLinear.
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Efeitos do projeto nas associações\index{Efeitos do projeto nas associações}\index{Associações}}
+\begin{itemize}
+\item Deve-se definir na fase de projeto como as associações serão implementadas,
+se obedecerão um determinado padrão ou não. 
+
+\begin{itemize}
+\item O projeto, ao referir-se a classes e associações, sofrerá mudanças
+futuras quando o código começar a ser desenvolvido.
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Efeitos do projeto nas otimizações\index{otimizações}}
+\begin{itemize}
+\item A ordem de execução pode ser alterada.
+
+\begin{itemize}
+\item Um menu com opções distintas irá aparecer na tela de modo que o usuário
+poderá escolher como gostaria de entrar com os dados, via teclado
+ou disco, o modelo empírico que gostaria de utilizar para realização
+dos cálculos de pressão e vazão. Logo após, o gráfico será gerado
+e o usuário poderá salvá-lo ou não.
+\end{itemize}
+\end{itemize}
+As dependências das bibliotecas e arquivos são demonstrados pelo diagrama
+de componentes e as dependências entre o sistema e o hardware são
+ilustradas pelo diagrama de implantação.
+
+\section{Diagrama de componentes\index{Diagrama de componentes}\label{sec:Diagrama-de-componentes}}
+
+O diagrama de componentes mostra a forma como os componentes do software
+se relacionam, suas dependências. Inclui itens como: componentes,
+subsistemas, executáveis, nós, associações, dependências, generalizações,
+restrições e notas. Exemplos de componentes são bibliotecas estáticas,
+bibliotecas dinâmicas, dlls, componentes Java, executáveis, arquivos
+de disco, código-fonte.
+
+Veja na Figura \ref{cap:Diagrama-de-componentes} o de diagrama de
+componentes. Dessa forma, um diagrama de componentes é uma ferramenta
+valiosa para o seu projeto de desenvolvimento de software para simulação
+de curvas IPR na engenharia de petróleo por várias razões:
+\begin{itemize}
+\item Visualiza a estrutura do sistema;
+\item Mostra as dependências entre os elementos;
+\item Organiza o código em módulos;
+\item Facilita a comunicação na equipe;
+\item Identifica áreas críticas do sistema;
+\item Serve como documentação.
+\end{itemize}
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=1\textwidth]{imagens/DiagramaDeComponentesIPR}
+\par\end{centering}
+\caption{Diagrama de componentes\label{cap:Diagrama-de-componentes}}
+\end{figure}
+
+
+\section{Diagrama de implantação\index{Diagrama de implantação}\index{Diagrama de execução}\label{sec:Diagrama-de-execu=0000E7=0000E3o}}
+
+O diagrama de implantação é um diagrama de alto nível que inclui relações
+entre o sistema e o hardware e que se preocupa com os aspectos da
+arquitetura computacional escolhida. Seu enfoque é o hardware, a configuração
+dos nós em tempo de execução. O diagrama de implantação deve incluir
+os elementos necessários para que o sistema seja colocado em funcionamento:
+computador, periféricos, processadores, dispositivos, nós, relacionamentos
+de dependência, associação, componentes, subsistemas, restrições e
+notas. O diagrama de implantação desempenha um papel crucial no projeto
+de engenharia de petróleo com simulações de curvas IPR para Poços
+Verticais. Ele se aplica de forma significativa ao ajudar a visualizar
+como os diversos componentes de software e hardware interagem em seu
+ambiente de execução. Neste contexto, o diagrama de implantação permite
+a:
+\begin{itemize}
+\item Visualização da Infraestrutura;
+\item Modelagem de Conexões;
+\item Planejamento de Recursos;
+\item Identificação de Pontos de Falha;
+\item Escalabilidade.
+\end{itemize}
+Veja na Figura \ref{cap:Diagrama-de-implanta=0000E7=0000E3o.} um
+exemplo de diagrama de implantação.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=1\textwidth]{imagens/DiagramadeImplantacao_IPR}
+\par\end{centering}
+\caption{Diagrama de implantação\label{cap:Diagrama-de-implanta=0000E7=0000E3o.}}
+\end{figure}
+
+
+\subsection{Lista de características <\textcompwordmark <features>\textcompwordmark >\label{subsec: Lista de caracter=0000EDsticas <<features>>}}
+
+No final do ciclo de concepção e análise chegamos a uma lista de características
+<\textcompwordmark <\emph{features}>\textcompwordmark > que teremos
+de implementar.
+
+Após a análises desenvolvidas e considerando o requisito de que este
+material deve ter um formato didático, chegamos a seguinte lista:
+\begin{itemize}
+\item v0.1
+\begin{itemize}
+\item Lista de classes a serem implementadas: CFluido, COleo, CGas, CPoco,
+CRocha, CReservatorio, CGeometria, CGeometriaLinear, CGeometriaRadial,
+CIPR, CIPRLinear, CIPRVogel, CIPRFetkovich, CIPRGeneralizada, CSimuladorCurvasIPR
+e CGnuplot.
+\item Testes:
+\begin{itemize}
+\item O software deve ser capaz de exibir um menu com uma lista de opções
+ao usuário;
+\item O software deve carregar informações via disco ou ler as informações
+inseridas pelo usuário via teclado;
+\item O software deve disponibilizar uma opção para que o usuário selecione
+o modelo empírico a ser utilizado, desde que seja adequado para seu
+problema
+\item O software deve, a partir dos dados inseridos, realizar cálculos iterativos
+de vazões e exportar os resultados para um arquivo externo;
+\item O software deve plotar, utilizando a biblioteca externa Gnuplot, gráfico
+com a curva IPR do modelo selecionado;
+\item O software deve oferecer ao usuário a possibilidade de salvar o gráfico
+gerado caso seja de necessidade do mesmo;
+\end{itemize}
+\end{itemize}
+\item v0.3
+\begin{itemize}
+\item Lista de classes a serem implementadas
+\item Testes
+\end{itemize}
+\item v0.5
+\begin{itemize}
+\item Lista de classes a serem implementadas
+\item Testes
+\end{itemize}
+\end{itemize}
+
+\subsection{Tabela classificação sistema\label{subsec:Tabela-classifica=0000E7=0000E3o-sistema}}
+
+A Tabela a seguir é utilizada para classificação do sistema desenvolvido.
+Deve ser preenchida na etapa de projeto e revisada no final, quando
+o software for entregue na sua versão final.
+
+\begin{longtable}[c]{|>{\centering}p{5cm}|>{\centering}p{12cm}|}
+\hline 
+\textcolor{blue}{Licença:} & {[}X{]} livre GPL-v3 {[} {]} proprietária\tabularnewline
+\hline 
+\textcolor{blue}{Engenharia de software:} & {[} {]}\textcolor{blue}{{} }tradicional {[}X{]} ágil {[} {]} outras\tabularnewline
+\hline 
+\textcolor{blue}{Paradigma de programação:} & {[} {]} estruturada {[}X{]} orientado a objeto - POO {[} {]} funcional\tabularnewline
+\hline 
+\textcolor{blue}{Modelagem UML:} & {[}X{]} básica {[}X{]} intermediária {[} {]} avançada\tabularnewline
+\hline 
+\textcolor{blue}{Algoritmos}: & {[}X{]} alto nível {[}X{]} baixo nível\tabularnewline
+\hline 
+ & implementação: {[} {]} recursivo ou {[}X{]} iterativo; {[}X{]} determinístico
+ou {[} {]} não-determinístico; {[} {]} exato ou {[}X{]} aproximado\tabularnewline
+\hline 
+ & concorrências: {[}X{]} serial - síncrona {[}{]} concorrente {[}{]}
+paralelo\tabularnewline
+\hline 
+ & paradigma: {[}X{]} dividir para conquistar {[} {]} programação linear
+{[} {]} transformação/ redução {[} {]} busca e enumeração {[} {]}
+heurístico e probabilístico {[} {]} baseados em pilhas\tabularnewline
+\hline 
+\textcolor{blue}{Software:} & {[} {]} de base {[}X{]} aplicados {[} {]} de cunho geral {[}X{]}
+específicos para determinada área {[}X{]} educativo {[}X{]} científico\tabularnewline
+\hline 
+ & instruções: {[}X{]} alto nível {[} {]} baixo nível\tabularnewline
+\hline 
+ & otimização: {[}X{]} serial não otimizado {[}X{]} serial otimizado
+{[}{]} concorrente {[}{]} paralelo {[} {]} vetorial\tabularnewline
+\hline 
+ & interface do usuário: {[} {]} kernel numérico {[} {]} linha de comando
+{[} {]} modo texto {[}X{]} híbrida (texto e saídas gráficas) {[} {]}
+modo gráfico (ex: Qt) {[} {]} navegador\tabularnewline
+\hline 
+\textcolor{blue}{Recursos de C++:} & {[}X{]} C++ básico (FCC): variáveis padrões da linguagem, estruturas
+de controle e repetição, estruturas de dados, struct, classes(objetos,
+atributos, métodos), funções; entrada e saída de dados (\emph{streams}),
+funções de cmath\tabularnewline
+\hline 
+ & {[}X{]} C++ intermediário: funções lambda. Ponteiros, referências,
+herança, herança múltipla, polimorfismo, sobrecarga de funções e de
+operadores, tipos genéricos (templates), \emph{smarth pointers}. Diretrizes
+de pré-processador, classes de armazenamento e modificadores de acesso.
+Estruturas de dados: enum, uniões. Bibliotecas: entrada e saída acesso
+com arquivos de disco, redirecionamento. Bibliotecas: \emph{filesystem}\tabularnewline
+\hline 
+ & {[}{]} C++ intermediário 2: A biblioteca de gabaritos de C++ (a STL),
+containers, iteradores, objetos funções e funções genéricas. Noções
+de processamento paralelo (múltiplas threads, uso de \emph{thread,
+join }e \emph{mutex}). Bibliotecas: \emph{random, threads}\tabularnewline
+\hline 
+ & {[} {]} C++ avançado: Conversão de tipos do usuário, especializações
+de templates, exceções. Cluster de computadores, processamento paralelo
+e concorrente, múltiplos processos (pipes, memória compartilhada,
+sinais). Bibliotecas: \emph{expressões regulares, múltiplos processos}\tabularnewline
+\hline 
+\textcolor{blue}{Bibliotecas de C++:} & {[}X{]} Entrada e saída de dados (\emph{streams}) {[}X{]} cmath {[}X{]}
+\emph{filesystem }{[} {]} \emph{random }{[}X{]} \emph{threads }{[}
+{]} \emph{expressões regulares }{[} {]} \emph{múltiplos processos
+{[}X{]} Vector {[}X{]} Locale {[}X{]} String}\tabularnewline
+\hline 
+\textcolor{blue}{Bibliotecas externas:} & {[}X{]} \texttt{CGnuplot }{[}{]} \texttt{QCustomPlot }{[} {]} \texttt{Qt
+diálogos} {[} {]} QT Janelas/menus/BT\_\_\_\_\_\_\tabularnewline
+\hline 
+\textcolor{blue}{Ferramentas auxiliares:} & Montador:\texttt{ }{[}{]} make\texttt{ }{[}{]} cmake\texttt{ }{[}{]}
+qmake\tabularnewline
+\hline 
+\textcolor{blue}{IDE:} & {[} {]} Editor simples: kate/gedit/emacs\texttt{ }{[} {]} kdevelop\texttt{
+}{[} {]} QT-Creator\texttt{ }{[}X{]} Embarcadero {[}X{]} Dev C++\tabularnewline
+\hline 
+\textcolor{blue}{SCV:} & {[} {]} cvs\texttt{ }{[} {]} svn\texttt{ }{[}X{]} git\tabularnewline
+\hline 
+\textcolor{blue}{Disciplinas correlacionadas} & {[} {]} estatística {[} {]} cálculo numérico  {[} {]}\texttt{ }modelamento
+numérico  {[} {]} análise e processamento de imagens {[}X{]} elevação
+e escoamento {[}X{]} engenharia de reservatório\tabularnewline
+\hline 
+\end{longtable}

@@ -1,0 +1,234 @@
+\lhead{\thechapter\space - Especificação}  
+
+\chapter{Especificação\index{Concepção}\index{especificação}}
+
+Nesta seção do projeto de engenharia, é apresentada a especificação
+do software a ser desenvolvido para aplicação em sistemas de modelagem
+de curvas IPR, utilizado modelos empíricos em poços verticais. Para
+a indústria de Óleo e Gás, este processo é altamente relevante, pois
+ao dispor de um software capaz de construir curvas IPR (Figura \ref{cap:IPR-tipica}),
+será possível estimar características importantes acerca dos poços
+analisados, dentre elas a sua produtividade. Além disso, o projeto
+visa estimar e fornecer ao usuário o momento em que será necessário
+utilizar-se de métodos de recuperação terciária, como a elevação artificial.
+
+\begin{figure}[h]
+\begin{centering}
+\includegraphics[width=0.8\textwidth]{imagens/IPR}
+\par\end{centering}
+\caption{Curva IPR típica de um reservatório de óleo\label{cap:IPR-tipica}}
+\end{figure}
+
+
+\section{Nome do sistema/produto }
+
+\begin{tabular*}{14cm}{@{\extracolsep{\fill}}|c|>{\centering}m{8cm}|}
+\hline 
+\textbf{Nome} & Simulação de Curvas IPR Utilizando Modelos Empíricos para Poços Verticais\tabularnewline
+\hline 
+\textbf{Componentes principais} & - Implementação de Modelos Empíricos de IPR: Será desenvolvida uma
+gama diversificada de modelos empíricos, os quais representarão com
+precisão os padrões de produção em poços verticais de petróleo.
+
+- Entrada Customizada: O software possibilitará aos usuários inserirem
+parâmetros específicos do poço, tais como propriedades dos fluidos
+e do reservatório, para conduzir simulações altamente personalizadas.
+
+- Cálculos de Produtividade: O software executará cálculos para estimar
+a produtividade prevista em um poço vertical, com base nos modelos
+empíricos selecionados e nos dados fornecidos.
+
+- Visualização Gráfica: O software será equipado com recursos de visualização
+gráfica, a fim de exibir de forma clara e compreensível os resultados,
+facilitando a análise e interpretação dos resultados. \tabularnewline
+\hline 
+\textbf{Missão} & A missão subjacente a este software é disponibilizar aos estudantes
+do curso de Elevação e Escoamento e à indústria uma ferramenta de
+simulação de curvas IPR de alta qualidade. Por meio de uma interface
+intuitiva e da capacidade de fornecer estimativas precisas de produtividade,
+o software tem por objetivo apoiar engenheiros, pesquisadores e profissionais
+do setor em suas decisões e na otimização da produção de poços verticais.
+Fundindo a precisão dos modelos com a flexibilidade de entrada dos
+dados, essa solução almeja tornar-se uma ferramenta indispensável
+para avaliação e planejamento de operações em poços de petróleo.\tabularnewline
+\hline 
+\end{tabular*}
+
+\section{Especificação\index{especificação}}
+
+O presente projeto tem como objetivo a criação de um software avançado
+de simulação de curvas IPR (\emph{Inflow Performance Relationship}),
+utilizando modelos empíricos para poços verticais de petróleo. A simulação
+de curvas IPR permite estimativas precisas da produtividade dos poços
+e auxiliam na tomada de decisões estratégicas. O software a ser desenvolvido
+busca proporcionar uma ferramenta poderosa para engenheiros e profissionais
+do setor, que desejam analisar e otimizar a produção de poços verticais
+de maneira eficiente e eficaz.
+
+O fundamento deste projeto conta com a aplicação de modelos empíricos
+conhecidos, incluindo as abordagens de Fetkovich, Vogel, e outras
+metodologias de IPR generalizada. Esses modelos têm sido fundamentais
+na avaliação da performance de poços de petróleo, considerando variáveis
+complexas como propriedades do reservatório, características dos fluidos
+e condições operacionais. O software que está sendo desenvolvido permitirá
+aos usuários empregarem esses modelos com facilidade, fornecendo uma
+plataforma de simulação confiável e precisa.
+
+Os modelos empíricos como Fetkovich e Vogel têm sido amplamente utilizados
+para representar a relação entre a vazão de óleo e a pressão na entrada
+do poço. O Fetkovich é reconhecido pela sua aplicabilidade a diferentes
+regimes de fluxo, enquanto o modelo Vogel oferece uma abordagem simplificada
+para estimar a produtividade. Além disso, abordar-se-á a adaptação
+desses modelos para situações específicas, como poços estratificados,
+onde a heterogeneidade do reservatório é levada em consideração para
+uma simulação mais precisa.
+
+Em suma, o projeto em questão fornece uma solução de simulação para
+a análise de curvas IPR em poços verticais. Com modelos empíricos
+consagrados, como Fetkovich e Vogel, juntamente com adaptações para
+poços estratificados e outras variações, o software busca simplificar
+e aprimorar a avaliação da produtividade de poços de petróleo. Com
+isso, engenheiros e profissionais do setor terão uma ferramenta valiosa
+para otimizar a produção e tomar decisões embasadas no setor de exploração
+e produção de petróleo.
+
+O software será desenvolvido utilizando o conceito de programação
+orientada a objeto, interface intuitiva e utilizará o software externo
+Gnuplot para gerar e salvar os gráficos.
+
+O software tem licença GPL 2.0.
+
+\pagebreak{}
+
+\subsection{Requisitos funcionais}
+
+Apresenta-se a seguir os requisitos funcionais.
+
+\begin{tabular*}{14cm}{@{\extracolsep{\fill}}|c|p{11.5cm}|}
+\hline 
+\textbf{RF-01} & O usuário deve ter liberdade para escolher quais parâmetros de entrada
+utilizar, fornecendo-os através do teclado.\tabularnewline
+\hline 
+\end{tabular*}
+
+\bigskip{}
+\begin{tabular*}{14cm}{@{\extracolsep{\fill}}|c|p{11.5cm}|}
+\hline 
+\textbf{RF-02} & O usuário deve escolher o modelo adequado para seu problema de engenharia
+específico.\tabularnewline
+\hline 
+\end{tabular*}
+
+\bigskip{}
+
+\begin{tabular*}{14cm}{@{\extracolsep{\fill}}|c|p{11.5cm}|}
+\hline 
+\textbf{RF-03} & O usuário poderá plotar suas curvas em um gráfico utilizando o software
+externo Gnuplot. O gráfico poderá ser salvo como imagem.\tabularnewline
+\hline 
+\end{tabular*}
+
+\bigskip{}
+
+
+\subsection{Requisitos não funcionais}
+
+\begin{tabular*}{14cm}{@{\extracolsep{\fill}}|c|p{11cm}|}
+\hline 
+\textbf{RNF-01} & Os cálculos devem ser feitos utilizando-se formulações/modelos matemáticos
+conhecidos na literatura.\tabularnewline
+\hline 
+\end{tabular*}
+
+\bigskip{}
+
+\begin{tabular*}{14cm}{@{\extracolsep{\fill}}|c|p{11cm}|}
+\hline 
+\textbf{RNF-02} & Usuário deve ter conhecimento básico e prévio de assuntos sobre Elevação
+e Escoamento para escolha do método mais adequado.\tabularnewline
+\hline 
+\end{tabular*}\bigskip{}
+
+\begin{tabular*}{14cm}{@{\extracolsep{\fill}}|c|p{11cm}|}
+\hline 
+\textbf{RNF-03} & O programa deverá ser multi-plataforma, podendo ser executado em \emph{Windows},
+\emph{GNU/Linux} ou \emph{Mac}.\tabularnewline
+\hline 
+\end{tabular*}
+
+\subsection{Casos de uso\index{Casos de uso}}
+
+Nesta seção, apresenta-se a Tabela \ref{cap:Caso-de-uso (tabela)}
+que especifica um caso de uso geral para o software. O diagrama de
+caso de uso geral (Figura \ref{cap:Diagrama-caso-uso-geral}) e o
+diagrama de caso de uso específico (Figura \ref{cap:Diagrama-de-caso-de-uso-especifico})
+para casos onde o reservatório é estratificado, isto é, cada camada
+possui diferentes propriedades.
+
+\begin{table}[H]
+\caption{Caso de uso\label{cap:Caso-de-uso (tabela)}}
+
+~
+\centering{}%
+\begin{tabular}{|c|p{10cm}|}
+\hline 
+Nome do caso de uso: & Simulação de curvas IPR de um reservatório.\tabularnewline
+\hline 
+\hline 
+Resumo/descrição: & Determinação das curvas IPR através das propriedades dos fluidos,
+rocha e poço para análise do comportamento do reservatório ao longo
+do tempo.\tabularnewline
+\hline 
+Etapas: & 1. Definição do número de camadas.
+
+2. Entrada de dados do reservatório, fluidos e poço via teclado.
+
+3. Definir método adequado para a simulação.
+
+4. Cálculo da vazão ao longo do tempo.
+
+5. Gerar gráfico.
+
+6. Analisar resultados.\tabularnewline
+\hline 
+\hline 
+Cenários alternativos: & Inserir valores negativos ou incompatíveis com a ordem de grandeza
+de um reservatório real.\tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+\bigskip{}
+
+
+\subsection{Diagrama de caso de uso geral}
+
+O diagrama de caso de uso geral da Figura \ref{cap:Diagrama-caso-uso-geral}
+mostra o usuário interagindo com o software para obter as curvas de
+IPR do reservatório. Nesse caso, o usuário insere os dados do problema
+(propriedades dos fluidos, reservatório e poço), selecionando o modelo
+mais adequado para o problema que ele possuir e analisando os resultados
+obtidos. \bigskip{}
+
+\begin{figure}[h]
+\begin{centering}
+\includegraphics[width=1\textwidth]{imagens/DiagramaDeCasoUso-Geral}
+\par\end{centering}
+\caption{Diagrama de caso de uso -- Caso de uso geral\label{cap:Diagrama-caso-uso-geral}}
+\end{figure}
+\pagebreak{}
+
+\subsection{Diagrama de caso de uso específico}
+
+O caso de uso para reservatórios homogêneos é descrito na Figura \ref{cap:Diagrama-caso-uso-geral}
+e na Tabela \ref{cap:Caso-de-uso (tabela)}. Para reservatórios estratificados
+o processo é detalhado na Figura \ref{cap:Diagrama-de-caso-de-uso-especifico}.
+O usuário entrará com o número de camadas do reservatório e com as
+propriedades de cada camada do reservatório para obtenção das curvas.\bigskip{}
+
+\begin{figure}[h]
+\begin{centering}
+\includegraphics[width=1\textwidth]{imagens/DiagramaDeCasoDeUso-Especifico-AnaliseDosResultados}
+\par\end{centering}
+\caption{Diagrama de caso de uso específico -- Reservatórios Estratificados\label{cap:Diagrama-de-caso-de-uso-especifico}}
+\end{figure}
+

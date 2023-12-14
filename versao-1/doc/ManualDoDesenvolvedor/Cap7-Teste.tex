@@ -1,0 +1,69 @@
+
+\chapter{Teste\label{chap:Teste}}
+
+\lhead{\thechapter - Teste} 
+
+Todo projeto de engenharia passa por uma etapa de testes. Neste capítulo
+apresentamos alguns testes do software desenvolvido. Estes testes
+devem dar resposta aos diagramas de caso de uso inicialmente apresentados
+(diagramas de caso de uso geral e específicos).
+
+\section{Teste 1\label{sec:Teste-1}: Entrada de dados}
+
+O software inicia com a entrada de dados referentes ao problema como:
+tipo de fluido, raio de poço, viscosidade, fator volume formação do
+fluido e etc. Os dados são inseridos via teclado pelo usuário \ref{fig:Software-Entrada-Dados}.
+É importante notar que os tipos de dados inseridos está condicionado
+ao método de IPR que será utilizado nos cálculos.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=1\textwidth]{imagens/EntradaDados}
+\par\end{centering}
+\caption{Software - Entrada de dados.\label{fig:Software-Entrada-Dados}}
+\end{figure}
+
+\lstset{style=out} \lstinputlisting[ caption={Exemplo teste 1}, label={CTipoFluido-h},extendedchars=true,breaklines=true,basicstyle=\footnotesize\tt] {../../test/Teste-01-Vogel.txt}
+
+
+\section{Teste 2\label{sec:Teste-2}: Cálculos}
+
+Após a entrada de dados é realizado o cálculo de vazões com base no
+método selecionado. A saída dos resultados é gerada com o valor de
+vazão para a pressão de fundo em questão\ref{fig:Calculos}.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=1\textwidth]{imagens/CalculoMetodos}
+\par\end{centering}
+\caption{Cálculo de vazão.\label{fig:Calculos}}
+\end{figure}
+
+
+\section{Teste 3\label{sec:Teste-3}: Plotar gráficos}
+
+Após a entrada de dados e cálculo dos resultados o usuário pode optar
+pelo plot das curvas. Os resultados quando comparados à literatura
+foram satisfatórios \ref{fig:Plot-graficos}.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=1\textwidth]{imagens/Plotar-Graficos}
+\par\end{centering}
+\caption{Gráfico IPR generalizada\label{fig:Plot-graficos}}
+\end{figure}
+
+
+\section{Teste 4\label{sec:Teste-4}: Salvar gráficos}
+
+Após o gráfico ser gerado o usuário possui a autonomia de salvar o
+gráfico e executar novamente o programa para utilizar outros métodos
+de cálculo de IPR \ref{fig:Salvar-Graficos}.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=1\textwidth]{imagens/SalvarGraficos}
+\par\end{centering}
+\caption{Gráfico IPR generalizada\label{fig:Salvar-Graficos}}
+\end{figure}
+
