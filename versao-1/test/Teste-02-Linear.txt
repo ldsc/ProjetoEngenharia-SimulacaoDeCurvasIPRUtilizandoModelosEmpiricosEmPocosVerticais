@@ -1,0 +1,97 @@
+
+--------------- SIMULADOR DE CURVAS IPR PARA POCOS VERTICAIS ---------------
+----------------------------------------------------------------------------
+------------ Atila Junior, Giovanna Massardi e Marcelo Bernardo ------------
+-------------------------------- UENF/LENEP --------------------------------
+
+
+--------------- SIMULADOR DE CURVAS IPR PARA POCOS VERTICAIS ---------------
+----------------------------------------------------------------------------
+------------ Atila Junior, Giovanna Massardi e Marcelo Bernardo ------------
+-------------------------------- UENF/LENEP --------------------------------
+
+Qual o metodo sera utilizado?
+1 - IPR Linear
+2 - IPR Generalizada
+3 - IPR de Fetkovich (Ideal para reservatorios de gas)
+4 - IPR de Vogel
+----------------------------------------------------------------------------
+1
+
+Entre com o comprimento do reservatorio (FT)
+2980
+Entre com a largura do reservatorio (FT)
+600
+Entre com o raio do poco (FT):
+0.328
+Entre com a pressao inicial do reservatorio (PSIA):
+5651
+Entre com a pressao de bolha do reservatorio (PSIA):
+50
+Qual tipo de fluido presente no reservatorio?
+1 - Oleo
+2 - Gas
+----------------------------------------------------------------------------
+1
+Entre com fator volume de formacao do oleo:
+1.1
+Entre com a viscosidade do fluido (CP):
+1.7
+Entre com a espessura do reservatorio (FT):
+53
+Entre com a permeabilidade da rocha reservatorio (MD):
+8.2
+Entre com fator de pelicula do reservatorio:
+0
+IP = 0.23505
+
+
+
+Calculando IPR...
+
+
+Deseja realizar o calculo de pressoes em quantas partes?
+Digite um numero inteiro.
+25
+Pwf: 5651, Vazao: 0
+Pwf: 5424.96, Vazao: 53.1307
+Pwf: 5198.92, Vazao: 106.261
+Pwf: 4972.88, Vazao: 159.392
+Pwf: 4746.84, Vazao: 212.523
+Pwf: 4520.8, Vazao: 265.653
+Pwf: 4294.76, Vazao: 318.784
+Pwf: 4068.72, Vazao: 371.915
+Pwf: 3842.68, Vazao: 425.045
+Pwf: 3616.64, Vazao: 478.176
+Pwf: 3390.6, Vazao: 531.307
+Pwf: 3164.56, Vazao: 584.437
+Pwf: 2938.52, Vazao: 637.568
+Pwf: 2712.48, Vazao: 690.699
+Pwf: 2486.44, Vazao: 743.829
+Pwf: 2260.4, Vazao: 796.96
+Pwf: 2034.36, Vazao: 850.091
+Pwf: 1808.32, Vazao: 903.221
+Pwf: 1582.28, Vazao: 956.352
+Pwf: 1356.24, Vazao: 1009.48
+Pwf: 1130.2, Vazao: 1062.61
+Pwf: 904.16, Vazao: 1115.74
+Pwf: 678.12, Vazao: 1168.87
+Pwf: 452.08, Vazao: 1222.01
+Pwf: 226.04, Vazao: 1275.14
+Pwf: 8.52651e-13, Vazao: 1328.27
+Pwf: 0, Vazao: 1328.27
+Deseja plotar o grafico?
+ 1 - Sim
+ 2 - Nao
+----------------------------------------------------------------------------
+1
+
+Deseja salvar o grafico?
+ 1 - Sim
+ 2 - Nao
+----------------------------------------------------------------------------
+1
+Deseja realizar os calculos utilizando outro metodo?
+1 - Sim
+2 - Nao
+----------------------------------------------------------------------------
