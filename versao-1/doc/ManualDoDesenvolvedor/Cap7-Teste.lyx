@@ -180,7 +180,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/giova/Documents/GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocosVerticais/versao-1/test/out/EntradaDados-Generalizada.png
+	filename C:/Users/giova/Documents/GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocosVerticais/versao-1/test/out/EntradaDadosGeneralizada.png
 	width 100text%
 
 \end_inset
@@ -400,7 +400,7 @@ name "sec:Teste-3"
 
 \end_inset
 
-: Plotar gráficos
+: Saída de dados
 \end_layout
 
 \begin_layout Standard
@@ -412,39 +412,30 @@ Após a entrada de dados e cálculo dos resultados o usuário pode optar pela
 
 \begin_layout Standard
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Graphics
 	filename C:/Users/giova/Documents/GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocosVerticais/versao-1/test/out/Teste-01-Generalizada-GraficoIPR.png
-	lyxscale 25
 	width 100text%
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Gráfico IPR Generalizada
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Plot-graficos"
+\end_layout
 
 \end_inset
 
 
 \end_layout
 
-\end_inset
-
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -460,10 +451,8 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Graphics
 	filename C:/Users/giova/Documents/GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocosVerticais/versao-1/test/out/Teste-02-Linear-GraficoIPR.png
-	lyxscale 25
 	width 100text%
 
 \end_inset
@@ -483,10 +472,6 @@ Gráfico IPR Linear
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -499,10 +484,8 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Graphics
 	filename C:/Users/giova/Documents/GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocosVerticais/versao-1/test/out/Teste-03-Vogel-GraficoIPR.png
-	lyxscale 25
 	width 100text%
 
 \end_inset
@@ -538,10 +521,8 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Graphics
 	filename C:/Users/giova/Documents/GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocosVerticais/versao-1/test/out/Teste-04-Fetkovich-GraficoIPR.png
-	lyxscale 25
 	width 100text%
 
 \end_inset
@@ -566,42 +547,30 @@ Gráfico IPR Fetkovich
 
 \end_layout
 
-\begin_layout Section
-Teste 4
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Teste-4"
-
-\end_inset
-
-: Salvar gráficos
-\end_layout
-
 \begin_layout Standard
-Após o gráfico ser gerado o usuário possui a autonomia de salvar o gráfico
- e executar novamente o programa para utilizar outros métodos de cálculo
- de IPR 
+Por fim, o usuário pode salvar o gráfico em seu computador selecionando
+ o item 1 no Simulador como a imagem 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Salvar-Graficos"
+reference "fig:Salvar-gráfico"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-.
+ demonstra.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Graphics
-	filename imagens/SalvarGraficos.png
-	lyxscale 25
+	filename C:/Users/giova/Documents/GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocosVerticais/versao-1/test/out/SalvarGrafico.png
 	width 100text%
 
 \end_inset
@@ -613,10 +582,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Gráfico IPR generalizada
+Salvar gráfico 
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Salvar-Graficos"
+name "fig:Salvar-gráfico"
 
 \end_inset
 
@@ -625,6 +594,10 @@ name "fig:Salvar-Graficos"
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
