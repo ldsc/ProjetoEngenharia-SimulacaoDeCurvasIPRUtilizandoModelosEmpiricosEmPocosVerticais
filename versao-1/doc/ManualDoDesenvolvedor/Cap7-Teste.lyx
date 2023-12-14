@@ -159,13 +159,15 @@ O software inicia com a entrada de dados referentes ao problema como: tipo
  Os dados são inseridos via teclado pelo usuário 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Software-Entrada-Dados"
+reference "fig:Software-Entrada-Dados-Generalizada"
 
 \end_inset
 
 .
  É importante notar que os tipos de dados inseridos está condicionado ao
  método de IPR que será utilizado nos cálculos.
+ Abaixo, encontra-se o primeiro exemplo o qual utiliza o modelo da IPR Generaliz
+ada.
 \end_layout
 
 \begin_layout Standard
@@ -178,7 +180,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/EntradaDados.png
+	filename C:/Users/giova/Documents/GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocosVerticais/versao-1/test/out/EntradaDados-Generalizada.png
 	width 100text%
 
 \end_inset
@@ -190,10 +192,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Software - Entrada de dados.
+Software - Entrada de dados IPR Generalizada
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Software-Entrada-Dados"
+name "fig:Software-Entrada-Dados-Generalizada"
 
 \end_inset
 
@@ -220,16 +222,102 @@ status open
 \backslash
 lstset{style=out} 
 \backslash
-lstinputlisting[ caption={Exemplo teste 1}, label={CTipoFluido-h},extendedchars=
-true,breaklines=true,basicstyle=
+lstinputlisting[ caption={Exemplo teste 1 - IPR Generalizada}, label={CTipoFluid
+o-h},extendedchars=true,breaklines=true,basicstyle=
 \backslash
 footnotesize
 \backslash
-tt] {../../test/Teste-01-Vogel.txt}
+tt] {../../test/Teste-01-Generalizada.txt}
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O segundo teste foi realizado utilizando o modelo IPR Linear e possui as
+ mesmas premissas da entrada de dados do modelo anterior.
+ Logo, é possível observar abaixo: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
 
+
+\backslash
+lstset{style=out} 
+\backslash
+lstinputlisting[ caption={Exemplo teste 2 - IPR Linear}, label={CTipoFluido-h},e
+xtendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../test/Teste-02-Linear.txt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O terceito teste, assim como os anteriores, também possui a mesma interface
+ de entrada de dados, porém foi compilado com modelo IPR Vogel e está a
+ seguir:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{style=out} 
+\backslash
+lstinputlisting[ caption={Exemplo teste 3 - IPR Vogel}, label={CTipoFluido-h},ex
+tendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../test/Teste-03-Vogel.txt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por último, há o modelo Fetkovich que também foi testado.
+ Observe a seguir as informações que abrangem este modelo:
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{style=out} 
+\backslash
+lstinputlisting[ caption={Exemplo teste  4- IPR Fetkovich}, label={CTipoFluido-h
+},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../../test/Teste-04-Fetkovich.txt}
 \end_layout
 
 \end_inset
@@ -316,16 +404,10 @@ name "sec:Teste-3"
 \end_layout
 
 \begin_layout Standard
-Após a entrada de dados e cálculo dos resultados o usuário pode optar pelo
- plot das curvas.
- Os resultados quando comparados à literatura foram satisfatórios 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Plot-graficos"
-
-\end_inset
-
-.
+Após a entrada de dados e cálculo dos resultados o usuário pode optar pela
+ plotagem das curvas.
+ Os resultados quando comparados à literatura foram satisfatórios e podem
+ ser analisados a seguir.
 \end_layout
 
 \begin_layout Standard
@@ -338,7 +420,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/Plotar-Graficos.png
+	filename C:/Users/giova/Documents/GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocosVerticais/versao-1/test/out/Teste-01-Generalizada-GraficoIPR.png
 	lyxscale 25
 	width 100text%
 
@@ -351,7 +433,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Gráfico IPR generalizada
+Gráfico IPR Generalizada
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Plot-graficos"
@@ -359,6 +441,119 @@ name "fig:Plot-graficos"
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/giova/Documents/GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocosVerticais/versao-1/test/out/Teste-02-Linear-GraficoIPR.png
+	lyxscale 25
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfico IPR Linear
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/giova/Documents/GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocosVerticais/versao-1/test/out/Teste-03-Vogel-GraficoIPR.png
+	lyxscale 25
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfico IPR Vogel
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/giova/Documents/GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocosVerticais/versao-1/test/out/Teste-04-Fetkovich-GraficoIPR.png
+	lyxscale 25
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfico IPR Fetkovich
 \end_layout
 
 \end_inset
