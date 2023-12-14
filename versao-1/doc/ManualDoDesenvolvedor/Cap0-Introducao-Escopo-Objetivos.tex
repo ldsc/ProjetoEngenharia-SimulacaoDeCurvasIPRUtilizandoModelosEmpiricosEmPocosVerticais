@@ -1,0 +1,90 @@
+\tableofcontents{}
+
+\listoffigures
+
+\listoftables
+
+\printnomenclature{}
+
+\pagebreak{}
+
+\chapter{Introdução\label{cha:Introdu=0000E7=0000E3o}}
+
+\lhead{\thechapter\space - Introdução}\pagenumbering{arabic}
+
+\lfoot{Atila Jr., Giovanna M. e Marcelo B.} \rfoot{\today }
+
+No presente projeto de engenharia, desenvolve-se o software de Simulação
+de Curvas IPR (\emph{Inflow Performance Relationship}) utilizando
+Modelos Empíricos em Poços verticais, um software aplicado a engenharia
+de petróleo e que utiliza o paradigma da orientação a objetos. 
+
+Este software tem como finalidade obter curvas de IPR no regime pseudopermanente
+a partir de dados inseridos pelo usuário. Para isso, é necessário
+que o índice de produtividade seja calculado com base nos dados de
+pressão e vazão ou propriedades do reservatório. Dessa forma, os modelos
+empíricos Linear, Fetkovich, Vogel e Vogel Generalizado poderão ser
+escolhidos para realização do cálculo da pressão de fundo e respectivas
+vazões bem como avaliar reservatórios estratificados a partir dos
+cálculos resultantes. Tais valores serão mostrados ao usuário juntamente
+com um gráfico com a curva de IPR e estas informações poderão ser
+salvas em disco. 
+
+\section{Escopo do problema\label{sec:Escopo-do-Problema}}
+
+A curva de IPR, que pode ser chamada de curva de influxo, curva de
+pressão disponível ou curva do índice de produtividade, é uma representação
+gráfica que descreve como a pressão disponível no fundo de um poço
+de petróleo ou gás varia em relação à taxa de fluxo de fluidos. Essas
+medidas são tomadas na profundidade em que o reservatório foi perfurado
+em um momento específico durante a vida útil do campo. Em outras palavras,
+essa curva fornece informações cruciais sobre como a pressão no poço
+reage quando se está produzindo hidrocarbonetos.
+
+Através da análise dessa curva, as decisões estratégicas podem ser
+tomadas para maximizar a eficiência e recuperação de petróleo ou gás,
+além de demonstrar os cenários nos quais intervenções deverão ser
+realizadas assim como definir quando perfurar novos poços. Com isso,
+é possível analisar quando há possíveis limitações no desempenho do
+poço. Ademais, esta ferramenta é frequentemente utilizada em simulações
+de reservatório a fim de prever o comportamento futuro e auxiliar
+em um planejamento de longo prazo.
+
+O cálculo da IPR pode sofrer variações dependendo das características
+do reservatório e se estes dados são conhecidos. Logo, alguns modelos
+matemáticos podem ser aplicados para obter a curva de IPR e inúmeros
+métodos podem ser escolhidos com base nos regimes de escoamento, tipos
+de fluxo e fluidos existentes. Portanto, estas equações e suas respectivas
+análises podem ser encontradas na literatura e, facilitar o cálculo
+e plotagem das curvas é algo extremamente relevante para simulação
+de reservatórios e para o entedimento de elevação e escoamento de
+fluidos. Neste trabalho será abordado apenas os modelos matemáticos
+descritos sob o regime pseudo-permanente, os quais pode-se destacar:
+IPR Linear, Fetkovich, Vogel e Vogel Generalizada. 
+
+\section{Objetivos\label{sec:Objetivos}}
+
+Os objetivos deste projeto de engenharia são:
+\begin{itemize}
+\item Objetivos gerais:
+
+\begin{itemize}
+\item Utilizar modelos empíricos e equações matemáticas propostas na literatura
+para o cálculo das pressões de poço e suas respectivas vazões ao longo
+da vida útil de um reservatório.
+\item Plotar curvas de IPR em escoamentos monofásico e bifásico utilizando
+os modelos Linear, Vogel, Fetkovich e Vogel Generalizado considerando
+regime pseudopermanente a partir do sofware externo Gnuplot.
+\end{itemize}
+\item Objetivos específicos:
+
+\begin{itemize}
+\item Permitir que o usuário escolha qual modelo irá utilizar para realizar
+o cálculo dos parâmetros da curva de IPR.
+\item Criar o software de modo que a curva de IPR possa ser plotada independente
+da existência dos parâmetros de reservatório.
+\item A partir do cálculo dos modelos empíricos, analisar os tipos de IPR:
+Linear, Generalizada e Reservatórios Estratificados.
+\end{itemize}
+\end{itemize}
+

@@ -88,7 +88,7 @@
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
-\author 267031021 "marce"
+\author -627105657 "Atila Junior"
 \end_header
 
 \begin_body
@@ -151,11 +151,6 @@ A terceira etapa do desenvolvimento de um projeto de engenharia, no nosso
  A AOO utiliza algumas regras para identificar os objetos de interesse,
  as relacões entre os pacotes, as classes, os atributos, os métodos, as
  heranças, as associações, as agregações, as composições e as dependências.
-
-\change_deleted 267031021 1702518097
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Section
@@ -505,10 +500,6 @@ a sequência do diagrama abaixo é irreal pois pede entrada de dados 2x antes
 \begin_layout Plain Layout
 faça dois diagramas; um para entrada dados disco e outro para teclado ou
  coloque uma nota explicando que a entrada pode ser de duas formas;
-\change_deleted 267031021 1702518097
- 
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -683,20 +674,11 @@ name "par:Diagrama-de-colaboração:"
 \end_inset
 
 
-\change_deleted 267031021 1702518097
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
 No diagrama de comunicação o foco é a interação e a troca de mensagens e
  dados entre os objetos.
-
-\change_deleted 267031021 1702518097
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -806,7 +788,11 @@ reference "cap:Diagrama-de-maquina-de-estado"
 
 \end_inset
 
- o diagrama de máquina de estado para os objetos da classe CsimuladorCurvasIPR.
+ o diagrama de máquina de estado para os objetos da classe C
+\change_inserted -627105657 1702520428
+S
+\change_unchanged
+imuladorCurvasIPR.
 \end_layout
 
 \begin_layout Standard
@@ -819,7 +805,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/Diagrama_de_Estado_Simulação_IPR.png
+	filename imagens/DiagramaDeEstado-ClasseSimulador.png
 	lyxscale 85
 	width 100text%
 
@@ -875,12 +861,10 @@ reference "cap:Diagrama-de-atividades"
  o diagrama de atividades correspondente a uma atividade específica do diagrama
  de máguina de estado.
  Neste caso específico, é realizado o cálculo da produtividade de um poço
- vertical, utilizando-se de modelos teóricos e empíricos.
-
-\change_deleted 267031021 1702518097
- 
-\change_unchanged
-
+ vertical, utilizando-se o modelo empírico de Fetkovich, onde se é necessário
+ o usuário possuir dados de pressão de fundo e vazão de dois diferentes
+ poços para que seja realizado o cálculo das constantes do modelo e essas
+ sejam utilizadas no cálculo de vazões para o poço de interesse.
 \end_layout
 
 \begin_layout Standard
