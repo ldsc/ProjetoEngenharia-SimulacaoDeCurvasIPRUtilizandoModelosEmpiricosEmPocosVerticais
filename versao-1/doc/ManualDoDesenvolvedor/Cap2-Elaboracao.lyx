@@ -102,9 +102,6 @@
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
-\author -1380949907 "andre duarte bueno"
-\author 267031021 "marce"
-\author 1635264300 "andreduartebueno" andreduartebueno@gmail.com
 \end_header
 
 \begin_body
@@ -255,10 +252,6 @@ Formulação teórica
 Nesta seção, apresenta-se a formulação teórica dos conceitos fundamentais
  abordados ao longo deste projeto.
  A mesma tem como base o livro
-\change_deleted 267031021 1698414871
- X
-\change_inserted 267031021 1698414862
-
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Boyun-2007"
@@ -266,10 +259,6 @@ literal "false"
 
 \end_inset
 
-
-\change_deleted 267031021 1698414866
-X 
-\change_unchanged
 
 \begin_inset Note Note
 status open
@@ -306,25 +295,13 @@ Inflow Performance Relationship
 \emph default
 ) é usada para avaliar a capacidade de entrega do reservatório na engenharia
  de produção.
- 
-\change_deleted -1380949907 1702485197
-A curva IPR é
-\change_inserted -1380949907 1702485197
-É
-\change_unchanged
- uma apresentação gráfica da relação entre a pressão de fluxo no fundo do
- poço e a taxa de produção de líquidos.
+ É uma apresentação gráfica da relação entre a pressão de fluxo no fundo
+ do poço e a taxa de produção de líquidos.
  A magnitude da inclinação da curva IPR é chamada de “índice de produtividade”
  (
-\change_deleted -1380949907 1702485215
-J
-\change_inserted -1380949907 1702485215
-
 \begin_inset Formula $J$
 \end_inset
 
-
-\change_unchanged
 ):
 \end_layout
 
@@ -353,15 +330,9 @@ A IPR Linear é aplicada na suposição de fluxo líquido monofásico e, dessa
  forma, funciona para zonas do reservatório acima do ponto de bolha ou para
  óleos subsaturados.
  As equações definem o índice de produtividade (
-\change_deleted -1380949907 1702485236
-J
-\change_inserted -1380949907 1702485236
-
 \begin_inset Formula $J$
 \end_inset
 
-
-\change_unchanged
 ) (equação 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -380,22 +351,10 @@ J^{*}=\frac{q}{\left(p_{e}-p_{wf}\right)}=\frac{kh}{141.2B_{o}\left(\frac{1}{2}l
 
 \end_inset
 
-
-\change_deleted 267031021 1698289317
-
-\end_layout
-
-\begin_layout Standard
 Como o índice de produtividade (
-\change_deleted -1380949907 1702485245
-J
-\change_inserted -1380949907 1702485245
-
 \begin_inset Formula $J$
 \end_inset
 
-
-\change_unchanged
 ) acima da pressão do ponto de bolha é independente da taxa de produção,
  a curva IPR para um reservatório monofásico (líquido) é uma linha reta
  traçada da pressão do reservatório até a pressão do ponto de bolha.
@@ -408,85 +367,49 @@ J
 \end_inset
 
 , o fluxo aberto absoluto (
-\change_deleted -1380949907 1702485250
-AOF
-\change_inserted -1380949907 1702485250
-
 \begin_inset Formula $AOF$
 \end_inset
 
-
-\change_unchanged
 ) é o índice de produtividade (
-\change_deleted -1380949907 1702485253
-J
-\change_inserted -1380949907 1702485253
-
 \begin_inset Formula $J$
 \end_inset
 
-
-\change_unchanged
-) vezes a pressão do reservatório
-\change_inserted 267031021 1698289627
+) vezes a pressão do reservatório .
  
-\change_unchanged
-.
-
-\change_inserted 267031021 1698289458
- 
-\change_inserted -1380949907 1702485256
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -1380949907 1702485266
 Arrumar indices das equações; usar ctrl+m
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
 
-\change_unchanged
-
 \begin_inset Formula 
-\[
-AOF=JPe
-\]
+\begin{equation}
+AOF=JPe\label{eq: AOF}
+\end{equation}
 
 \end_inset
 
-
-\change_inserted 1635264300 1698147831
 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1635264300 1698147850
 TODA equação é colocada usando uma equação, mesmo que seja pequena e em
  linha;
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1635264300 1698147895
 quando você for usar termos usados nas equações deve usar uma equação inline.
  Desta forma os textos nas equações e no meio do texto ficarão iguais; sem
  isso ficam diferentes!
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -497,16 +420,9 @@ Reservatórios Bifásicos
 \begin_layout Standard
 Acima da pressão de bolha, o óleo contido no reservatório se encontra subsaturad
 o, ou seja, o gás contido no óleo se encontra todo dissolvido, fazendo com
- que a IPR apresente um comportament
-\change_deleted -1380949907 1702485298
-e
-\change_inserted -1380949907 1702485298
-o
-\change_unchanged
- linear.
+ que a IPR apresente um comportamento linear.
  Abaixo da pressão do ponto de bolha, o gás em solução escapa do óleo e
  se torna gás livre.
- 
 \end_layout
 
 \begin_layout Standard
@@ -540,39 +456,19 @@ Equação de Vogel
 
 \begin_layout Standard
 A equação de Vogel é descrita por:
-\change_inserted 1635264300 1698147984
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1635264300 1698148004
 coloque como equação numerada as equações importantes e adicione label
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted -1380949907 1702485330
-\begin_inset Formula $q=q_{max}\left[1-0.2\left(\frac{p_{wf}}{\overline{p}}\right)-0.8\left(\frac{p_{wf}}{\overline{p}}\right)^{2}\right]$
-\end_inset
-
- ou 
-\begin_inset Formula $p_{wf}=0.125\overline{p}\left[\sqrt{81-80\left(\frac{q}{q_{max}}\right)}-1\right]$
-\end_inset
-
-
-\change_inserted -1380949907 1702485330
-
 \begin_inset Formula 
 \begin{equation}
 q=q_{max}\left[1-0.2\left(\frac{p_{wf}}{\overline{p}}\right)-0.8\left(\frac{p_{wf}}{\overline{p}}\right)^{2}\right]oup_{wf}=0.125\overline{p}\left[\sqrt{81-80\left(\frac{q}{q_{max}}\right)}-1\right]\label{eq:Vogel}
@@ -580,48 +476,38 @@ q=q_{max}\left[1-0.2\left(\frac{p_{wf}}{\overline{p}}\right)-0.8\left(\frac{p_{w
 
 \end_inset
 
-
-\change_unchanged
 ,
 \end_layout
 
 \begin_layout Standard
 onde 
-\change_deleted 1635264300 1698148012
-qmax
-\change_inserted 1635264300 1698148012
-
 \begin_inset Formula $qmax[ft³/d]$
 \end_inset
 
-
-\change_inserted -1380949907 1702485491
 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -1380949907 1702485494
 colocar unidades
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
  é uma constante empírica e seu valor representa a capacidade máxima que
  o reservatório pode entregar, ou AOF.
  Para fluxo pseudo-permanente pode ser calculado por:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $q_{max}=\frac{J*\overline{p}}{1.8}$
+\begin_inset Formula 
+\begin{equation}
+q_{max}=\frac{J*\overline{p}}{1.8}\label{eq:Vazão Máxima Utilizando Vogel}
+\end{equation}
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Subsection
@@ -630,39 +516,19 @@ Equação de Fetkovich
 
 \begin_layout Standard
 A equação de Fetkovich é definida por:
-\change_inserted 1635264300 1698148045
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1635264300 1698148059
 numerar as equações e colocar label quando for referenciada
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted -1380949907 1702485374
-\begin_inset Formula $q=q_{max}\left[1-\left(\frac{p_{wf}}{\overline{p}}\right)^{2}\right]^{n}$
-\end_inset
-
- ou 
-\begin_inset Formula $q=C\left(\overline{p}^{2}-p_{wf}^{2}\right)^{n}$
-\end_inset
-
-
-\change_inserted -1380949907 1702485374
-
 \begin_inset Formula 
 \begin{equation}
 q=q_{max}\left[1-\left(\frac{p_{wf}}{\overline{p}}\right)^{2}\right]^{n}ouq=C\left(\overline{p}^{2}-p_{wf}^{2}\right)^{n}\label{eq:Fetkovich}
@@ -670,32 +536,18 @@ q=q_{max}\left[1-\left(\frac{p_{wf}}{\overline{p}}\right)^{2}\right]^{n}ouq=C\le
 
 \end_inset
 
-
-\change_unchanged
 ,
 \end_layout
 
 \begin_layout Standard
 onde 
-\change_deleted 1635264300 1698148022
-C
-\change_inserted 1635264300 1698148022
-
 \begin_inset Formula $C$
 \end_inset
 
-
-\change_unchanged
  e 
-\change_deleted 1635264300 1698148024
-n
-\change_inserted 1635264300 1698148024
-
 \begin_inset Formula $n$
 \end_inset
 
-
-\change_unchanged
  são constantes empíricas relacionadas a vazão máxima, dada por:
 \end_layout
 
@@ -716,23 +568,13 @@ Acima do ponto de bolha a IPR apresenta comportamento linear e a vazão na
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted -1380949907 1702485398
-\begin_inset Formula $q=J^{*}(\overline{p}-p_{b})$
-\end_inset
-
-.
-\change_inserted -1380949907 1702485398
-
 \begin_inset Formula 
 \begin{equation}
-q=J^{*}(\overline{p}-p_{b}).
+q=J^{*}(\overline{p}-p_{b})\label{eq:Vazão na Pressão de Bolha}
 \end{equation}
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -742,17 +584,9 @@ Baseado na equação de Vogel, a vazão adicional causada pela queda de pressão
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted -1380949907 1702485404
-\begin_inset Formula $\varDelta q=q_{v}\left[1-0.2\left(\frac{p_{wf}}{p_{b}}\right)-0.8\left(\frac{p_{wf}}{p_{b}}\right)^{2}\right]$
-\end_inset
-
-, 
-\change_inserted -1380949907 1702485404
-
 \begin_inset Formula 
 \begin{equation}
-\varDelta q=q_{v}\left[1-0.2\left(\frac{p_{wf}}{p_{b}}\right)-0.8\left(\frac{p_{wf}}{p_{b}}\right)^{2}\right],
+\varDelta q=q_{v}\left[1-0.2\left(\frac{p_{wf}}{p_{b}}\right)-0.8\left(\frac{p_{wf}}{p_{b}}\right)^{2}\right]\label{eq:Vazão Adicional Abaixo do Ponto de Bolha}
 \end{equation}
 
 \end_inset
@@ -761,8 +595,29 @@ Baseado na equação de Vogel, a vazão adicional causada pela queda de pressão
 \end_layout
 
 \begin_layout Standard
-onde 
+sabendo que 
 \begin_inset Formula $q_{v}=\frac{J^{*}p_{b}}{1.8}$
+\end_inset
+
+, onde 
+\begin_inset Formula $qv$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ é expressado em 
+\begin_inset Formula $[ft³/d]$
 \end_inset
 
 .
@@ -774,23 +629,13 @@ Portanto, a vazão para uma determinada pressão abaixo da pressão de bolha
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted -1380949907 1702485412
-\begin_inset Formula $q=J^{*}\left(\overline{p}-p_{b}\right)+\frac{J^{*}p_{b}}{1.8}*\left[1-0.2\left(\frac{p_{wf}}{p_{b}}\right)-0.8\left(\frac{p_{wf}}{p_{b}}\right)^{2}\right]$
-\end_inset
-
-.
-\change_inserted -1380949907 1702485412
-
 \begin_inset Formula 
 \begin{equation}
-q=J^{*}\left(\overline{p}-p_{b}\right)+\frac{J^{*}p_{b}}{1.8}*\left[1-0.2\left(\frac{p_{wf}}{p_{b}}\right)-0.8\left(\frac{p_{wf}}{p_{b}}\right)^{2}\right].
+q=J^{*}\left(\overline{p}-p_{b}\right)+\frac{J^{*}p_{b}}{1.8}*\left[1-0.2\left(\frac{p_{wf}}{p_{b}}\right)-0.8\left(\frac{p_{wf}}{p_{b}}\right)^{2}\right]\label{eq:Vazão Abaixo da Pressão de Bolha}
 \end{equation}
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -802,35 +647,35 @@ Fluxo Monofásico
 Para camadas de reservatório contendo óleos subsaturados, se a pressão de
  fluxo no fundo do poço estiver acima das pressões do ponto de bolha dos
  óleos em todas as camadas, é esperado fluxo monofásico.
-\change_inserted -1380949907 1702485417
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -1380949907 1702485433
 numerar as equações e dar labels para as referenciadas - principais
-\change_unchanged
-
 \end_layout
 
-\end_inset
-
-
-\change_unchanged
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\sum J^{*}(\overline{p}_{i}-p_{wf})=q_{wh}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $AOF=\sum J_{i}^{*}\overline{p}_{i}=\sum AOF_{i}$
+\begin_inset Formula 
+\begin{equation}
+\sum J^{*}(\overline{p}_{i}-p_{wf})=q_{wh}\label{eq:Vazão por Camadas}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+AOF=\sum J_{i}^{*}\overline{p}_{i}=\sum AOF_{i}\label{eq:Vazão Máxima por Camadas}
+\end{equation}
+
 \end_inset
 
 
@@ -843,10 +688,14 @@ Também é possível se chegar a pressão de fundo.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $p_{wfo}=\frac{\sum J_{i}^{*}\overline{p_{i}}}{\sum J_{i}^{*}}$
+\begin_inset Formula 
+\begin{equation}
+p_{wfo}=\frac{\sum J_{i}^{*}\overline{p_{i}}}{\sum J_{i}^{*}}.\label{eq:Pressão de Fundo de Poço Fluxo Monofásico}
+\end{equation}
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Subsection
@@ -856,22 +705,26 @@ Fluxo Bifásico
 \begin_layout Standard
 Para camadas de reservatório contendo óleos saturados, é esperado um fluxo
  bifásico.
-
-\change_inserted 1635264300 1698148168
- 
-\change_unchanged
-Utilizando Vogel:
+ Utilizando Vogel:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\sum\frac{J_{i}^{*}\overline{p}_{i}}{1.8}\left[1-0.2\left(\frac{p_{wf}}{\overline{p_{i}}}\right)-0.8\left(\frac{p_{wf}}{\overline{p_{i}}}\right)^{2}\right]=q_{wh}$
+\begin_inset Formula 
+\begin{equation}
+\sum\frac{J_{i}^{*}\overline{p}_{i}}{1.8}\left[1-0.2\left(\frac{p_{wf}}{\overline{p_{i}}}\right)-0.8\left(\frac{p_{wf}}{\overline{p_{i}}}\right)^{2}\right]=q_{wh}\label{eq:Vazão por Camadas Utilizando Vogel}
+\end{equation}
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $AOF=\sum\frac{J_{i}^{*}\overline{p}_{i}}{1.8}=\sum AOF_{i}$
+\begin_inset Formula 
+\begin{equation}
+AOF=\sum\frac{J_{i}^{*}\overline{p}_{i}}{1.8}=\sum AOF_{i}\label{eq:Vazão Máxima por Camadas Utilizando Vogel}
+\end{equation}
+
 \end_inset
 
 
@@ -882,10 +735,14 @@ Também é possível se chegar a pressão de fundo:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $p_{wfo}=\frac{\sqrt{80\sum J_{i}^{*}\overline{p}_{i}\sum\frac{J_{i}^{*}}{\overline{p}_{i}}+\left(\sum J_{i}^{*}\right)^{2}}-\sum J_{i}^{*}}{8\sum\frac{J_{i}^{*}}{\overline{p}_{i}}}$
+\begin_inset Formula 
+\begin{equation}
+p_{wfo}=\frac{\sqrt{80\sum J_{i}^{*}\overline{p}_{i}\sum\frac{J_{i}^{*}}{\overline{p}_{i}}+\left(\sum J_{i}^{*}\right)^{2}}-\sum J_{i}^{*}}{8\sum\frac{J_{i}^{*}}{\overline{p}_{i}}}\label{eq:Pressão de Fundo de Poço Fluxo Bifásico}
+\end{equation}
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Section
@@ -898,52 +755,19 @@ A partir da análise dos modelos apresentados, identifica-se ose seguintes
 \end_layout
 
 \begin_layout Itemize
-Pacote 
-\change_deleted 1635264300 1698148303
-Propriedades do 
-\change_unchanged
-Reservatório: 
-\change_inserted 1635264300 1698148178
-
+Pacote Reservatório:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Composto pelos parâmetros da rocha-reservatório
-\change_inserted 1635264300 1698148248
-(como porosidade, permeabilidade)
-\change_unchanged
-, fluidos
-\change_inserted 1635264300 1698148262
-(como viscosidade)
-\change_unchanged
- e do próprio reservatório
-\change_deleted 1635264300 1698148267
-,
-\change_inserted 1635264300 1698148269
-(como
-\change_unchanged
- 
-\change_deleted 1635264300 1698148245
-como porosidade, permeabilidade
-\change_unchanged
-, extensão, 
-\change_deleted 1635264300 1698148254
-viscosidade,
-\change_unchanged
- fator volume-formação
-\change_inserted 1635264300 1698148275
-)
-\change_unchanged
- e outros.
- 
+Composto pelos parâmetros da rocha-reservatório(como porosidade, permeabilidade)
+, fluidos(como viscosidade, densidade e fator volume formação) e do próprio
+ reservatório(como espessura e pressão inicial) e outros.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Pacote Dados de Produção: 
-\change_inserted 1635264300 1698148180
-
+Pacote Dados de Produção:
 \end_layout
 
 \begin_deeper
@@ -951,63 +775,43 @@ Pacote Dados de Produção:
 Composto por dados de pressão de fundo e inicial do reservatório de modo
  que o cálculo da IPR seja possível sem necessitar dos parâmetros do pacote
  acima descrito.
-\change_inserted 1635264300 1698148378
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1635264300 1698148434
 não faz sentido separar os dados de produção do reservatório do reservatório
  em si;
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1635264300 1698149163
-Pode-se pensar em criar 
+Pode-se pensar em criar
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1635264300 1698149230
 CAmostra com dados da amostra, formato, dimensões, quem coletou; refere-se
  apenas a amostra, seria válido para qualquer amostra, tanto rocha como
  fluido; teria de ter o tipo e um identificador;
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1635264300 1698149250
 CMeioPoroso tem propriedades petrofísicas como porosidade e permeabilidade
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1635264300 1698149263
 CFluido tem propriedades básicas de fluido
-\change_unchanged
-
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1635264300 1698149305
 CAmostraRochaReservatorio teria duas agregações, CAmostra e CMeioPoroso
  ou seria herdeiro das duas;
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1635264300 1698149360
 CReservatorio que terá definição do tipo de reservatório, número de camadas,
  um vetor de CAmostraRocha (pode ser uma única ou camadas);
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1635264300 1698149371
 CReservatorioProducao que se refere a um reservatório em produção, incluiria
  dados de produção ou Algo diretamente ligado ao modelo de IPR; vamos ver
  isso junto;
@@ -1016,126 +820,38 @@ CReservatorioProducao que se refere a um reservatório em produção, incluiria
 \end_inset
 
 
-\change_unchanged
-
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Pacote Modelos Empíricos
-\change_inserted 1635264300 1698148629
-
+Pacote Modelos Empíricos de IPR
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1635264300 1698148644
 é o pacote IPR? com os diferentes modelos de IPR?
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
-: 
-\change_inserted 1635264300 1698148182
-
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 Calcula os parâmetros necessários para as curvas utilizando os modelos listados.
- O usuário poderá escolher qual modelo deseja usar.
+ O usuário poderá escolher qual modelo deseja usar..
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Pacote Regime Pseudopermanente
-\change_inserted 1635264300 1698148659
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1635264300 1698149434
-não é um pacote; para ser um pacote tem de ter várias classes dentro;
-\end_layout
-
-\begin_layout Plain Layout
-
-\change_inserted 1635264300 1698149457
-modelos empiricos e regime parecem estar dentro do pacote IPR
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-: 
-\change_inserted 1635264300 1698148184
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Permite calcular o parâmetro de índice de produtividade o qual será utilizado
- nos cálculos de vazão posteriormente.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Pacote Simulador
-\change_inserted -1380949907 1702485636
-CurvasIPR
-\change_unchanged
-: 
-\change_inserted 1635264300 1698148186
-
+Pacote SimuladorCurvasIPR:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 Relaciona os pacotes listados, sendo responsável por interagir com o usuário
  através de um interface via texto para definir as ações a serem tomadas.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Pacote Gráficos: 
-\change_inserted 1635264300 1698148189
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Utilizando um software externo
-\change_deleted 1635264300 1698148694
- (GNUPLOT)
-\change_inserted 1635264300 1698148695
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1635264300 1698148712
-fale do gnuplot no capítulo de projeto; daí revisa os diagramas adicionando
- a classe CGnuplot
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-, será possível gerar gráficos de IPR.
 \end_layout
 
 \end_deeper
@@ -1152,51 +868,35 @@ reference "fig:Diagrama-de-Pacotes"
 \end_inset
 
  mostra as relações e dependências existentes entre os pacotes deste software.
-\change_inserted 1635264300 1698148759
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1635264300 1698148761
 erros:
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1635264300 1698148821
 Dados de poço não são um pacote! dados de poço são atributos da classe CPoco;
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1635264300 1698148858
 CPoco deve ter as propriedades e funcionalidades básicas de um poço;
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1635264300 1698148895
 Pode-se pensar em criar CPocoProducao herdeira de CPoco e que adiciona os
  dados de produção, como pressão inicial, de fundo e vazão;
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1635264300 1698148988
 vamos discutir isso juntos.
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1635264300 1698148990
 -
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1635264300 1698149075
 PENSE NUM PACOTE COMO UM CONJUNTO DE CLASSES E FUN¨CÕES QUE ESTÃO INTIMAMENTE
  RELACIONADAS E POR ISSO São agrupadas num único arquivo, como uma biblioteca;
  um conjunto de classes que irão gerar uma biblioteca.
@@ -1204,15 +904,11 @@ PENSE NUM PACOTE COMO UM CONJUNTO DE CLASSES E FUN¨CÕES QUE ESTÃO INTIMAMENTE
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1635264300 1698149104
 Parece existir um pacote IPR e dentro dele as classes CIPR_Fetkovich,...
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -1232,23 +928,15 @@ status open
 \end_inset
 
 
-\change_inserted -1380949907 1702485648
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -1380949907 1702485658
 SimuladorIPR que acessa
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 

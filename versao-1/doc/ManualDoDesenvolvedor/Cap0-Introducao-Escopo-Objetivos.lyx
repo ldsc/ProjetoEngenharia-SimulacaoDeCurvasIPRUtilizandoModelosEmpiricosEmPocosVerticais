@@ -203,9 +203,12 @@ today }
 
 \begin_layout Standard
 No presente projeto de engenharia, desenvolve-se o software de Simulação
- de Curvas IPR (Inflow Performance Relationship) utilizando Modelos Empíricos
- em Poços verticais, um software aplicado a engenharia de petróleo e que
- utiliza o paradigma da orientação a objetos.
+ de Curvas IPR (
+\emph on
+Inflow Performance Relationship
+\emph default
+) utilizando Modelos Empíricos em Poços verticais, um software aplicado
+ a engenharia de petróleo e que utiliza o paradigma da orientação a objetos.
  
 \end_layout
 
@@ -267,6 +270,9 @@ O cálculo da IPR pode sofrer variações dependendo das características do
  na literatura e, facilitar o cálculo e plotagem das curvas é algo extremamente
  relevante para simulação de reservatórios e para o entedimento de elevação
  e escoamento de fluidos.
+ Neste trabalho será abordado apenas os modelos matemáticos descritos sob
+ o regime pseudo-permanente, os quais pode-se destacar: IPR Linear, Fetkovich,
+ Vogel e Vogel Generalizada.
  
 \end_layout
 
