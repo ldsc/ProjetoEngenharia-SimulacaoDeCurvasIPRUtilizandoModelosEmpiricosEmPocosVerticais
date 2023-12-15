@@ -1,0 +1,29 @@
+
+Correções:
+
+1- O nome dos diagramas (abas no umbrello), deve ser igual ao nome do arquivo .png do lyx, assim, só exportar todos e copiar para ManualDoDesenvolvedor/imagens.
+
+2- Arrumar todos os diagramas, muitos erros.
+
+3- Diagramas de atividades da classe X, método Y, descrevedo o fluxo de cálculo.
+Descrever tomadas de decisão, desvios, situações de algoritmos complexas.
+
+4- diagrama de máquina de estado não é para fazer a sequência do simulador, a sequencia do simulador esta no diagrama de sequência.
+São os estados do objeto.
+Fazemos para os objetos complexos, que mudam o comportamento ao longo do tempo.
+
+5- Os diagramas devem estar sincronizados com o s códigos.
+
+6- Tem de documentar os códigos nos arquivos .h e gerar a documentação usando o doxygen, tem no modelo e tem apeêndice explicando.
+/// descricao.
+int atributo;
+
+/// descricao.
+int Metodo() ;
+
+7- Nos códigos criam os objetos nas classes (.h) e depois criam de novo no cpp. Não pode!
+
+8- Tem de corrigir tudo que foi anotado no lyx.
+Quando peço colocar unidades é para todo documento.
+Senão teria de pedir um por um...
+

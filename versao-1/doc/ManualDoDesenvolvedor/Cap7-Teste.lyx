@@ -180,7 +180,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/giova/Documents/GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocosVerticais/versao-1/test/out/EntradaDadosGeneralizada.png
+	filename ../../test/out/EntradaDadosGeneralizada.png
 	width 100text%
 
 \end_inset
@@ -418,7 +418,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/giova/Documents/GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocosVerticais/versao-1/test/out/Teste-01-Generalizada-GraficoIPR.png
+	filename ../../test/out/Teste-01-Generalizada-GraficoIPR.png
 	width 100text%
 
 \end_inset
@@ -452,7 +452,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/giova/Documents/GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocosVerticais/versao-1/test/out/Teste-02-Linear-GraficoIPR.png
+	filename ../../test/out/Teste-02-Linear-GraficoIPR.png
 	width 100text%
 
 \end_inset
@@ -485,7 +485,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/giova/Documents/GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocosVerticais/versao-1/test/out/Teste-03-Vogel-GraficoIPR.png
+	filename ../../test/out/Teste-03-Vogel-GraficoIPR.png
 	width 100text%
 
 \end_inset
@@ -522,7 +522,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/giova/Documents/GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocosVerticais/versao-1/test/out/Teste-04-Fetkovich-GraficoIPR.png
+	filename ../../test/out/Teste-04-Fetkovich-GraficoIPR.png
 	width 100text%
 
 \end_inset
@@ -570,7 +570,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/giova/Documents/GitHub/ProjetoEngenharia-SimulacaoDeCurvasIPRUtilizandoModelosEmpiricosEmPocosVerticais/versao-1/test/out/SalvarGrafico.png
+	filename ../../test/out/SalvarGrafico.png
 	width 100text%
 
 \end_inset

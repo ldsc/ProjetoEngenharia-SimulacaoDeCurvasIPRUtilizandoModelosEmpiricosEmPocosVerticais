@@ -911,6 +911,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/DiagramaDeCasoUso-Geral.png
+	lyxscale 50
 	width 100text%
 
 \end_inset
@@ -995,6 +996,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/DiagramaDeCasoDeUso-Especifico-AnaliseDosResultados.png
+	lyxscale 50
 	width 100text%
 
 \end_inset

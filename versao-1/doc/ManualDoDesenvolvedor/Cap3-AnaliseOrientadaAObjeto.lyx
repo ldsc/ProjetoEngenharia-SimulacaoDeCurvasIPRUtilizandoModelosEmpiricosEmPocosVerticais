@@ -226,6 +226,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/DiagramaDeClasses.png
+	lyxscale 25
 	width 100text%
 
 \end_inset
@@ -518,7 +519,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/DiagramaGeral.png
-	lyxscale 85
+	lyxscale 50
 	width 100text%
 
 \end_inset
@@ -582,7 +583,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/DiagramaSequenciaEspecifico.png
-	scale 80
+	width 100text%
 	rotateAngle 90
 
 \end_inset
